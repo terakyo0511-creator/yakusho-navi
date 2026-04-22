@@ -1,0 +1,39 @@
+{
+  "home": {
+    "title": "役所手続きナビ",
+    "subtitle": "外国人住民のための手続きガイド",
+    "language_note": "上で言語を選んでください",
+    "procedures_title": "手続き一覧",
+    "minutes": "分",
+    "free": "無料",
+    "yen": "円",
+    "at_city_hall": "市区町村役所",
+    "at_immigration": "入国管理局"
+  },
+  "procedure": {
+    "required_documents": "必要書類",
+    "steps": "手順",
+    "cost": "費用",
+    "time": "所要時間",
+    "deadline": "期限",
+    "warnings": "注意事項",
+    "official_link": "公式サイト",
+    "print": "印刷",
+    "share_line": "LINEで共有",
+    "back": "← 戻る",
+    "show_staff": "窓口スタッフに見せる",
+    "show_staff_note": "この画面を窓口スタッフに見せてください",
+    "deadline_within_days": "{from}から{days}日以内",
+    "deadline_moving": "転入日",
+    "deadline_expiry": "有効期限",
+    "no_deadline": "期限なし",
+    "location_city_hall": "市区町村役所・区役所",
+    "location_immigration": "出入国在留管理局"
+  },
+  "lang": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

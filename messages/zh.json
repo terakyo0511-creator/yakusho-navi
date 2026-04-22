@@ -1,0 +1,39 @@
+{
+  "home": {
+    "title": "日本市政厅手续指南",
+    "subtitle": "外国居民的分步操作指南",
+    "language_note": "请在上方选择语言",
+    "procedures_title": "手续",
+    "minutes": "分钟",
+    "free": "免费",
+    "yen": "¥",
+    "at_city_hall": "市政厅",
+    "at_immigration": "出入国管理局"
+  },
+  "procedure": {
+    "required_documents": "所需材料",
+    "steps": "办理步骤",
+    "cost": "费用",
+    "time": "预计时间",
+    "deadline": "截止时间",
+    "warnings": "重要提示",
+    "official_link": "官方网站",
+    "print": "打印",
+    "share_line": "分享到LINE",
+    "back": "← 返回",
+    "show_staff": "出示给窗口工作人员",
+    "show_staff_note": "将此界面出示给市政厅工作人员",
+    "deadline_within_days": "{from}后{days}天内",
+    "deadline_moving": "搬家",
+    "deadline_expiry": "到期日",
+    "no_deadline": "无期限",
+    "location_city_hall": "市政厅 / 区役所",
+    "location_immigration": "出入国在留管理局"
+  },
+  "lang": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

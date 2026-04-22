@@ -1,0 +1,105 @@
+{
+  "id": "pension",
+  "icon": "📮",
+  "deadline": {
+    "type": "within_days",
+    "days": 14,
+    "from": "after_moving"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": { "min": 20, "max": 40 },
+  "translations": {
+    "ja": {
+      "title": "国民年金の加入",
+      "subtitle": "20歳以上60歳未満は加入義務あり",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
+        { "icon": "🏠", "name": "転入届済みの住民票", "note": "同日に転入届を出す場合は不要" },
+        { "icon": "🏦", "name": "銀行口座情報", "note": "保険料の口座振替を希望する場合" }
+      ],
+      "steps": [
+        "転入後14日以内に市区町村の窓口へ行く",
+        "「国民年金加入」の旨を窓口に伝える",
+        "在留カードを提示して申請書に記入・提出",
+        "年金手帳または基礎年金番号通知書が交付される",
+        "毎月の保険料は口座振替または納付書で支払う"
+      ],
+      "warnings": [
+        "会社の厚生年金に加入している場合は手続き不要",
+        "収入が少ない場合は保険料の免除・猶予申請が可能",
+        "未加入のまま放置すると将来の年金受給額が減る"
+      ]
+    },
+    "en": {
+      "title": "National Pension (国民年金)",
+      "subtitle": "Mandatory for residents aged 20–59 not in company pension",
+      "required_documents": [
+        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
+        { "icon": "🏠", "name": "Resident registration certificate", "note": "Not needed if registering on the same day as moving-in" },
+        { "icon": "🏦", "name": "Bank account information", "note": "Required if you want automatic bank transfer for premiums" }
+      ],
+      "steps": [
+        "Go to city hall within 14 days of moving in",
+        "Tell the staff you want to enroll in the National Pension",
+        "Show your Residence Card and fill out the application form",
+        "You will receive a pension booklet or basic pension number notice",
+        "Pay monthly premiums by bank transfer or payment slip"
+      ],
+      "warnings": [
+        "Not needed if your company already enrolls you in Employees' Pension",
+        "If your income is low, you can apply for a premium exemption or deferral",
+        "Not enrolling will reduce the pension you receive in the future"
+      ]
+    },
+    "vi": {
+      "title": "Lương hưu quốc dân (国民年金)",
+      "subtitle": "Bắt buộc cho cư dân từ 20–59 tuổi không có lương hưu công ty",
+      "required_documents": [
+        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
+        { "icon": "🏠", "name": "Giấy chứng nhận đăng ký cư trú", "note": "Không cần nếu đăng ký cùng ngày chuyển nhà" },
+        { "icon": "🏦", "name": "Thông tin tài khoản ngân hàng", "note": "Cần thiết nếu muốn trích nợ tự động cho phí bảo hiểm" }
+      ],
+      "steps": [
+        "Đến ủy ban nhân dân trong vòng 14 ngày sau khi chuyển đến",
+        "Thông báo với nhân viên rằng bạn muốn đăng ký lương hưu quốc dân",
+        "Xuất trình thẻ cư trú và điền vào đơn đăng ký",
+        "Bạn sẽ nhận được sổ lương hưu hoặc thông báo số lương hưu cơ bản",
+        "Nộp phí hàng tháng qua chuyển khoản ngân hàng hoặc phiếu thanh toán"
+      ],
+      "warnings": [
+        "Không cần thiết nếu công ty đã đăng ký bảo hiểm hưu trí cho bạn",
+        "Nếu thu nhập thấp, bạn có thể xin miễn hoặc hoãn đóng phí",
+        "Không đăng ký sẽ làm giảm khoản lương hưu bạn nhận được trong tương lai"
+      ]
+    },
+    "zh": {
+      "title": "国民年金 (国民年金)",
+      "subtitle": "20至59岁居民若无公司年金则须强制加入",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
+        { "icon": "🏠", "name": "住民票（已完成转入登记）", "note": "若当天同时办理转入登记则无需提供" },
+        { "icon": "🏦", "name": "银行账户信息", "note": "若希望通过银行自动扣款支付保险费时需要" }
+      ],
+      "steps": [
+        "转入后14天内前往市区町村窗口",
+        "告知工作人员您要加入国民年金",
+        "出示在留卡并填写申请表提交",
+        "将收到年金手册或基础年金编号通知书",
+        "每月保险费通过银行自动扣款或缴费单支付"
+      ],
+      "warnings": [
+        "若公司已为您加入厚生年金，则无需办理",
+        "若收入较少，可申请保险费减免或猶予",
+        "不加入将减少您将来所能领取的养老金金额"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "日本年金機構 国民年金",
+      "label_en": "Japan Pension Service - National Pension",
+      "url": "https://www.nenkin.go.jp/international/english/nationalpension/nationalpension.html"
+    }
+  ]
+}

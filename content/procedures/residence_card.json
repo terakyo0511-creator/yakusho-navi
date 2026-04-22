@@ -1,0 +1,113 @@
+{
+  "id": "residence_card",
+  "icon": "🪪",
+  "deadline": {
+    "type": "within_days",
+    "days": 90,
+    "from": "before_expiry"
+  },
+  "location_type": "immigration_office",
+  "cost_yen": 4000,
+  "duration_minutes": { "min": 60, "max": 180 },
+  "translations": {
+    "ja": {
+      "title": "在留カードの更新",
+      "subtitle": "有効期限が切れる前に入国管理局で更新",
+      "required_documents": [
+        { "icon": "🪪", "name": "現在の在留カード", "note": "必ず原本" },
+        { "icon": "📷", "name": "証明写真（4cm×3cm）", "note": "3ヶ月以内に撮影したもの" },
+        { "icon": "📋", "name": "在留期間更新許可申請書", "note": "入管のサイトからダウンロード可" },
+        { "icon": "💴", "name": "収入印紙4,000円分", "note": "入管内または近くのコンビニで購入" },
+        { "icon": "📄", "name": "在職証明書または在学証明書", "note": "雇用主または学校が発行" }
+      ],
+      "steps": [
+        "有効期限の3ヶ月前から申請できる",
+        "必要書類をすべて準備する",
+        "最寄りの出入国在留管理局へ行く",
+        "窓口で申請書と書類を提出・収入印紙を貼付",
+        "審査後、新しい在留カードが交付される（即日〜数週間）"
+      ],
+      "warnings": [
+        "有効期限が切れてから更新すると不法残留になる恐れがある",
+        "証明写真のサイズ・規格を必ず確認すること",
+        "在職・在学証明書は最新のものが必要"
+      ]
+    },
+    "en": {
+      "title": "Residence Card Renewal (在留カード更新)",
+      "subtitle": "Renew at the immigration office before expiry",
+      "required_documents": [
+        { "icon": "🪪", "name": "Current Residence Card (在留カード)", "note": "Original required" },
+        { "icon": "📷", "name": "Passport photo (4cm × 3cm)", "note": "Taken within the last 3 months" },
+        { "icon": "📋", "name": "Application form for extension", "note": "Download from immigration website" },
+        { "icon": "💴", "name": "Revenue stamp (収入印紙) ¥4,000", "note": "Buy at immigration office or nearby convenience store" },
+        { "icon": "📄", "name": "Certificate of employment or enrollment", "note": "Issued by your employer or school" }
+      ],
+      "steps": [
+        "You can apply up to 3 months before the expiry date",
+        "Prepare all required documents",
+        "Go to the nearest Regional Immigration Services Bureau",
+        "Submit the application form and documents; attach the revenue stamp",
+        "After review, a new Residence Card will be issued (same day to several weeks)"
+      ],
+      "warnings": [
+        "Staying after the expiry date may result in illegal residence status",
+        "Check the exact size and format requirements for your passport photo",
+        "Employment or enrollment certificate must be recent"
+      ]
+    },
+    "vi": {
+      "title": "Gia hạn thẻ cư trú (在留カード更新)",
+      "subtitle": "Gia hạn tại cục quản lý xuất nhập cảnh trước khi hết hạn",
+      "required_documents": [
+        { "icon": "🪪", "name": "Thẻ cư trú hiện tại (在留カード)", "note": "Cần bản gốc" },
+        { "icon": "📷", "name": "Ảnh chứng minh (4cm × 3cm)", "note": "Chụp trong vòng 3 tháng gần đây" },
+        { "icon": "📋", "name": "Đơn xin gia hạn thời gian lưu trú", "note": "Tải về từ trang web cục quản lý xuất nhập cảnh" },
+        { "icon": "💴", "name": "Tem doanh thu (収入印紙) ¥4.000", "note": "Mua tại cục xuất nhập cảnh hoặc cửa hàng tiện lợi gần đó" },
+        { "icon": "📄", "name": "Giấy xác nhận làm việc hoặc học tập", "note": "Do nhà tuyển dụng hoặc trường cấp" }
+      ],
+      "steps": [
+        "Có thể nộp đơn trước 3 tháng so với ngày hết hạn",
+        "Chuẩn bị đầy đủ tất cả các tài liệu cần thiết",
+        "Đến Cục quản lý xuất nhập cảnh khu vực gần nhất",
+        "Nộp đơn và tài liệu tại quầy; dán tem doanh thu vào đơn",
+        "Sau khi xét duyệt, thẻ cư trú mới sẽ được cấp (trong ngày đến vài tuần)"
+      ],
+      "warnings": [
+        "Ở lại sau khi hết hạn có thể bị coi là cư trú bất hợp pháp",
+        "Kiểm tra kỹ kích thước và quy cách ảnh chứng minh",
+        "Giấy xác nhận làm việc hoặc học tập phải là mới nhất"
+      ]
+    },
+    "zh": {
+      "title": "在留卡更新 (在留カード更新)",
+      "subtitle": "到期前在出入国管理局办理更新手续",
+      "required_documents": [
+        { "icon": "🪪", "name": "现持在留卡 (在留カード)", "note": "需要原件" },
+        { "icon": "📷", "name": "证件照（4cm×3cm）", "note": "3个月内拍摄" },
+        { "icon": "📋", "name": "在留期间更新许可申请书", "note": "可从出入国管理局官网下载" },
+        { "icon": "💴", "name": "收入印花税票 (収入印紙) ¥4,000", "note": "可在出入境管理局内或附近便利店购买" },
+        { "icon": "📄", "name": "在职证明或在学证明", "note": "由雇主或学校出具" }
+      ],
+      "steps": [
+        "可在有效期到期前3个月开始申请",
+        "准备好所有所需材料",
+        "前往最近的地方出入国管理局",
+        "在窗口提交申请书和材料并贴上收入印花税票",
+        "审核后将颁发新在留卡（当天至数周不等）"
+      ],
+      "warnings": [
+        "有效期过后仍然居留可能构成非法居留",
+        "请务必确认证件照的尺寸和规格要求",
+        "在职或在学证明需为最新版本"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "出入国在留管理庁 在留期間更新許可申請",
+      "label_en": "Immigration Services Agency - Extension of Period of Stay",
+      "url": "https://www.isa.go.jp/en/applications/procedures/16-3.html"
+    }
+  ]
+}

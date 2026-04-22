@@ -1,0 +1,99 @@
+{
+  "id": "my_number",
+  "icon": "🔢",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": { "min": 20, "max": 40 },
+  "translations": {
+    "ja": {
+      "title": "マイナンバーカード申請",
+      "subtitle": "個人番号カードを取得する（任意だが便利）",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
+        { "icon": "📷", "name": "証明写真（4.5cm×3.5cm）", "note": "スマホからオンライン申請する場合は不要" },
+        { "icon": "📬", "name": "通知カードまたは個人番号通知書", "note": "転入後に住民票に記載された番号を確認" }
+      ],
+      "steps": [
+        "転入届後、住民票にマイナンバーが記載される",
+        "市役所窓口またはスマホのマイナポータルアプリで申請",
+        "申請後1〜2ヶ月でカードが届く旨の通知が来る",
+        "市役所へ受け取りに行く（本人確認が必要）"
+      ],
+      "warnings": [
+        "申請は任意だが、各種行政手続きや確定申告に便利",
+        "受け取りは必ず本人が市役所へ行く必要がある",
+        "在留カードとは別のカード"
+      ]
+    },
+    "en": {
+      "title": "My Number Card Application (マイナンバーカード)",
+      "subtitle": "Apply for your Individual Number Card (optional but useful)",
+      "required_documents": [
+        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
+        { "icon": "📷", "name": "Passport photo (4.5cm × 3.5cm)", "note": "Not needed for online application via smartphone" },
+        { "icon": "📬", "name": "Notification card or Individual Number notice", "note": "Check your My Number after completing moving-in registration" }
+      ],
+      "steps": [
+        "After moving-in registration, your My Number will be on your resident record",
+        "Apply at city hall counter or via the My Number Portal app on your smartphone",
+        "After applying, you will receive a notice in 1–2 months when the card is ready",
+        "Pick up the card at city hall in person (ID verification required)"
+      ],
+      "warnings": [
+        "Application is optional but useful for official procedures and tax filing",
+        "You must pick up the card in person at city hall",
+        "This is a separate card from your Residence Card"
+      ]
+    },
+    "vi": {
+      "title": "Đăng ký thẻ My Number (マイナンバーカード)",
+      "subtitle": "Xin cấp thẻ số cá nhân (không bắt buộc nhưng tiện lợi)",
+      "required_documents": [
+        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
+        { "icon": "📷", "name": "Ảnh chứng minh (4,5cm × 3,5cm)", "note": "Không cần nếu đăng ký trực tuyến qua điện thoại" },
+        { "icon": "📬", "name": "Thẻ thông báo hoặc giấy thông báo số cá nhân", "note": "Kiểm tra số My Number sau khi hoàn tất đăng ký chuyển đến" }
+      ],
+      "steps": [
+        "Sau khi đăng ký chuyển đến, My Number sẽ được ghi vào hồ sơ cư trú",
+        "Đăng ký tại quầy ủy ban nhân dân hoặc qua ứng dụng My Number Portal trên điện thoại",
+        "Sau khi đăng ký, bạn sẽ nhận được thông báo sau 1–2 tháng khi thẻ sẵn sàng",
+        "Đến ủy ban nhân dân để nhận thẻ trực tiếp (cần xác minh danh tính)"
+      ],
+      "warnings": [
+        "Đăng ký không bắt buộc nhưng hữu ích cho các thủ tục hành chính và khai thuế",
+        "Phải đến ủy ban nhân dân trực tiếp để nhận thẻ",
+        "Đây là thẻ riêng biệt với thẻ cư trú"
+      ]
+    },
+    "zh": {
+      "title": "个人编号卡申请 (マイナンバーカード)",
+      "subtitle": "申请个人编号卡（非必须但方便）",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
+        { "icon": "📷", "name": "证件照（4.5cm×3.5cm）", "note": "通过智能手机在线申请时无需提供" },
+        { "icon": "📬", "name": "通知卡或个人编号通知书", "note": "完成转入登记后确认您的My Number" }
+      ],
+      "steps": [
+        "完成转入登记后，My Number将记录在住民票上",
+        "在市政厅窗口或通过智能手机的My Number Portal应用申请",
+        "申请后约1~2个月内会收到取卡通知",
+        "本人亲自前往市政厅取卡（需进行身份验证）"
+      ],
+      "warnings": [
+        "申请为自愿，但对各类行政手续和报税很方便",
+        "必须本人亲自前往市政厅领取",
+        "这是与在留卡不同的另一张卡"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "マイナンバーカード総合サイト",
+      "label_en": "My Number Card General Website",
+      "url": "https://www.kojinbango-card.go.jp/en/"
+    }
+  ]
+}

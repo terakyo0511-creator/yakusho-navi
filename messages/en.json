@@ -1,0 +1,39 @@
+{
+  "home": {
+    "title": "Japan City Hall Guide",
+    "subtitle": "Step-by-step procedures for foreign residents",
+    "language_note": "Select your language above",
+    "procedures_title": "Procedures",
+    "minutes": "min",
+    "free": "Free",
+    "yen": "¥",
+    "at_city_hall": "City Hall",
+    "at_immigration": "Immigration Office"
+  },
+  "procedure": {
+    "required_documents": "Required Documents",
+    "steps": "Steps",
+    "cost": "Cost",
+    "time": "Estimated Time",
+    "deadline": "Deadline",
+    "warnings": "Important Notes",
+    "official_link": "Official Website",
+    "print": "Print",
+    "share_line": "Share on LINE",
+    "back": "← Back",
+    "show_staff": "Show to Staff at Counter",
+    "show_staff_note": "Show this screen to the city hall staff",
+    "deadline_within_days": "Within {days} days after {from}",
+    "deadline_moving": "moving",
+    "deadline_expiry": "expiry date",
+    "no_deadline": "No deadline",
+    "location_city_hall": "City Hall / Ward Office",
+    "location_immigration": "Immigration Office"
+  },
+  "lang": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

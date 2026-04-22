@@ -1,0 +1,39 @@
+{
+  "home": {
+    "title": "Hướng dẫn thủ tục ủy ban nhân dân Nhật Bản",
+    "subtitle": "Hướng dẫn từng bước cho người nước ngoài",
+    "language_note": "Chọn ngôn ngữ của bạn ở trên",
+    "procedures_title": "Thủ tục",
+    "minutes": "phút",
+    "free": "Miễn phí",
+    "yen": "¥",
+    "at_city_hall": "Ủy ban nhân dân",
+    "at_immigration": "Cục xuất nhập cảnh"
+  },
+  "procedure": {
+    "required_documents": "Giấy tờ cần thiết",
+    "steps": "Các bước thực hiện",
+    "cost": "Chi phí",
+    "time": "Thời gian dự kiến",
+    "deadline": "Thời hạn",
+    "warnings": "Lưu ý quan trọng",
+    "official_link": "Trang web chính thức",
+    "print": "In",
+    "share_line": "Chia sẻ LINE",
+    "back": "← Quay lại",
+    "show_staff": "Hiển thị cho nhân viên",
+    "show_staff_note": "Hiện màn hình này cho nhân viên ủy ban",
+    "deadline_within_days": "Trong vòng {days} ngày sau {from}",
+    "deadline_moving": "khi chuyển nhà",
+    "deadline_expiry": "ngày hết hạn",
+    "no_deadline": "Không có thời hạn",
+    "location_city_hall": "Ủy ban nhân dân / Văn phòng phường",
+    "location_immigration": "Cục quản lý xuất nhập cảnh"
+  },
+  "lang": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

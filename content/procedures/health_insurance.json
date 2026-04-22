@@ -1,0 +1,101 @@
+{
+  "id": "health_insurance",
+  "icon": "🏥",
+  "deadline": {
+    "type": "within_days",
+    "days": 14,
+    "from": "after_moving"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": { "min": 30, "max": 60 },
+  "translations": {
+    "ja": {
+      "title": "国民健康保険の加入",
+      "subtitle": "会社の保険に入っていない場合は市役所で加入",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
+        { "icon": "🏠", "name": "住民票（転入届済みのもの）", "note": "同日に転入届を出す場合は不要" }
+      ],
+      "steps": [
+        "会社で社会保険に加入していない場合は手続きが必要",
+        "転入後14日以内に市区町村の窓口へ行く",
+        "「国民健康保険加入」の旨を窓口に伝える",
+        "在留カードを提示して申請書に記入・提出",
+        "後日、保険証が自宅に郵送される"
+      ],
+      "warnings": [
+        "会社の社会保険に加入済みの場合は手続き不要",
+        "保険料は前年の収入に基づいて計算される",
+        "未加入のまま医療機関を受診すると全額自己負担になる"
+      ]
+    },
+    "en": {
+      "title": "National Health Insurance (国民健康保険)",
+      "subtitle": "Enroll at city hall if not covered by employer insurance",
+      "required_documents": [
+        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
+        { "icon": "🏠", "name": "Resident Registration Certificate", "note": "Not needed if registering on the same day as moving-in" }
+      ],
+      "steps": [
+        "Required only if your employer does not provide social insurance",
+        "Go to city hall within 14 days of moving in",
+        "Tell the staff you want to enroll in National Health Insurance",
+        "Show your Residence Card and fill out the application form",
+        "Your insurance card will be mailed to your home"
+      ],
+      "warnings": [
+        "Not needed if you are already enrolled in company social insurance",
+        "Premiums are calculated based on previous year's income",
+        "Without insurance, you must pay 100% of medical costs yourself"
+      ]
+    },
+    "vi": {
+      "title": "Bảo hiểm y tế quốc dân (国民健康保険)",
+      "subtitle": "Đăng ký tại ủy ban nhân dân nếu không có bảo hiểm từ công ty",
+      "required_documents": [
+        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
+        { "icon": "🏠", "name": "Giấy chứng nhận đăng ký cư trú", "note": "Không cần nếu đăng ký cùng ngày chuyển nhà" }
+      ],
+      "steps": [
+        "Chỉ cần thiết nếu công ty không cung cấp bảo hiểm xã hội",
+        "Đến ủy ban nhân dân trong vòng 14 ngày sau khi chuyển đến",
+        "Thông báo với nhân viên rằng bạn muốn đăng ký bảo hiểm y tế quốc dân",
+        "Xuất trình thẻ cư trú và điền vào đơn đăng ký",
+        "Thẻ bảo hiểm sẽ được gửi đến nhà bạn qua đường bưu điện"
+      ],
+      "warnings": [
+        "Không cần thiết nếu bạn đã có bảo hiểm xã hội của công ty",
+        "Phí bảo hiểm được tính dựa trên thu nhập năm trước",
+        "Nếu không có bảo hiểm, bạn phải tự trả 100% chi phí y tế"
+      ]
+    },
+    "zh": {
+      "title": "国民健康保险 (国民健康保険)",
+      "subtitle": "若公司未提供保险，请在市政厅办理加入手续",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
+        { "icon": "🏠", "name": "住民票（已完成转入登记）", "note": "若当天同时办理转入登记则无需提供" }
+      ],
+      "steps": [
+        "仅在公司未提供社会保险的情况下需要办理",
+        "转入后14天内前往市区町村窗口",
+        "告知工作人员您要加入国民健康保险",
+        "出示在留卡并填写申请表提交",
+        "保险证将通过邮寄发送到您的住所"
+      ],
+      "warnings": [
+        "若已加入公司的社会保险，则无需办理",
+        "保险费根据上一年度收入计算",
+        "未加入保险时就医需自行承担全部费用"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "厚生労働省 国民健康保険",
+      "label_en": "Ministry of Health - National Health Insurance",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/koukiseido/index.html"
+    }
+  ]
+}
