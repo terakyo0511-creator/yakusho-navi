@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import movingIn from "@/content/procedures/moving_in.json";
 import residenceCard from "@/content/procedures/residence_card.json";
 import healthInsurance from "@/content/procedures/health_insurance.json";
+import healthInsuranceLeave from "@/content/procedures/health_insurance_leave.json";
 import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
 import PrintButton from "@/components/PrintButton";
@@ -14,6 +15,7 @@ const procedureMap: Record<string, typeof movingIn> = {
   moving_in: movingIn,
   residence_card: residenceCard as typeof movingIn,
   health_insurance: healthInsurance as typeof movingIn,
+  health_insurance_leave: healthInsuranceLeave as typeof movingIn,
   my_number: myNumber as typeof movingIn,
   pension: pension as typeof movingIn,
 };

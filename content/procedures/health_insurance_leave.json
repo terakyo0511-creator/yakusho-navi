@@ -1,0 +1,105 @@
+{
+  "id": "health_insurance_leave",
+  "icon": "🚪",
+  "deadline": {
+    "type": "within_days",
+    "days": 14,
+    "from": "after_moving"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": { "min": 20, "max": 40 },
+  "translations": {
+    "ja": {
+      "title": "国民健康保険の脱退",
+      "subtitle": "帰国・転出・就職時に忘れず手続きを",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
+        { "icon": "💳", "name": "国民健康保険証", "note": "持っている場合は返却" },
+        { "icon": "✈️", "name": "帰国の場合：出国を証明できるもの", "note": "航空券・パスポートなど" }
+      ],
+      "steps": [
+        "帰国・転出・会社の社会保険加入が決まったら市役所へ行く",
+        "「国民健康保険の脱退（喪失）手続き」を窓口に伝える",
+        "在留カードと保険証を提示する",
+        "必要書類に記入・提出する",
+        "手続き完了後、保険証を返却する（持参している場合）"
+      ],
+      "warnings": [
+        "脱退しないと保険料の請求が続く",
+        "帰国後に未納分があると次回来日時にトラブルになる可能性がある",
+        "会社の社会保険に加入した日から自動的に国保は切れないため、自分で手続きが必要"
+      ]
+    },
+    "en": {
+      "title": "Cancel National Health Insurance (国民健康保険)",
+      "subtitle": "Required when leaving Japan, moving, or joining company insurance",
+      "required_documents": [
+        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
+        { "icon": "💳", "name": "Health Insurance Card", "note": "Return it if you have one" },
+        { "icon": "✈️", "name": "Proof of departure (if leaving Japan)", "note": "Flight ticket or passport" }
+      ],
+      "steps": [
+        "Go to city hall when you decide to leave Japan, move out, or join company insurance",
+        "Tell the staff you want to cancel (withdraw from) National Health Insurance",
+        "Show your Residence Card and insurance card",
+        "Fill in and submit the required form",
+        "Return your insurance card at the counter"
+      ],
+      "warnings": [
+        "If you don't cancel, insurance fees will keep being charged to you",
+        "Unpaid fees may cause problems when you return to Japan in the future",
+        "Joining company insurance does NOT automatically cancel National Health Insurance — you must do it yourself"
+      ]
+    },
+    "vi": {
+      "title": "Hủy bảo hiểm y tế quốc dân (国民健康保険)",
+      "subtitle": "Cần làm khi về nước, chuyển địa chỉ hoặc có bảo hiểm công ty",
+      "required_documents": [
+        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
+        { "icon": "💳", "name": "Thẻ bảo hiểm y tế", "note": "Trả lại nếu bạn có" },
+        { "icon": "✈️", "name": "Bằng chứng xuất cảnh (nếu về nước)", "note": "Vé máy bay hoặc hộ chiếu" }
+      ],
+      "steps": [
+        "Đến ủy ban nhân dân khi quyết định về nước, chuyển địa chỉ hoặc tham gia bảo hiểm công ty",
+        "Thông báo với nhân viên rằng bạn muốn hủy bảo hiểm y tế quốc dân",
+        "Xuất trình thẻ cư trú và thẻ bảo hiểm",
+        "Điền và nộp mẫu đơn cần thiết",
+        "Trả lại thẻ bảo hiểm tại quầy"
+      ],
+      "warnings": [
+        "Nếu không hủy, phí bảo hiểm sẽ tiếp tục được tính",
+        "Phí chưa thanh toán có thể gây rắc rối khi bạn quay lại Nhật Bản",
+        "Tham gia bảo hiểm công ty KHÔNG tự động hủy bảo hiểm quốc dân — bạn phải tự làm thủ tục"
+      ]
+    },
+    "zh": {
+      "title": "退出国民健康保险 (国民健康保険)",
+      "subtitle": "回国、迁出或加入公司保险时需办理退出手续",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
+        { "icon": "💳", "name": "健康保险证", "note": "如有请归还" },
+        { "icon": "✈️", "name": "出境证明（如回国）", "note": "机票或护照" }
+      ],
+      "steps": [
+        "决定回国、迁出或加入公司保险后，前往市政厅",
+        "告知工作人员您要退出（注销）国民健康保险",
+        "出示在留卡和保险证",
+        "填写并提交所需表格",
+        "在窗口归还保险证"
+      ],
+      "warnings": [
+        "若不退出，保险费将持续被扣缴",
+        "未缴保险费可能在下次入境日本时造成麻烦",
+        "加入公司保险并不会自动注销国民健康保险——必须自行办理手续"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "厚生労働省 国民健康保険",
+      "label_en": "Ministry of Health - National Health Insurance",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/koukiseido/index.html"
+    }
+  ]
+}

@@ -4,10 +4,11 @@ import ProcedureCard from "@/components/ProcedureCard";
 import movingIn from "@/content/procedures/moving_in.json";
 import residenceCard from "@/content/procedures/residence_card.json";
 import healthInsurance from "@/content/procedures/health_insurance.json";
+import healthInsuranceLeave from "@/content/procedures/health_insurance_leave.json";
 import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
 
-const procedures = [movingIn, residenceCard, healthInsurance, myNumber, pension];
+const procedures = [movingIn, residenceCard, healthInsurance, healthInsuranceLeave, myNumber, pension];
 
 export default async function HomePage({
   params,

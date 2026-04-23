@@ -12,8 +12,8 @@ const flagMap: Record<string, string> = {
 };
 
 const labelMap: Record<string, string> = {
-  en: "EN",
-  vi: "VI",
+  en: "English",
+  vi: "Tiếng Việt",
   zh: "中文",
   ja: "日本語",
 };

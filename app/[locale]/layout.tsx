@@ -9,8 +9,17 @@ import "../globals.css";
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "役所手続きナビ | Japan City Hall Guide",
-  description: "Step-by-step guide for foreign residents in Japan",
+  title: "Japan City Hall Guide | 役所手続きナビ",
+  description: "Step-by-step guides for foreign residents in Japan. Residence card, health insurance, moving-in registration and more — in English, Vietnamese, and Chinese.",
+  keywords: ["japan city hall", "residence card", "在留カード", "foreign residents japan", "city hall procedures english", "役所 英語", "国民健康保険 外国人"],
+  openGraph: {
+    title: "Japan City Hall Guide | 役所手続きナビ",
+    description: "Step-by-step guides for foreign residents in Japan. In English, Vietnamese, and Chinese.",
+    url: "https://cityhall-guide.vercel.app",
+    siteName: "Japan City Hall Guide",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default async function LocaleLayout({
