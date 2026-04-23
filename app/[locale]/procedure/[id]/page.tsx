@@ -102,7 +102,7 @@ export default async function ProcedurePage({
               <li key={i} className="flex items-start gap-2 bg-blue-50 rounded-lg px-4 py-3">
                 <span className="text-2xl">{doc.icon}</span>
                 <div>
-                  <span className="font-semibold">{doc.name}</span>
+                  <span className="font-semibold text-gray-900">{doc.name}</span>
                   {doc.note && <p className="text-sm text-gray-600 mt-0.5">{doc.note}</p>}
                 </div>
               </li>
@@ -120,7 +120,7 @@ export default async function ProcedurePage({
                 <span className="bg-[#1a2744] text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
                   {i + 1}
                 </span>
-                <p>{step}</p>
+                <p className="text-gray-900">{step}</p>
               </li>
             ))}
           </ol>
