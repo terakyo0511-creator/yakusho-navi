@@ -29,7 +29,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <div lang={locale} className={`${geist.className} min-h-screen bg-gray-50`}>
+    <div lang={locale} className={`${geist.className} min-h-screen bg-white`}>
       <NextIntlClientProvider messages={messages}>
         {children}
       </NextIntlClientProvider>

@@ -19,9 +19,11 @@ const labelMap: Record<string, string> = {
 };
 
 export default function LanguageSwitcher() {
-  const locale = useLocale();
+  const fallbackLocale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const seg = pathname.split("/")[1];
+  const locale = routing.locales.includes(seg as (typeof routing.locales)[number]) ? seg : fallbackLocale;
 
   function switchLocale(newLocale: string) {
     const segments = pathname.split("/");

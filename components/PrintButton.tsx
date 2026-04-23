@@ -6,7 +6,7 @@ export default function PrintButton({ label }: { label: string }) {
       onClick={() => window.print()}
       className="bg-[#1a2744] text-white px-3 py-1.5 rounded-lg text-sm hover:bg-[#2a3754] transition-colors"
     >
-      🖨️ {label}
+      🖨️ <span className="hidden sm:inline">{label}</span>
     </button>
   );
 }

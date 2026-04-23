@@ -40,7 +40,7 @@ export default function ShowStaffButton({ label, jaTitle, jaDocuments }: ShowSta
       onClick={() => setOpen(true)}
       className="flex items-center gap-1.5 bg-[#1a2744] text-white px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-[#2a3754] transition-colors"
     >
-      🗣️ {label}
+      🗣️ <span className="hidden sm:inline">{label}</span>
     </button>
   );
 }
