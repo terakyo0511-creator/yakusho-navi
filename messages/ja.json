@@ -8,7 +8,9 @@
     "free": "無料",
     "yen": "円",
     "at_city_hall": "市区町村役所",
-    "at_immigration": "入国管理局"
+    "at_immigration": "入国管理局",
+    "share_checklist": "チェックリストをシェア",
+    "checklist_share_text": "来日後にやること チェックリスト"
   },
   "procedure": {
     "required_documents": "必要書類",

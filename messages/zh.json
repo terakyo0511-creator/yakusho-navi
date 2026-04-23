@@ -8,7 +8,9 @@
     "free": "免费",
     "yen": "¥",
     "at_city_hall": "市政厅",
-    "at_immigration": "出入国管理局"
+    "at_immigration": "出入国管理局",
+    "share_checklist": "分享清单",
+    "checklist_share_text": "来日后需要办理的手续清单"
   },
   "procedure": {
     "required_documents": "所需材料",

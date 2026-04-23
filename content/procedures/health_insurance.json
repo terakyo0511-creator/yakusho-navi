@@ -8,14 +8,25 @@
   },
   "location_type": "city_hall",
   "cost_yen": 0,
-  "duration_minutes": { "min": 30, "max": 60 },
+  "duration_minutes": {
+    "min": 30,
+    "max": 60
+  },
   "translations": {
     "ja": {
       "title": "国民健康保険の加入",
       "subtitle": "会社の保険に入っていない場合は市役所で加入",
       "required_documents": [
-        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
-        { "icon": "🏠", "name": "住民票（転入届済みのもの）", "note": "同日に転入届を出す場合は不要" }
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "必ず原本"
+        },
+        {
+          "icon": "🏠",
+          "name": "住民票（転入届済みのもの）",
+          "note": "同日に転入届を出す場合は不要"
+        }
       ],
       "steps": [
         "会社で社会保険に加入していない場合は手続きが必要",
@@ -31,11 +42,19 @@
       ]
     },
     "en": {
-      "title": "National Health Insurance (国民健康保険)",
+      "title": "National Health Insurance",
       "subtitle": "Enroll at city hall if not covered by employer insurance",
       "required_documents": [
-        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
-        { "icon": "🏠", "name": "Resident Registration Certificate", "note": "Not needed if registering on the same day as moving-in" }
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "🏠",
+          "name": "Resident Registration Certificate",
+          "note": "Not needed if registering on the same day as moving-in"
+        }
       ],
       "steps": [
         "Required only if your employer does not provide social insurance",
@@ -51,11 +70,19 @@
       ]
     },
     "vi": {
-      "title": "Bảo hiểm y tế quốc dân (国民健康保険)",
+      "title": "Bảo hiểm y tế quốc dân",
       "subtitle": "Đăng ký tại ủy ban nhân dân nếu không có bảo hiểm từ công ty",
       "required_documents": [
-        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
-        { "icon": "🏠", "name": "Giấy chứng nhận đăng ký cư trú", "note": "Không cần nếu đăng ký cùng ngày chuyển nhà" }
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "🏠",
+          "name": "Giấy chứng nhận đăng ký cư trú",
+          "note": "Không cần nếu đăng ký cùng ngày chuyển nhà"
+        }
       ],
       "steps": [
         "Chỉ cần thiết nếu công ty không cung cấp bảo hiểm xã hội",
@@ -71,11 +98,19 @@
       ]
     },
     "zh": {
-      "title": "国民健康保险 (国民健康保険)",
+      "title": "国民健康保险",
       "subtitle": "若公司未提供保险，请在市政厅办理加入手续",
       "required_documents": [
-        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
-        { "icon": "🏠", "name": "住民票（已完成转入登记）", "note": "若当天同时办理转入登记则无需提供" }
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "🏠",
+          "name": "住民票（已完成转入登记）",
+          "note": "若当天同时办理转入登记则无需提供"
+        }
       ],
       "steps": [
         "仅在公司未提供社会保险的情况下需要办理",

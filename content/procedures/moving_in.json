@@ -8,15 +8,30 @@
   },
   "location_type": "city_hall",
   "cost_yen": 0,
-  "duration_minutes": { "min": 30, "max": 60 },
+  "duration_minutes": {
+    "min": 30,
+    "max": 60
+  },
   "translations": {
     "ja": {
       "title": "転入届",
       "subtitle": "新しい住所への住民登録",
       "required_documents": [
-        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
-        { "icon": "📄", "name": "転出証明書", "note": "前の市区町村で発行" },
-        { "icon": "📋", "name": "転入届（窓口でもらえる）", "note": null }
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "必ず原本"
+        },
+        {
+          "icon": "📄",
+          "name": "転出証明書",
+          "note": "前の市区町村で発行"
+        },
+        {
+          "icon": "📋",
+          "name": "転入届（窓口でもらえる）",
+          "note": null
+        }
       ],
       "steps": [
         "住所が決まったら14日以内に役所へ行く",
@@ -32,12 +47,24 @@
       ]
     },
     "en": {
-      "title": "Moving-in Registration (転入届)",
+      "title": "Moving-in Registration",
       "subtitle": "Register your new address at city hall",
       "required_documents": [
-        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
-        { "icon": "📄", "name": "Moving-out Certificate (転出証明書)", "note": "Issued by your previous city office" },
-        { "icon": "📋", "name": "Moving-in Form (転入届)", "note": "Available at the counter" }
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "📄",
+          "name": "Moving-out Certificate (転出証明書)",
+          "note": "Issued by your previous city office"
+        },
+        {
+          "icon": "📋",
+          "name": "Moving-in Form (転入届)",
+          "note": "Available at the counter"
+        }
       ],
       "steps": [
         "Go to city hall within 14 days of moving",
@@ -53,12 +80,24 @@
       ]
     },
     "vi": {
-      "title": "Đăng ký địa chỉ mới (転入届)",
+      "title": "Đăng ký địa chỉ mới",
       "subtitle": "Đăng ký địa chỉ mới tại ủy ban nhân dân",
       "required_documents": [
-        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
-        { "icon": "📄", "name": "Giấy chứng nhận chuyển đi (転出証明書)", "note": "Do ủy ban nhân dân cũ cấp" },
-        { "icon": "📋", "name": "Mẫu đăng ký chuyển đến (転入届)", "note": "Có tại quầy tiếp nhận" }
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "📄",
+          "name": "Giấy chứng nhận chuyển đi (転出証明書)",
+          "note": "Do ủy ban nhân dân cũ cấp"
+        },
+        {
+          "icon": "📋",
+          "name": "Mẫu đăng ký chuyển đến (転入届)",
+          "note": "Có tại quầy tiếp nhận"
+        }
       ],
       "steps": [
         "Đến ủy ban nhân dân trong vòng 14 ngày sau khi chuyển nhà",
@@ -74,12 +113,24 @@
       ]
     },
     "zh": {
-      "title": "转入登记 (転入届)",
+      "title": "转入登记",
       "subtitle": "在市政厅登记新地址",
       "required_documents": [
-        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
-        { "icon": "📄", "name": "迁出证明 (転出証明書)", "note": "由原市区町村发行" },
-        { "icon": "📋", "name": "转入申请表 (転入届)", "note": "可在窗口领取" }
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "📄",
+          "name": "迁出证明 (転出証明書)",
+          "note": "由原市区町村发行"
+        },
+        {
+          "icon": "📋",
+          "name": "转入申请表 (転入届)",
+          "note": "可在窗口领取"
+        }
       ],
       "steps": [
         "搬家后14天内前往市政厅",

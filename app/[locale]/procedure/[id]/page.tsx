@@ -5,6 +5,8 @@ import movingIn from "@/content/procedures/moving_in.json";
 import residenceCard from "@/content/procedures/residence_card.json";
 import healthInsurance from "@/content/procedures/health_insurance.json";
 import healthInsuranceLeave from "@/content/procedures/health_insurance_leave.json";
+import addressChange from "@/content/procedures/address_change.json";
+import hankoRegistration from "@/content/procedures/hanko_registration.json";
 import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
 import PrintButton from "@/components/PrintButton";
@@ -16,6 +18,8 @@ const procedureMap: Record<string, typeof movingIn> = {
   residence_card: residenceCard as typeof movingIn,
   health_insurance: healthInsurance as typeof movingIn,
   health_insurance_leave: healthInsuranceLeave as typeof movingIn,
+  address_change: addressChange as unknown as typeof movingIn,
+  hanko_registration: hankoRegistration as unknown as typeof movingIn,
   my_number: myNumber as typeof movingIn,
   pension: pension as typeof movingIn,
 };

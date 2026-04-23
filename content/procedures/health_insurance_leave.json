@@ -8,15 +8,30 @@
   },
   "location_type": "city_hall",
   "cost_yen": 0,
-  "duration_minutes": { "min": 20, "max": 40 },
+  "duration_minutes": {
+    "min": 20,
+    "max": 40
+  },
   "translations": {
     "ja": {
       "title": "国民健康保険の脱退",
       "subtitle": "帰国・転出・就職時に忘れず手続きを",
       "required_documents": [
-        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
-        { "icon": "💳", "name": "国民健康保険証", "note": "持っている場合は返却" },
-        { "icon": "✈️", "name": "帰国の場合：出国を証明できるもの", "note": "航空券・パスポートなど" }
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "必ず原本"
+        },
+        {
+          "icon": "💳",
+          "name": "国民健康保険証",
+          "note": "持っている場合は返却"
+        },
+        {
+          "icon": "✈️",
+          "name": "帰国の場合：出国を証明できるもの",
+          "note": "航空券・パスポートなど"
+        }
       ],
       "steps": [
         "帰国・転出・会社の社会保険加入が決まったら市役所へ行く",
@@ -32,12 +47,24 @@
       ]
     },
     "en": {
-      "title": "Cancel National Health Insurance (国民健康保険)",
+      "title": "Cancel National Health Insurance",
       "subtitle": "Required when leaving Japan, moving, or joining company insurance",
       "required_documents": [
-        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
-        { "icon": "💳", "name": "Health Insurance Card", "note": "Return it if you have one" },
-        { "icon": "✈️", "name": "Proof of departure (if leaving Japan)", "note": "Flight ticket or passport" }
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "💳",
+          "name": "Health Insurance Card",
+          "note": "Return it if you have one"
+        },
+        {
+          "icon": "✈️",
+          "name": "Proof of departure (if leaving Japan)",
+          "note": "Flight ticket or passport"
+        }
       ],
       "steps": [
         "Go to city hall when you decide to leave Japan, move out, or join company insurance",
@@ -53,12 +80,24 @@
       ]
     },
     "vi": {
-      "title": "Hủy bảo hiểm y tế quốc dân (国民健康保険)",
+      "title": "Hủy bảo hiểm y tế quốc dân",
       "subtitle": "Cần làm khi về nước, chuyển địa chỉ hoặc có bảo hiểm công ty",
       "required_documents": [
-        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
-        { "icon": "💳", "name": "Thẻ bảo hiểm y tế", "note": "Trả lại nếu bạn có" },
-        { "icon": "✈️", "name": "Bằng chứng xuất cảnh (nếu về nước)", "note": "Vé máy bay hoặc hộ chiếu" }
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "💳",
+          "name": "Thẻ bảo hiểm y tế",
+          "note": "Trả lại nếu bạn có"
+        },
+        {
+          "icon": "✈️",
+          "name": "Bằng chứng xuất cảnh (nếu về nước)",
+          "note": "Vé máy bay hoặc hộ chiếu"
+        }
       ],
       "steps": [
         "Đến ủy ban nhân dân khi quyết định về nước, chuyển địa chỉ hoặc tham gia bảo hiểm công ty",
@@ -74,12 +113,24 @@
       ]
     },
     "zh": {
-      "title": "退出国民健康保险 (国民健康保険)",
+      "title": "退出国民健康保险",
       "subtitle": "回国、迁出或加入公司保险时需办理退出手续",
       "required_documents": [
-        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
-        { "icon": "💳", "name": "健康保险证", "note": "如有请归还" },
-        { "icon": "✈️", "name": "出境证明（如回国）", "note": "机票或护照" }
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "💳",
+          "name": "健康保险证",
+          "note": "如有请归还"
+        },
+        {
+          "icon": "✈️",
+          "name": "出境证明（如回国）",
+          "note": "机票或护照"
+        }
       ],
       "steps": [
         "决定回国、迁出或加入公司保险后，前往市政厅",

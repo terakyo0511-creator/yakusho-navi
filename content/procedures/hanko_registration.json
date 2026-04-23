@@ -1,0 +1,93 @@
+{
+  "id": "hanko_registration",
+  "icon": "🔴",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": { "min": 20, "max": 40 },
+  "translations": {
+    "ja": {
+      "title": "印鑑登録",
+      "subtitle": "家の契約・銀行口座開設などに必要な実印登録",
+      "required_documents": [
+        { "icon": "🔴", "name": "登録したい印鑑", "note": "シャチハタ・ゴム印は不可" },
+        { "icon": "🪪", "name": "在留カード", "note": "本人確認に使用" }
+      ],
+      "steps": [
+        "登録したい印鑑（実印）を持参する",
+        "市区町村の窓口で「印鑑登録申請書」をもらい記入",
+        "在留カードで本人確認",
+        "登録完了後「印鑑登録証（カード）」が発行される",
+        "印鑑証明書が必要なときはこのカードを持参して窓口で申請する"
+      ],
+      "warnings": [
+        "シャチハタ（スタンプ式）・ゴム製の印鑑は登録できない",
+        "印鑑証明書の発行は別途300円程度かかる",
+        "賃貸契約・ローン・銀行口座によっては実印+印鑑証明が必要"
+      ]
+    },
+    "en": {
+      "title": "Hanko (Seal) Registration",
+      "subtitle": "Required for housing contracts, bank accounts, and official documents",
+      "required_documents": [
+        { "icon": "🔴", "name": "Your personal seal (hanko)", "note": "Rubber or self-inking stamps are not accepted" },
+        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "For identity verification" }
+      ],
+      "steps": [
+        "Bring your personal seal (hanko) to city hall",
+        "Get and fill out the seal registration form at the counter",
+        "Show your Residence Card for identity verification",
+        "After registration, you will receive a seal registration card",
+        "When you need a seal certificate, bring this card to request one at the counter"
+      ],
+      "warnings": [
+        "Self-inking stamps (Shachihata) and rubber stamps cannot be registered",
+        "Getting a seal certificate costs around ¥300 each time",
+        "Some rental contracts, loans, and bank accounts require a registered seal plus certificate"
+      ]
+    },
+    "vi": {
+      "title": "Đăng ký con dấu cá nhân (Hanko)",
+      "subtitle": "Cần thiết cho hợp đồng thuê nhà, tài khoản ngân hàng",
+      "required_documents": [
+        { "icon": "🔴", "name": "Con dấu cá nhân (hanko)", "note": "Không chấp nhận dấu cao su hoặc dấu tự động" },
+        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Để xác minh danh tính" }
+      ],
+      "steps": [
+        "Mang con dấu cá nhân đến ủy ban nhân dân",
+        "Lấy và điền mẫu đăng ký con dấu tại quầy",
+        "Xuất trình thẻ cư trú để xác minh danh tính",
+        "Sau khi đăng ký, bạn sẽ nhận được thẻ đăng ký con dấu",
+        "Khi cần giấy chứng nhận con dấu, mang thẻ này đến quầy để xin cấp"
+      ],
+      "warnings": [
+        "Không được đăng ký dấu cao su hoặc dấu Shachihata (tự động)",
+        "Phí cấp giấy chứng nhận con dấu khoảng 300 yên mỗi lần",
+        "Một số hợp đồng thuê nhà và tài khoản ngân hàng yêu cầu dấu đã đăng ký kèm giấy chứng nhận"
+      ]
+    },
+    "zh": {
+      "title": "印章登记",
+      "subtitle": "办理租房合同、银行开户等手续时需要",
+      "required_documents": [
+        { "icon": "🔴", "name": "需登记的印章（实印）", "note": "不接受橡皮章或自动印章" },
+        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "用于身份确认" }
+      ],
+      "steps": [
+        "携带需要登记的印章（实印）前往市政厅",
+        "在窗口领取并填写印章登记申请书",
+        "出示在留卡进行身份确认",
+        "登记完成后，将发放印章登记证（卡）",
+        "需要印章证明书时，携带此卡到窗口申请"
+      ],
+      "warnings": [
+        "不可登记渗透印章（Shachihata）或橡皮印章",
+        "每次发行印章证明书需缴纳约300日元",
+        "部分租房合同、贷款及银行账户需要实印及印章证明书"
+      ]
+    }
+  },
+  "official_links": []
+}

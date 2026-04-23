@@ -8,15 +8,30 @@
   },
   "location_type": "city_hall",
   "cost_yen": 0,
-  "duration_minutes": { "min": 20, "max": 40 },
+  "duration_minutes": {
+    "min": 20,
+    "max": 40
+  },
   "translations": {
     "ja": {
       "title": "国民年金の加入",
       "subtitle": "20歳以上60歳未満は加入義務あり",
       "required_documents": [
-        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
-        { "icon": "🏠", "name": "転入届済みの住民票", "note": "同日に転入届を出す場合は不要" },
-        { "icon": "🏦", "name": "銀行口座情報", "note": "保険料の口座振替を希望する場合" }
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "必ず原本"
+        },
+        {
+          "icon": "🏠",
+          "name": "転入届済みの住民票",
+          "note": "同日に転入届を出す場合は不要"
+        },
+        {
+          "icon": "🏦",
+          "name": "銀行口座情報",
+          "note": "保険料の口座振替を希望する場合"
+        }
       ],
       "steps": [
         "転入後14日以内に市区町村の窓口へ行く",
@@ -32,12 +47,24 @@
       ]
     },
     "en": {
-      "title": "National Pension (国民年金)",
+      "title": "National Pension",
       "subtitle": "Mandatory for residents aged 20–59 not in company pension",
       "required_documents": [
-        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
-        { "icon": "🏠", "name": "Resident registration certificate", "note": "Not needed if registering on the same day as moving-in" },
-        { "icon": "🏦", "name": "Bank account information", "note": "Required if you want automatic bank transfer for premiums" }
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "🏠",
+          "name": "Resident registration certificate",
+          "note": "Not needed if registering on the same day as moving-in"
+        },
+        {
+          "icon": "🏦",
+          "name": "Bank account information",
+          "note": "Required if you want automatic bank transfer for premiums"
+        }
       ],
       "steps": [
         "Go to city hall within 14 days of moving in",
@@ -53,12 +80,24 @@
       ]
     },
     "vi": {
-      "title": "Lương hưu quốc dân (国民年金)",
+      "title": "Lương hưu quốc dân",
       "subtitle": "Bắt buộc cho cư dân từ 20–59 tuổi không có lương hưu công ty",
       "required_documents": [
-        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
-        { "icon": "🏠", "name": "Giấy chứng nhận đăng ký cư trú", "note": "Không cần nếu đăng ký cùng ngày chuyển nhà" },
-        { "icon": "🏦", "name": "Thông tin tài khoản ngân hàng", "note": "Cần thiết nếu muốn trích nợ tự động cho phí bảo hiểm" }
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "🏠",
+          "name": "Giấy chứng nhận đăng ký cư trú",
+          "note": "Không cần nếu đăng ký cùng ngày chuyển nhà"
+        },
+        {
+          "icon": "🏦",
+          "name": "Thông tin tài khoản ngân hàng",
+          "note": "Cần thiết nếu muốn trích nợ tự động cho phí bảo hiểm"
+        }
       ],
       "steps": [
         "Đến ủy ban nhân dân trong vòng 14 ngày sau khi chuyển đến",
@@ -74,12 +113,24 @@
       ]
     },
     "zh": {
-      "title": "国民年金 (国民年金)",
+      "title": "国民年金",
       "subtitle": "20至59岁居民若无公司年金则须强制加入",
       "required_documents": [
-        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
-        { "icon": "🏠", "name": "住民票（已完成转入登记）", "note": "若当天同时办理转入登记则无需提供" },
-        { "icon": "🏦", "name": "银行账户信息", "note": "若希望通过银行自动扣款支付保险费时需要" }
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "🏠",
+          "name": "住民票（已完成转入登记）",
+          "note": "若当天同时办理转入登记则无需提供"
+        },
+        {
+          "icon": "🏦",
+          "name": "银行账户信息",
+          "note": "若希望通过银行自动扣款支付保险费时需要"
+        }
       ],
       "steps": [
         "转入后14天内前往市区町村窗口",

@@ -8,7 +8,9 @@
     "free": "Free",
     "yen": "¥",
     "at_city_hall": "City Hall",
-    "at_immigration": "Immigration Office"
+    "at_immigration": "Immigration Office",
+    "share_checklist": "Share checklist",
+    "checklist_share_text": "After moving to Japan — checklist of procedures to complete"
   },
   "procedure": {
     "required_documents": "Required Documents",

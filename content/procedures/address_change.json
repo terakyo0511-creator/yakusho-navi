@@ -1,0 +1,95 @@
+{
+  "id": "address_change",
+  "icon": "📦",
+  "deadline": {
+    "type": "within_days",
+    "days": 14,
+    "from": "after_moving"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": { "min": 20, "max": 40 },
+  "translations": {
+    "ja": {
+      "title": "転居届",
+      "subtitle": "同じ市区町村内での引越し時に必要",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
+        { "icon": "🪪", "name": "身分証明書（パスポート等）", "note": "在留カードで代用可" }
+      ],
+      "steps": [
+        "引越し後14日以内に市区町村の窓口へ行く",
+        "「転居届」の用紙を窓口でもらう",
+        "新住所・旧住所・氏名・生年月日などを記入",
+        "在留カードを一緒に提出",
+        "在留カードの裏に新住所が記入されて返却される"
+      ],
+      "warnings": [
+        "同じ市区町村内の引越しは「転居届」、市区町村をまたぐ場合は「転入届」が必要",
+        "14日以内に手続きしないと罰則が科される場合がある",
+        "在留カード原本が必要（コピー不可）"
+      ]
+    },
+    "en": {
+      "title": "Address Change Within Same City",
+      "subtitle": "Required when moving to a new address within the same city",
+      "required_documents": [
+        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
+        { "icon": "🪪", "name": "ID (passport etc.)", "note": "Residence Card is sufficient" }
+      ],
+      "steps": [
+        "Go to city hall within 14 days of moving",
+        "Get the address change form (転居届) at the counter",
+        "Fill in your new address, old address, name, and date of birth",
+        "Submit the form with your Residence Card",
+        "Your new address will be written on the back of your Residence Card"
+      ],
+      "warnings": [
+        "This form (転居届) is for moving within the same city — if you move to a different city, use the Moving-in Registration (転入届) instead",
+        "Late registration may result in a fine",
+        "You need the original Residence Card (not a copy)"
+      ]
+    },
+    "vi": {
+      "title": "Thay đổi địa chỉ trong cùng thành phố",
+      "subtitle": "Cần làm khi chuyển nhà trong cùng thành phố",
+      "required_documents": [
+        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
+        { "icon": "🪪", "name": "Giấy tờ tùy thân (hộ chiếu...)", "note": "Thẻ cư trú là đủ" }
+      ],
+      "steps": [
+        "Đến ủy ban nhân dân trong vòng 14 ngày sau khi chuyển nhà",
+        "Lấy mẫu thay đổi địa chỉ (転居届) tại quầy tiếp nhận",
+        "Điền địa chỉ mới, địa chỉ cũ, họ tên và ngày sinh",
+        "Nộp mẫu cùng thẻ cư trú",
+        "Địa chỉ mới sẽ được ghi vào mặt sau thẻ cư trú"
+      ],
+      "warnings": [
+        "Mẫu này (転居届) dành cho chuyển nhà trong cùng thành phố — nếu chuyển sang thành phố khác, dùng mẫu 転入届",
+        "Trễ hạn có thể bị phạt",
+        "Cần thẻ cư trú bản gốc (không dùng bản sao)"
+      ]
+    },
+    "zh": {
+      "title": "同城地址变更",
+      "subtitle": "在同一市区町村内搬家时需办理",
+      "required_documents": [
+        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
+        { "icon": "🪪", "name": "身份证明（护照等）", "note": "在留卡即可" }
+      ],
+      "steps": [
+        "搬家后14天内前往市区町村窗口",
+        "在窗口领取地址变更表格（転居届）",
+        "填写新地址、旧地址、姓名和出生日期",
+        "连同在留卡一起提交",
+        "新地址将被写入在留卡背面后归还"
+      ],
+      "warnings": [
+        "此表格（転居届）用于同城搬家——若跨市区町村搬家，需办理転入届",
+        "超过14天未办理可能受到处罚",
+        "需要在留卡原件（不接受复印件）"
+      ]
+    }
+  },
+  "official_links": []
+}
