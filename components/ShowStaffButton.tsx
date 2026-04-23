@@ -4,12 +4,11 @@ import { useState } from "react";
 
 interface ShowStaffButtonProps {
   label: string;
-  note: string;
   jaTitle: string;
   jaDocuments: Array<{ icon: string; name: string }>;
 }
 
-export default function ShowStaffButton({ label, note, jaTitle, jaDocuments }: ShowStaffButtonProps) {
+export default function ShowStaffButton({ label, jaTitle, jaDocuments }: ShowStaffButtonProps) {
   const [open, setOpen] = useState(false);
 
   if (open) {
@@ -39,7 +38,7 @@ export default function ShowStaffButton({ label, note, jaTitle, jaDocuments }: S
   return (
     <button
       onClick={() => setOpen(true)}
-      className="flex items-center gap-1.5 bg-[#1a2744] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#2a3754] transition-colors"
+      className="flex items-center gap-1.5 bg-[#1a2744] text-white px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-[#2a3754] transition-colors"
     >
       🗣️ {label}
     </button>

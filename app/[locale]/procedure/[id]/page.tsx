@@ -49,10 +49,9 @@ export default async function ProcedurePage({
         <Link href={`/${locale}`} className="text-[#1a2744] hover:underline text-sm font-medium">
           {t("back")}
         </Link>
-        <div className="flex gap-2">
+        <div className="flex gap-1.5">
           <ShowStaffButton
             label={t("show_staff")}
-            note={t("show_staff_note")}
             jaTitle={trJa.title}
             jaDocuments={trJa.required_documents.map((d) => ({ icon: d.icon, name: d.name }))}
           />
