@@ -32,20 +32,16 @@ export default function LanguageSwitcher() {
   }
 
   return (
-    <div className="flex gap-1">
+    <select
+      value={locale}
+      onChange={(e) => switchLocale(e.target.value)}
+      className="px-3 py-1.5 rounded-lg border border-[#1a2744] text-sm font-medium text-[#1a2744] bg-white"
+    >
       {routing.locales.map((l) => (
-        <button
-          key={l}
-          onClick={() => switchLocale(l)}
-          className={`px-2 py-1 rounded text-sm font-medium transition-colors ${
-            l === locale
-              ? "bg-navy-700 text-white bg-[#1a2744]"
-              : "bg-white text-[#1a2744] border border-[#1a2744] hover:bg-gray-100"
-          }`}
-        >
+        <option key={l} value={l}>
           {flagMap[l]} {labelMap[l]}
-        </button>
+        </option>
       ))}
-    </div>
+    </select>
   );
 }
