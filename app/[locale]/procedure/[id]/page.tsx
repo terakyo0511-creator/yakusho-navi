@@ -10,6 +10,7 @@ import hankoRegistration from "@/content/procedures/hanko_registration.json";
 import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
 import driversLicense from "@/content/procedures/drivers_license.json";
+import pensionWithdrawal from "@/content/procedures/pension_withdrawal.json";
 import PrintButton from "@/components/PrintButton";
 import ShareLineButton from "@/components/ShareLineButton";
 import ShowStaffButton from "@/components/ShowStaffButton";
@@ -26,6 +27,7 @@ const procedureMap: Record<string, typeof movingIn> = {
   my_number: myNumber as typeof movingIn,
   pension: pension as typeof movingIn,
   drivers_license: driversLicense as unknown as typeof movingIn,
+  pension_withdrawal: pensionWithdrawal as unknown as typeof movingIn,
 };
 
 export default async function ProcedurePage({

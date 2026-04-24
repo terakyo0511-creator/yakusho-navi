@@ -1,0 +1,174 @@
+{
+  "id": "pension_withdrawal",
+  "icon": "✈️",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 30,
+    "max": 60
+  },
+  "translations": {
+    "ja": {
+      "title": "国民年金脱退一時金",
+      "subtitle": "帰国前に年金保険料の一部を取り戻す",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "基礎年金番号通知書またはマイナンバーカード",
+          "note": "年金手帳でも可"
+        },
+        {
+          "icon": "🛂",
+          "name": "パスポート",
+          "note": "出国日が確認できるもの"
+        },
+        {
+          "icon": "🏦",
+          "name": "銀行口座情報（母国の口座）",
+          "note": "口座番号・SWIFTコードなど"
+        },
+        {
+          "icon": "📋",
+          "name": "脱退一時金請求書",
+          "note": "日本年金機構のウェブサイトからダウンロード可"
+        }
+      ],
+      "steps": [
+        "日本を出国する（出国後でないと請求できない）",
+        "出国後2年以内に日本年金機構へ郵送またはオンラインで申請",
+        "審査完了後、母国の銀行口座に振り込まれる（3〜6ヶ月程度）"
+      ],
+      "warnings": [
+        "出国後2年以内に申請しないと権利が消滅する",
+        "受給額は保険料納付月数によって異なる（上限36ヶ月分）",
+        "受給すると過去の年金加入期間がリセットされる",
+        "受給額の20.42%が源泉徴収される（租税条約のある国は還付申請可）",
+        "住民票の除票が必要になる場合がある"
+      ]
+    },
+    "en": {
+      "title": "Pension Lump-sum Withdrawal",
+      "subtitle": "Claim back part of your pension contributions before leaving Japan",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Basic Pension Number Notice or My Number Card",
+          "note": "Pension booklet (年金手帳) also accepted"
+        },
+        {
+          "icon": "🛂",
+          "name": "Passport",
+          "note": "Must show your departure date from Japan"
+        },
+        {
+          "icon": "🏦",
+          "name": "Bank account details (in your home country)",
+          "note": "Account number, SWIFT code, etc."
+        },
+        {
+          "icon": "📋",
+          "name": "Lump-sum Withdrawal Claim Form",
+          "note": "Downloadable from the Japan Pension Service website"
+        }
+      ],
+      "steps": [
+        "Leave Japan (you can only apply after departure)",
+        "Apply by mail or online to the Japan Pension Service within 2 years of leaving",
+        "After review, the payment will be sent to your home country bank account (takes 3–6 months)"
+      ],
+      "warnings": [
+        "You must apply within 2 years of leaving Japan — the right expires after that",
+        "The amount depends on how many months you paid into the pension (max 36 months)",
+        "Receiving the lump sum resets your pension contribution history in Japan",
+        "20.42% withholding tax is deducted (residents of tax-treaty countries may claim a refund)",
+        "A copy of your deregistration record (住民票の除票) may be required"
+      ]
+    },
+    "vi": {
+      "title": "Hoàn trả một lần lương hưu",
+      "subtitle": "Nhận lại một phần tiền đóng bảo hiểm lương hưu trước khi về nước",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Thông báo số hưu trí cơ bản hoặc thẻ My Number",
+          "note": "Sổ hưu trí (年金手帳) cũng được chấp nhận"
+        },
+        {
+          "icon": "🛂",
+          "name": "Hộ chiếu",
+          "note": "Phải ghi ngày rời Nhật Bản"
+        },
+        {
+          "icon": "🏦",
+          "name": "Thông tin tài khoản ngân hàng (tại quê nhà)",
+          "note": "Số tài khoản, mã SWIFT, v.v."
+        },
+        {
+          "icon": "📋",
+          "name": "Đơn yêu cầu hoàn trả một lần",
+          "note": "Tải về từ website của Japan Pension Service"
+        }
+      ],
+      "steps": [
+        "Rời Nhật Bản (chỉ có thể nộp đơn sau khi xuất cảnh)",
+        "Nộp đơn qua bưu điện hoặc trực tuyến đến Japan Pension Service trong vòng 2 năm sau khi rời đi",
+        "Sau khi xét duyệt, tiền sẽ được chuyển vào tài khoản ngân hàng tại quê nhà (mất 3–6 tháng)"
+      ],
+      "warnings": [
+        "Phải nộp đơn trong vòng 2 năm sau khi rời Nhật — quyền lợi sẽ hết hạn sau đó",
+        "Số tiền phụ thuộc vào số tháng đã đóng bảo hiểm (tối đa 36 tháng)",
+        "Nhận hoàn trả một lần sẽ xóa lịch sử đóng bảo hiểm lương hưu tại Nhật",
+        "Bị khấu trừ 20,42% thuế tại nguồn (cư dân các nước có hiệp ước thuế có thể xin hoàn thuế)",
+        "Có thể cần bản sao hồ sơ hủy đăng ký cư trú (住民票の除票)"
+      ]
+    },
+    "zh": {
+      "title": "国民年金脱退一次金",
+      "subtitle": "回国前取回部分养老金缴费",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "基础年金编号通知书或My Number卡",
+          "note": "年金手账也可接受"
+        },
+        {
+          "icon": "🛂",
+          "name": "护照",
+          "note": "须显示离开日本的日期"
+        },
+        {
+          "icon": "🏦",
+          "name": "银行账户信息（本国账户）",
+          "note": "账号、SWIFT代码等"
+        },
+        {
+          "icon": "📋",
+          "name": "脱退一次金申请表",
+          "note": "可从日本年金机构官网下载"
+        }
+      ],
+      "steps": [
+        "离开日本（只能在出境后申请）",
+        "离境后2年内通过邮寄或在线方式向日本年金机构提交申请",
+        "审核完成后，款项将汇入本国银行账户（需3至6个月）"
+      ],
+      "warnings": [
+        "必须在离开日本后2年内申请——逾期权利消失",
+        "金额取决于缴费月数（最多36个月）",
+        "领取一次金将清零在日本的年金缴费记录",
+        "将被扣除20.42%的预扣税（与日本签有税收协定的国家居民可申请退税）",
+        "可能需要住民票除票（注销登记证明）"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "日本年金機構 脱退一時金",
+      "label_en": "Japan Pension Service - Lump-sum Withdrawal",
+      "url": "https://www.nenkin.go.jp/service/jukyu/tetsuduki/dattai-ichiji/20150406.html"
+    }
+  ]
+}

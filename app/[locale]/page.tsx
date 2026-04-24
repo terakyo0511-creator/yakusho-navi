@@ -11,8 +11,9 @@ import hankoRegistration from "@/content/procedures/hanko_registration.json";
 import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
 import driversLicense from "@/content/procedures/drivers_license.json";
+import pensionWithdrawal from "@/content/procedures/pension_withdrawal.json";
 
-const procedures = [movingIn, residenceCard, healthInsurance, healthInsuranceLeave, addressChange, hankoRegistration, myNumber, pension, driversLicense];
+const procedures = [movingIn, residenceCard, healthInsurance, healthInsuranceLeave, addressChange, hankoRegistration, myNumber, pension, driversLicense, pensionWithdrawal];
 
 export default async function HomePage({
   params,
