@@ -1,0 +1,198 @@
+{
+  "id": "bank_account",
+  "icon": "🏦",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "bank",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 30,
+    "max": 90
+  },
+  "translations": {
+    "ja": {
+      "title": "銀行口座開設",
+      "subtitle": "来日後の給与受け取り・生活費の管理に必要",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "原本必須"
+        },
+        {
+          "icon": "🛂",
+          "name": "パスポート",
+          "note": "銀行によって必要な場合あり"
+        },
+        {
+          "icon": "📋",
+          "name": "住民票",
+          "note": "在留カードの住所と一致していること"
+        },
+        {
+          "icon": "📱",
+          "name": "日本の携帯電話番号",
+          "note": "SMS認証に使用（多くの銀行で必須）"
+        },
+        {
+          "icon": "🔏",
+          "name": "印鑑（銀行によっては不要）",
+          "note": "サインで代用できる銀行もある"
+        }
+      ],
+      "steps": [
+        "転入届を済ませ、在留カードに住所を記載してもらう（住所なしでは開設できない銀行が多い）",
+        "口座開設する銀行を選ぶ（ゆうちょ・イオン銀行は外国人でも開設しやすい）",
+        "必要書類を持って窓口へ行く",
+        "申込用紙に記入し、書類を提出",
+        "審査後、キャッシュカードが郵送される（1〜2週間）"
+      ],
+      "warnings": [
+        "来日直後（在留カードに住所がない状態）は開設を断られることが多い",
+        "在留期間が短い場合（3ヶ月未満）は開設できない銀行がある",
+        "日本の携帯電話番号が必要な銀行が多い（SIMなしでは開設困難な場合あり）",
+        "ネット銀行（楽天・ソニーなど）はオンライン開設可能だが審査が厳しい場合あり"
+      ]
+    },
+    "en": {
+      "title": "Bank Account Opening",
+      "subtitle": "Required to receive your salary and manage living expenses",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "🛂",
+          "name": "Passport",
+          "note": "May be required depending on the bank"
+        },
+        {
+          "icon": "📋",
+          "name": "Resident Record (住民票)",
+          "note": "Address must match your Residence Card"
+        },
+        {
+          "icon": "📱",
+          "name": "Japanese phone number",
+          "note": "Used for SMS verification (required at most banks)"
+        },
+        {
+          "icon": "🔏",
+          "name": "Hanko stamp (not required at all banks)",
+          "note": "Some banks accept a signature instead"
+        }
+      ],
+      "steps": [
+        "Complete your moving-in registration so your address is printed on your Residence Card (most banks require this)",
+        "Choose a bank — Japan Post Bank (ゆうちょ) and AEON Bank are known to be more foreigner-friendly",
+        "Visit the branch with your documents",
+        "Fill in the application form and submit your documents",
+        "After review, your cash card will be mailed to you (1–2 weeks)"
+      ],
+      "warnings": [
+        "Many banks will refuse to open an account right after arrival if your Residence Card has no address yet",
+        "Some banks won't open accounts if your residence permit is shorter than 3 months",
+        "Most banks require a Japanese phone number for SMS verification",
+        "Online banks (Rakuten, Sony, etc.) allow online application but may have stricter screening"
+      ]
+    },
+    "vi": {
+      "title": "Mở tài khoản ngân hàng",
+      "subtitle": "Cần thiết để nhận lương và quản lý chi tiêu hàng ngày",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "🛂",
+          "name": "Hộ chiếu",
+          "note": "Tùy ngân hàng có thể yêu cầu"
+        },
+        {
+          "icon": "📋",
+          "name": "Giấy đăng ký cư trú (住民票)",
+          "note": "Địa chỉ phải khớp với thẻ cư trú"
+        },
+        {
+          "icon": "📱",
+          "name": "Số điện thoại Nhật Bản",
+          "note": "Dùng để xác minh SMS (bắt buộc ở hầu hết ngân hàng)"
+        },
+        {
+          "icon": "🔏",
+          "name": "Con dấu Hanko (không bắt buộc ở mọi ngân hàng)",
+          "note": "Một số ngân hàng chấp nhận chữ ký thay thế"
+        }
+      ],
+      "steps": [
+        "Hoàn thành đăng ký chuyển đến để địa chỉ được in trên thẻ cư trú (hầu hết ngân hàng yêu cầu)",
+        "Chọn ngân hàng — Japan Post Bank (ゆうちょ) và AEON Bank thân thiện hơn với người nước ngoài",
+        "Đến chi nhánh cùng với các giấy tờ cần thiết",
+        "Điền vào mẫu đăng ký và nộp giấy tờ",
+        "Sau khi xét duyệt, thẻ ATM sẽ được gửi qua bưu điện (1–2 tuần)"
+      ],
+      "warnings": [
+        "Nhiều ngân hàng từ chối mở tài khoản ngay sau khi nhập cảnh nếu thẻ cư trú chưa có địa chỉ",
+        "Một số ngân hàng không mở tài khoản nếu thời hạn cư trú dưới 3 tháng",
+        "Hầu hết ngân hàng yêu cầu số điện thoại Nhật để xác minh SMS",
+        "Ngân hàng trực tuyến (Rakuten, Sony...) cho phép đăng ký online nhưng có thể có yêu cầu nghiêm ngặt hơn"
+      ]
+    },
+    "zh": {
+      "title": "开设银行账户",
+      "subtitle": "接收工资和管理生活费的必要手续",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "🛂",
+          "name": "护照",
+          "note": "部分银行可能需要"
+        },
+        {
+          "icon": "📋",
+          "name": "住民票",
+          "note": "地址须与在留卡一致"
+        },
+        {
+          "icon": "📱",
+          "name": "日本手机号码",
+          "note": "用于短信验证（大多数银行必须）"
+        },
+        {
+          "icon": "🔏",
+          "name": "印章（部分银行不要求）",
+          "note": "部分银行可用签名代替"
+        }
+      ],
+      "steps": [
+        "完成转入登记，将地址印在在留卡上（大多数银行要求）",
+        "选择银行——日本邮政银行（ゆうちょ）和永旺银行对外国人更为友好",
+        "携带所需材料前往网点",
+        "填写申请表并提交材料",
+        "审核通过后，银行卡将邮寄给您（1至2周）"
+      ],
+      "warnings": [
+        "刚入境时（在留卡尚无地址）许多银行会拒绝开户",
+        "部分银行不为居留期限不足3个月的人开户",
+        "大多数银行需要日本手机号码进行短信验证",
+        "网络银行（乐天、索尼等）可在线申请，但审核可能更严格"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "ゆうちょ銀行 外国人の方の口座開設",
+      "label_en": "Japan Post Bank - Account Opening for Foreigners",
+      "url": "https://www.jp-bank.japanpost.jp/kojin/kouza/kj_kz_index.html"
+    }
+  ]
+}

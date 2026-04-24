@@ -78,6 +78,7 @@ export default async function HomePage({
                 cityHallLabel={t("at_city_hall")}
                 immigrationLabel={t("at_immigration")}
                 licenseCenterLabel={t("at_license_center")}
+                bankLabel={t("at_bank")}
               />
             );
           })}

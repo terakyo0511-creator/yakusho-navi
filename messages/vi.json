@@ -11,6 +11,7 @@
     "at_city_hall": "Ủy ban nhân dân",
     "at_immigration": "Cục xuất nhập cảnh",
     "at_license_center": "Trung tâm cấp bằng lái",
+    "at_bank": "Ngân hàng",
     "share_checklist": "Chia sẻ danh sách",
     "checklist_share_text": "Sau khi đến Nhật Bản — danh sách thủ tục cần hoàn thành"
   },
@@ -35,7 +36,8 @@
     "no_deadline": "Không có thời hạn",
     "location_city_hall": "Ủy ban nhân dân / Văn phòng phường",
     "location_immigration": "Cục quản lý xuất nhập cảnh",
-    "location_license_center": "Trung tâm cấp bằng lái xe"
+    "location_license_center": "Trung tâm cấp bằng lái xe",
+    "location_bank": "Ngân hàng"
   },
   "lang": {
     "en": "English",

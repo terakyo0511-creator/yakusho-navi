@@ -11,6 +11,7 @@
     "at_city_hall": "市区町村役所",
     "at_immigration": "入国管理局",
     "at_license_center": "運転免許センター",
+    "at_bank": "銀行",
     "share_checklist": "チェックリストをシェア",
     "checklist_share_text": "来日後にやること チェックリスト"
   },
@@ -35,7 +36,8 @@
     "no_deadline": "期限なし",
     "location_city_hall": "市区町村役所・区役所",
     "location_immigration": "出入国在留管理局",
-    "location_license_center": "運転免許センター"
+    "location_license_center": "運転免許センター",
+    "location_bank": "銀行"
   },
   "lang": {
     "en": "English",

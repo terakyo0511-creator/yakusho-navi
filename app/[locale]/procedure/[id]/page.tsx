@@ -11,6 +11,7 @@ import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
 import driversLicense from "@/content/procedures/drivers_license.json";
 import pensionWithdrawal from "@/content/procedures/pension_withdrawal.json";
+import bankAccount from "@/content/procedures/bank_account.json";
 import PrintButton from "@/components/PrintButton";
 import ShareLineButton from "@/components/ShareLineButton";
 import ShowStaffButton from "@/components/ShowStaffButton";
@@ -28,6 +29,7 @@ const procedureMap: Record<string, typeof movingIn> = {
   pension: pension as typeof movingIn,
   drivers_license: driversLicense as unknown as typeof movingIn,
   pension_withdrawal: pensionWithdrawal as unknown as typeof movingIn,
+  bank_account: bankAccount as unknown as typeof movingIn,
 };
 
 export default async function ProcedurePage({
@@ -55,6 +57,8 @@ export default async function ProcedurePage({
     ? `🏢 ${t("location_immigration")}`
     : proc.location_type === "license_center"
     ? `🚗 ${t("location_license_center")}`
+    : proc.location_type === "bank"
+    ? `🏦 ${t("location_bank")}`
     : `🏛️ ${t("location_city_hall")}`;
 
   return (
