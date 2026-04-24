@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
+import ChecklistItem from "@/components/ChecklistItem";
 import movingIn from "@/content/procedures/moving_in.json";
 import residenceCard from "@/content/procedures/residence_card.json";
 import healthInsurance from "@/content/procedures/health_insurance.json";
@@ -16,10 +17,10 @@ const titleMap: Record<string, string> = {
 };
 
 const subtitleMap: Record<string, string> = {
-  en: "Complete these procedures within 14 days of arrival",
-  vi: "Hoàn thành các thủ tục này trong vòng 14 ngày sau khi đến",
-  zh: "请在抵达后14天内完成以下手续",
-  ja: "到着後14日以内に完了させましょう",
+  en: "Tap the circle to mark as done. Progress is saved on this device.",
+  vi: "Nhấn vào vòng tròn để đánh dấu hoàn thành. Tiến độ được lưu trên thiết bị này.",
+  zh: "点击圆圈标记为已完成。进度保存在此设备上。",
+  ja: "丸をタップして完了マーク。進捗はこの端末に保存されます。",
 };
 
 export default async function ChecklistPage({
@@ -28,6 +29,7 @@ export default async function ChecklistPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const t = await getTranslations("procedure");
 
   const title = titleMap[locale] ?? titleMap.en;
   const subtitle = subtitleMap[locale] ?? subtitleMap.en;
@@ -35,28 +37,23 @@ export default async function ChecklistPage({
   return (
     <div className="max-w-2xl mx-auto px-4 py-6">
       <Link href={`/${locale}`} className="text-[#1a2744] hover:underline text-sm font-medium">
-        ← Back
+        {t("back")}
       </Link>
       <h1 className="text-xl font-bold text-[#1a2744] mt-4 mb-1">☑️ {title}</h1>
       <p className="text-sm text-gray-500 mb-6">{subtitle}</p>
 
       <ol className="space-y-3">
-        {checklistProcedures.map((proc, i) => {
+        {checklistProcedures.map((proc) => {
           const tr = proc.translations[locale as keyof typeof proc.translations] ?? proc.translations.en;
           return (
-            <li key={proc.id}>
-              <Link
-                href={`/${locale}/procedure/${proc.id}`}
-                className="flex items-center gap-3 bg-white border border-gray-200 rounded-xl px-4 py-3 hover:border-[#1a2744] transition-colors"
-              >
-                <span className="text-2xl w-8 text-center">{proc.icon}</span>
-                <div className="flex-1">
-                  <span className="font-semibold text-gray-900">{tr.title}</span>
-                  <p className="text-xs text-gray-500 mt-0.5">{tr.subtitle}</p>
-                </div>
-                <span className="text-gray-300 text-lg">›</span>
-              </Link>
-            </li>
+            <ChecklistItem
+              key={proc.id}
+              id={proc.id}
+              icon={proc.icon}
+              title={tr.title}
+              subtitle={tr.subtitle}
+              href={`/${locale}/procedure/${proc.id}`}
+            />
           );
         })}
       </ol>

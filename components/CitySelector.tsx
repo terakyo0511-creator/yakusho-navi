@@ -2,7 +2,22 @@
 
 import { useState, useEffect } from "react";
 
-const cities: Record<string, string[]> = {
+const cityKeys = [
+  "",
+  "tokyo",
+  "osaka",
+  "nagoya",
+  "yokohama",
+  "kawasaki",
+  "saitama",
+  "chiba",
+  "fukuoka",
+  "kobe",
+  "kyoto",
+  "other",
+];
+
+const cityLabels: Record<string, string[]> = {
   en: ["(Select your city)", "Tokyo (23 Wards)", "Osaka", "Nagoya", "Yokohama", "Kawasaki", "Saitama", "Chiba", "Fukuoka", "Kobe", "Kyoto", "Other"],
   vi: ["(Chọn thành phố)", "Tokyo (23 quận)", "Osaka", "Nagoya", "Yokohama", "Kawasaki", "Saitama", "Chiba", "Fukuoka", "Kobe", "Kyoto", "Khác"],
   zh: ["（选择城市）", "东京（23区）", "大阪", "名古屋", "横滨", "川崎", "埼玉", "千叶", "福冈", "神户", "京都", "其他"],
@@ -16,38 +31,41 @@ const noteMap: Record<string, string> = {
   ja: "表示されている手続きは一般的なガイドです。詳細は市区町村によって異なる場合があります。",
 };
 
-const STORAGE_KEY = "yakusho_navi_city";
+export const CITY_STORAGE_KEY = "yakusho_navi_city";
 
 export default function CitySelector({ locale }: { locale: string }) {
-  const [city, setCity] = useState("");
+  const [cityKey, setCityKey] = useState("");
 
   useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) setCity(saved);
+    const saved = localStorage.getItem(CITY_STORAGE_KEY);
+    if (saved && cityKeys.includes(saved)) setCityKey(saved);
+    else if (saved) localStorage.removeItem(CITY_STORAGE_KEY);
   }, []);
 
   function handleChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    const val = e.target.value;
-    setCity(val);
-    if (val) localStorage.setItem(STORAGE_KEY, val);
-    else localStorage.removeItem(STORAGE_KEY);
+    const key = e.target.value;
+    setCityKey(key);
+    if (key) localStorage.setItem(CITY_STORAGE_KEY, key);
+    else localStorage.removeItem(CITY_STORAGE_KEY);
   }
 
-  const options = cities[locale] ?? cities.en;
+  const labels = cityLabels[locale] ?? cityLabels.en;
   const note = noteMap[locale] ?? noteMap.en;
 
   return (
     <div className="mt-2">
       <select
-        value={city}
+        value={cityKey}
         onChange={handleChange}
         className="px-3 py-1.5 rounded-lg border border-gray-300 text-sm text-gray-700 bg-white w-full sm:w-auto"
       >
-        {options.map((c, i) => (
-          <option key={i} value={i === 0 ? "" : c}>{c}</option>
+        {cityKeys.map((key, i) => (
+          <option key={key} value={key}>
+            {labels[i]}
+          </option>
         ))}
       </select>
-      {city && (
+      {cityKey && cityKey !== "other" && (
         <p className="text-xs text-gray-400 mt-1">{note}</p>
       )}
     </div>

@@ -72,6 +72,7 @@ export default async function HomePage({
                 locale={locale}
                 freeLabel={t("free")}
                 minutesLabel={t("minutes")}
+                daysLabel={t("days")}
                 cityHallLabel={t("at_city_hall")}
                 immigrationLabel={t("at_immigration")}
               />

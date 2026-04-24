@@ -13,6 +13,7 @@ interface ProcedureCardProps {
   locale: string;
   freeLabel: string;
   minutesLabel: string;
+  daysLabel: string;
   cityHallLabel: string;
   immigrationLabel: string;
 }
@@ -30,6 +31,7 @@ export default function ProcedureCard({
   locale,
   freeLabel,
   minutesLabel,
+  daysLabel,
   cityHallLabel,
   immigrationLabel,
 }: ProcedureCardProps) {
@@ -46,7 +48,7 @@ export default function ProcedureCard({
               <h2 className="text-xl font-bold text-[#1a2744] leading-tight">{title}</h2>
               {deadlineDays !== null && (
                 <span className="flex-shrink-0 bg-red-100 text-red-700 text-xs font-bold px-2 py-1 rounded-full">
-                  {deadlineDays}日
+                  {deadlineDays}{daysLabel}
                 </span>
               )}
             </div>

@@ -12,6 +12,8 @@ import pension from "@/content/procedures/pension.json";
 import PrintButton from "@/components/PrintButton";
 import ShareLineButton from "@/components/ShareLineButton";
 import ShowStaffButton from "@/components/ShowStaffButton";
+import DocumentCheckboxList from "@/components/DocumentCheckboxList";
+import CityOfficialLink from "@/components/CityOfficialLink";
 
 const procedureMap: Record<string, typeof movingIn> = {
   moving_in: movingIn,
@@ -60,6 +62,8 @@ export default async function ProcedurePage({
             label={t("show_staff")}
             jaTitle={trJa.title}
             jaDocuments={trJa.required_documents.map((d) => ({ icon: d.icon, name: d.name }))}
+            tapBackLabel={t("show_tap_back")}
+            documentsLabel={t("show_documents")}
           />
           <PrintButton label={t("print")} />
           <ShareLineButton label={t("share_line")} title={tr.title} />
@@ -102,17 +106,13 @@ export default async function ProcedurePage({
           <h2 className="text-lg font-bold text-[#1a2744] border-b-2 border-[#1a2744] pb-1 mb-3">
             📋 {t("required_documents")}
           </h2>
-          <ul className="space-y-2">
-            {tr.required_documents.map((doc, i) => (
-              <li key={i} className="flex items-start gap-2 bg-blue-50 rounded-lg px-4 py-3">
-                <span className="text-2xl">{doc.icon}</span>
-                <div>
-                  <span className="font-semibold text-gray-900">{doc.name}</span>
-                  {doc.note && <p className="text-sm text-gray-600 mt-0.5">{doc.note}</p>}
-                </div>
-              </li>
-            ))}
-          </ul>
+          <DocumentCheckboxList
+            documents={tr.required_documents.map((d) => ({
+              icon: d.icon,
+              name: d.name,
+              note: d.note ?? null,
+            }))}
+          />
         </section>
 
         <section className="mb-6">
@@ -145,6 +145,13 @@ export default async function ProcedurePage({
             </ul>
           </section>
         )}
+
+        <section className="mb-6 print:hidden">
+          <h2 className="text-lg font-bold text-[#1a2744] border-b-2 border-[#1a2744] pb-1 mb-3">
+            🏛️ {t("location_city_hall")}
+          </h2>
+          <CityOfficialLink locale={locale} />
+        </section>
 
         {proc.official_links.length > 0 && (
           <section>

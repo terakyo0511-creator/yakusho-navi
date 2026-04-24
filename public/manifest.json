@@ -2,7 +2,7 @@
   "name": "役所手続きナビ",
   "short_name": "役所ナビ",
   "description": "Step-by-step guide for foreign residents in Japan",
-  "start_url": "/",
+  "start_url": "/en",
   "display": "standalone",
   "background_color": "#f9fafb",
   "theme_color": "#1a2744",
