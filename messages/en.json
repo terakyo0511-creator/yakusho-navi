@@ -12,6 +12,7 @@
     "at_immigration": "Immigration Office",
     "at_license_center": "Driver's License Center",
     "at_bank": "Bank",
+    "at_phone_shop": "Phone Shop",
     "share_checklist": "Share checklist",
     "checklist_share_text": "After moving to Japan — checklist of procedures to complete"
   },
@@ -33,11 +34,13 @@
     "deadline_within_days": "Within {days} days after {from}",
     "deadline_moving": "moving",
     "deadline_expiry": "expiry date",
+    "deadline_before_expiry": "before expiry",
     "no_deadline": "No deadline",
     "location_city_hall": "City Hall / Ward Office",
     "location_immigration": "Immigration Office",
     "location_license_center": "Driver's License Center",
-    "location_bank": "Bank"
+    "location_bank": "Bank",
+    "location_phone_shop": "Phone Shop"
   },
   "lang": {
     "en": "English",

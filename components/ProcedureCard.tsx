@@ -18,6 +18,7 @@ interface ProcedureCardProps {
   immigrationLabel: string;
   licenseCenterLabel: string;
   bankLabel: string;
+  phoneShopLabel: string;
 }
 
 export default function ProcedureCard({
@@ -38,9 +39,10 @@ export default function ProcedureCard({
   immigrationLabel,
   licenseCenterLabel,
   bankLabel,
+  phoneShopLabel,
 }: ProcedureCardProps) {
-  const locationIcon = locationType === "immigration_office" ? "🏢" : locationType === "license_center" ? "🚗" : locationType === "bank" ? "🏦" : "🏛️";
-  const locationLabel = locationType === "immigration_office" ? immigrationLabel : locationType === "license_center" ? licenseCenterLabel : locationType === "bank" ? bankLabel : cityHallLabel;
+  const locationIcon = locationType === "immigration_office" ? "🏢" : locationType === "license_center" ? "🚗" : locationType === "bank" ? "🏦" : locationType === "phone_shop" ? "📱" : "🏛️";
+  const locationLabel = locationType === "immigration_office" ? immigrationLabel : locationType === "license_center" ? licenseCenterLabel : locationType === "bank" ? bankLabel : locationType === "phone_shop" ? phoneShopLabel : cityHallLabel;
 
   return (
     <Link href={`/${locale}/procedure/${id}`}>

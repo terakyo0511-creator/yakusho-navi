@@ -1,0 +1,148 @@
+{
+  "id": "health_insurance_withdrawal",
+  "icon": "🏥",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 20,
+    "max": 40
+  },
+  "translations": {
+    "ja": {
+      "title": "国民健康保険の脱退",
+      "subtitle": "帰国・社保加入時に役所で手続きが必要",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "原本必須"
+        },
+        {
+          "icon": "💳",
+          "name": "国民健康保険証",
+          "note": "返却が必要"
+        },
+        {
+          "icon": "📄",
+          "name": "社会保険の加入証明（職場の健康保険証）",
+          "note": "就職・転職による脱退の場合"
+        }
+      ],
+      "steps": [
+        "市区町村役所の国民健康保険窓口へ行く",
+        "脱退の理由を申し出る（帰国・社会保険加入など）",
+        "国民健康保険証を返却する",
+        "脱退手続き完了（その場で完了）"
+      ],
+      "warnings": [
+        "脱退手続きをしないと保険料が発生し続ける",
+        "帰国する場合は出国前に手続きを済ませること",
+        "社会保険に加入した日から14日以内に手続きする",
+        "脱退後に医療機関を受診した場合、保険給付を受けられない"
+      ]
+    },
+    "en": {
+      "title": "National Health Insurance Withdrawal",
+      "subtitle": "Required when leaving Japan or switching to employer insurance",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "💳",
+          "name": "National Health Insurance Card",
+          "note": "Must be returned"
+        },
+        {
+          "icon": "📄",
+          "name": "Proof of employer insurance enrollment",
+          "note": "Required if switching to company health insurance"
+        }
+      ],
+      "steps": [
+        "Go to the National Health Insurance counter at city hall",
+        "State the reason for withdrawal (leaving Japan, joining employer insurance, etc.)",
+        "Return your National Health Insurance card",
+        "Withdrawal is completed on the spot"
+      ],
+      "warnings": [
+        "Premiums will continue to be charged if you don't formally withdraw",
+        "Complete the procedure before leaving Japan if you are returning home",
+        "You must withdraw within 14 days of joining employer health insurance",
+        "After withdrawal, you will not be covered if you visit a medical facility"
+      ]
+    },
+    "vi": {
+      "title": "Rút khỏi Bảo hiểm y tế quốc gia",
+      "subtitle": "Cần làm khi về nước hoặc chuyển sang bảo hiểm của công ty",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "💳",
+          "name": "Thẻ bảo hiểm y tế quốc gia",
+          "note": "Phải trả lại"
+        },
+        {
+          "icon": "📄",
+          "name": "Bằng chứng tham gia bảo hiểm của công ty",
+          "note": "Cần khi chuyển sang bảo hiểm của nhà tuyển dụng"
+        }
+      ],
+      "steps": [
+        "Đến quầy Bảo hiểm y tế quốc gia tại ủy ban nhân dân",
+        "Nêu lý do rút (về nước, tham gia bảo hiểm công ty, v.v.)",
+        "Trả lại thẻ bảo hiểm y tế quốc gia",
+        "Hoàn tất thủ tục ngay tại chỗ"
+      ],
+      "warnings": [
+        "Phí bảo hiểm sẽ tiếp tục phát sinh nếu không làm thủ tục rút chính thức",
+        "Hoàn thành thủ tục trước khi rời Nhật nếu bạn về nước",
+        "Phải rút trong vòng 14 ngày kể từ khi tham gia bảo hiểm của công ty",
+        "Sau khi rút, bạn sẽ không được bảo hiểm khi đến cơ sở y tế"
+      ]
+    },
+    "zh": {
+      "title": "国民健康保险退保",
+      "subtitle": "回国或加入单位保险时需要在市政厅办理",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "💳",
+          "name": "国民健康保险证",
+          "note": "需要归还"
+        },
+        {
+          "icon": "📄",
+          "name": "单位健康保险加入证明",
+          "note": "因就业/跳槽退保时需要"
+        }
+      ],
+      "steps": [
+        "前往市政厅国民健康保险窗口",
+        "说明退保原因（回国、加入单位保险等）",
+        "归还国民健康保险证",
+        "当场完成退保手续"
+      ],
+      "warnings": [
+        "若不正式办理退保，保险费将持续产生",
+        "如果回国，请在出境前完成手续",
+        "加入单位健康保险后14天内必须办理退保",
+        "退保后就医将无法享受保险理赔"
+      ]
+    }
+  },
+  "official_links": []
+}

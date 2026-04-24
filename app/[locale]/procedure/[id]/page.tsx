@@ -12,6 +12,9 @@ import pension from "@/content/procedures/pension.json";
 import driversLicense from "@/content/procedures/drivers_license.json";
 import pensionWithdrawal from "@/content/procedures/pension_withdrawal.json";
 import bankAccount from "@/content/procedures/bank_account.json";
+import mobilePhone from "@/content/procedures/mobile_phone.json";
+import healthInsuranceWithdrawal from "@/content/procedures/health_insurance_withdrawal.json";
+import residenceExtension from "@/content/procedures/residence_extension.json";
 import PrintButton from "@/components/PrintButton";
 import ShareLineButton from "@/components/ShareLineButton";
 import ShowStaffButton from "@/components/ShowStaffButton";
@@ -30,6 +33,9 @@ const procedureMap: Record<string, typeof movingIn> = {
   drivers_license: driversLicense as unknown as typeof movingIn,
   pension_withdrawal: pensionWithdrawal as unknown as typeof movingIn,
   bank_account: bankAccount as unknown as typeof movingIn,
+  mobile_phone: mobilePhone as unknown as typeof movingIn,
+  health_insurance_withdrawal: healthInsuranceWithdrawal as unknown as typeof movingIn,
+  residence_extension: residenceExtension as unknown as typeof movingIn,
 };
 
 export default async function ProcedurePage({
@@ -47,7 +53,7 @@ export default async function ProcedurePage({
 
   const deadlineText = (() => {
     if (proc.deadline.type === "within_days" && "days" in proc.deadline) {
-      const fromKey = proc.deadline.from === "after_moving" ? "deadline_moving" : "deadline_expiry";
+      const fromKey = proc.deadline.from === "after_moving" ? "deadline_moving" : proc.deadline.from === "before_expiry" ? "deadline_before_expiry" : "deadline_expiry";
       return t("deadline_within_days", { days: proc.deadline.days, from: t(fromKey) });
     }
     return t("no_deadline");
@@ -59,6 +65,8 @@ export default async function ProcedurePage({
     ? `🚗 ${t("location_license_center")}`
     : proc.location_type === "bank"
     ? `🏦 ${t("location_bank")}`
+    : proc.location_type === "phone_shop"
+    ? `📱 ${t("location_phone_shop")}`
     : `🏛️ ${t("location_city_hall")}`;
 
   return (

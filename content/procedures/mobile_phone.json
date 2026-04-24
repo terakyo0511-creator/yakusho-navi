@@ -1,0 +1,156 @@
+{
+  "id": "mobile_phone",
+  "icon": "📱",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "phone_shop",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 60,
+    "max": 120
+  },
+  "translations": {
+    "ja": {
+      "title": "携帯電話の契約",
+      "subtitle": "日本での連絡手段・SMS認証に必須",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "原本必須"
+        },
+        {
+          "icon": "🛂",
+          "name": "パスポート",
+          "note": "キャリアによっては不要な場合あり"
+        },
+        {
+          "icon": "💳",
+          "name": "クレジットカードまたは銀行口座",
+          "note": "月額料金の支払いに使用"
+        }
+      ],
+      "steps": [
+        "契約するキャリアを選ぶ（格安SIM：IIJmio・楽天モバイルなどが外国人に契約しやすい）",
+        "店舗またはオンラインで申し込む",
+        "本人確認書類と支払い情報を提出",
+        "審査後、SIMカードが発行される（即日〜数日）",
+        "スマートフォンにSIMを挿入して設定する"
+      ],
+      "warnings": [
+        "大手キャリア（docomo・au・SoftBank）は審査が厳しく、来日直後は断られる場合がある",
+        "格安SIM（MVNO）のほうが外国人でも契約しやすい",
+        "クレジットカードがない場合は口座振替対応のキャリアを選ぶ",
+        "在留カードに住所が記載されていないと契約できない場合がある",
+        "SIMフリー端末が必要（日本で購入したSIMロック端末は使えない場合あり）"
+      ]
+    },
+    "en": {
+      "title": "Mobile Phone Contract",
+      "subtitle": "Essential for communication and SMS verification in Japan",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "🛂",
+          "name": "Passport",
+          "note": "May not be required depending on the carrier"
+        },
+        {
+          "icon": "💳",
+          "name": "Credit card or bank account",
+          "note": "Used for monthly payments"
+        }
+      ],
+      "steps": [
+        "Choose a carrier — budget SIM providers (IIJmio, Rakuten Mobile, etc.) are easier for foreigners to sign up with",
+        "Apply in-store or online",
+        "Submit your ID documents and payment information",
+        "After review, your SIM card will be issued (same day to a few days)",
+        "Insert the SIM into your smartphone and configure the settings"
+      ],
+      "warnings": [
+        "Major carriers (docomo, au, SoftBank) have stricter screening and may refuse new arrivals",
+        "Budget SIM (MVNO) providers are more foreigner-friendly",
+        "If you don't have a credit card, choose a carrier that accepts bank transfer payment",
+        "Your Residence Card must have an address — contracts may be refused without one",
+        "You need an unlocked (SIM-free) device"
+      ]
+    },
+    "vi": {
+      "title": "Đăng ký điện thoại di động",
+      "subtitle": "Cần thiết để liên lạc và xác minh SMS tại Nhật Bản",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "🛂",
+          "name": "Hộ chiếu",
+          "note": "Tùy nhà mạng có thể không cần"
+        },
+        {
+          "icon": "💳",
+          "name": "Thẻ tín dụng hoặc tài khoản ngân hàng",
+          "note": "Dùng để thanh toán phí hàng tháng"
+        }
+      ],
+      "steps": [
+        "Chọn nhà mạng — các nhà cung cấp SIM giá rẻ (IIJmio, Rakuten Mobile...) dễ đăng ký hơn cho người nước ngoài",
+        "Đăng ký tại cửa hàng hoặc trực tuyến",
+        "Nộp giấy tờ tùy thân và thông tin thanh toán",
+        "Sau khi xét duyệt, SIM sẽ được cấp (trong ngày đến vài ngày)",
+        "Lắp SIM vào điện thoại và cài đặt"
+      ],
+      "warnings": [
+        "Các nhà mạng lớn (docomo, au, SoftBank) có yêu cầu nghiêm ngặt hơn và có thể từ chối người mới đến",
+        "Nhà cung cấp SIM giá rẻ (MVNO) thân thiện hơn với người nước ngoài",
+        "Nếu không có thẻ tín dụng, chọn nhà mạng chấp nhận thanh toán qua tài khoản ngân hàng",
+        "Thẻ cư trú phải có địa chỉ — có thể bị từ chối nếu chưa có địa chỉ",
+        "Cần điện thoại đã mở khóa (SIM-free)"
+      ]
+    },
+    "zh": {
+      "title": "手机合约办理",
+      "subtitle": "在日本通讯和短信验证必不可少",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "🛂",
+          "name": "护照",
+          "note": "部分运营商可能不需要"
+        },
+        {
+          "icon": "💳",
+          "name": "信用卡或银行账户",
+          "note": "用于每月付款"
+        }
+      ],
+      "steps": [
+        "选择运营商——廉价SIM提供商（IIJmio、乐天移动等）对外国人更容易办理",
+        "在门店或在线申请",
+        "提交身份证明文件和付款信息",
+        "审核通过后发放SIM卡（当天至数天）",
+        "将SIM卡插入手机并进行设置"
+      ],
+      "warnings": [
+        "主要运营商（docomo、au、SoftBank）审核较严，刚入境时可能被拒绝",
+        "廉价SIM（MVNO）提供商对外国人更友好",
+        "没有信用卡的话，选择支持银行转账付款的运营商",
+        "在留卡须有地址——没有地址可能无法签约",
+        "需要解锁（SIM-free）设备"
+      ]
+    }
+  },
+  "official_links": []
+}

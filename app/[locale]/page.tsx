@@ -12,8 +12,12 @@ import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
 import driversLicense from "@/content/procedures/drivers_license.json";
 import pensionWithdrawal from "@/content/procedures/pension_withdrawal.json";
+import bankAccount from "@/content/procedures/bank_account.json";
+import mobilePhone from "@/content/procedures/mobile_phone.json";
+import healthInsuranceWithdrawal from "@/content/procedures/health_insurance_withdrawal.json";
+import residenceExtension from "@/content/procedures/residence_extension.json";
 
-const procedures = [movingIn, residenceCard, healthInsurance, healthInsuranceLeave, addressChange, hankoRegistration, myNumber, pension, driversLicense, pensionWithdrawal];
+const procedures = [movingIn, residenceCard, healthInsurance, healthInsuranceLeave, addressChange, hankoRegistration, myNumber, pension, driversLicense, pensionWithdrawal, bankAccount, mobilePhone, healthInsuranceWithdrawal, residenceExtension];
 
 export default async function HomePage({
   params,
@@ -79,6 +83,7 @@ export default async function HomePage({
                 immigrationLabel={t("at_immigration")}
                 licenseCenterLabel={t("at_license_center")}
                 bankLabel={t("at_bank")}
+                phoneShopLabel={t("at_phone_shop")}
               />
             );
           })}

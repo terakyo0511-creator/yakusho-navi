@@ -1,0 +1,224 @@
+{
+  "id": "residence_extension",
+  "icon": "🔄",
+  "deadline": {
+    "type": "within_days",
+    "days": 30,
+    "from": "before_expiry"
+  },
+  "location_type": "immigration_office",
+  "cost_yen": 4000,
+  "duration_minutes": {
+    "min": 60,
+    "max": 180
+  },
+  "translations": {
+    "ja": {
+      "title": "在留期間の更新",
+      "subtitle": "在留カードの有効期限が切れる前に申請する",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留カード（現在のもの）",
+          "note": "原本必須"
+        },
+        {
+          "icon": "🛂",
+          "name": "パスポート",
+          "note": "原本必須"
+        },
+        {
+          "icon": "📋",
+          "name": "在留期間更新許可申請書",
+          "note": "出入国在留管理局または入管庁ウェブサイトで入手"
+        },
+        {
+          "icon": "📄",
+          "name": "在職証明書または雇用契約書",
+          "note": "就労ビザの場合"
+        },
+        {
+          "icon": "💰",
+          "name": "住民税の課税証明書・納税証明書",
+          "note": "市区町村役所で取得"
+        },
+        {
+          "icon": "🖼️",
+          "name": "証明写真",
+          "note": "4cm×3cm、6ヶ月以内撮影"
+        }
+      ],
+      "steps": [
+        "在留期限の3ヶ月前から申請可能。できるだけ早めに準備を始める",
+        "在職証明書・納税証明書など必要書類を揃える",
+        "申請書に記入する（入管庁ウェブサイトからダウンロード）",
+        "管轄の出入国在留管理局へ書類一式を持参して申請",
+        "審査中は「申請中」シール付きの在留カードで在留可能",
+        "許可後、在留カードを受け取る（審査期間：2週間〜2ヶ月程度）"
+      ],
+      "warnings": [
+        "在留期限の30日前を過ぎてからの申請は超過在留とみなされる場合がある",
+        "必要書類はビザの種類によって異なる（就労・留学・家族滞在など）",
+        "更新が許可されない場合もあるため、早めに申請すること",
+        "オンライン申請（在留申請オンラインシステム）も利用可能"
+      ]
+    },
+    "en": {
+      "title": "Residence Permit Extension",
+      "subtitle": "Apply before your residence card expires",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Current Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "🛂",
+          "name": "Passport",
+          "note": "Original required"
+        },
+        {
+          "icon": "📋",
+          "name": "Application for Extension of Period of Stay",
+          "note": "Available at the immigration office or the Immigration Services Agency website"
+        },
+        {
+          "icon": "📄",
+          "name": "Certificate of employment or work contract",
+          "note": "Required for work visas"
+        },
+        {
+          "icon": "💰",
+          "name": "Tax certificate and tax payment certificate",
+          "note": "Obtained from your city hall"
+        },
+        {
+          "icon": "🖼️",
+          "name": "ID photo",
+          "note": "4cm×3cm, taken within 6 months"
+        }
+      ],
+      "steps": [
+        "You can apply up to 3 months before expiry — start preparing early",
+        "Gather all required documents (employment certificate, tax certificates, etc.)",
+        "Fill in the application form (downloadable from the Immigration Services Agency website)",
+        "Visit your regional immigration office with all documents",
+        "While under review, you can remain in Japan with a sticker on your Residence Card",
+        "Receive your new Residence Card after approval (review takes 2 weeks to 2 months)"
+      ],
+      "warnings": [
+        "Applying after the 30-day period before expiry may be treated as overstaying",
+        "Required documents vary by visa type (work, student, family stay, etc.)",
+        "Extensions are not guaranteed — apply as early as possible",
+        "Online applications are also available via the Immigration Online System"
+      ]
+    },
+    "vi": {
+      "title": "Gia hạn thời hạn cư trú",
+      "subtitle": "Nộp đơn trước khi thẻ cư trú hết hạn",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú hiện tại (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "🛂",
+          "name": "Hộ chiếu",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "📋",
+          "name": "Đơn xin gia hạn thời hạn cư trú",
+          "note": "Có tại cục quản lý xuất nhập cảnh hoặc tải từ website"
+        },
+        {
+          "icon": "📄",
+          "name": "Giấy xác nhận việc làm hoặc hợp đồng lao động",
+          "note": "Cần cho visa lao động"
+        },
+        {
+          "icon": "💰",
+          "name": "Giấy chứng nhận thuế và nộp thuế",
+          "note": "Lấy tại ủy ban nhân dân"
+        },
+        {
+          "icon": "🖼️",
+          "name": "Ảnh thẻ",
+          "note": "4cm×3cm, chụp trong vòng 6 tháng"
+        }
+      ],
+      "steps": [
+        "Có thể nộp đơn trước 3 tháng khi hết hạn — hãy chuẩn bị sớm",
+        "Thu thập đầy đủ giấy tờ (xác nhận việc làm, chứng nhận thuế, v.v.)",
+        "Điền vào mẫu đơn (tải từ website của Cục Dịch vụ Xuất nhập cảnh)",
+        "Đến cục quản lý xuất nhập cảnh khu vực với đầy đủ giấy tờ",
+        "Trong thời gian xét duyệt, bạn có thể ở lại Nhật với nhãn dán trên thẻ cư trú",
+        "Nhận thẻ cư trú mới sau khi được chấp thuận (xét duyệt mất 2 tuần đến 2 tháng)"
+      ],
+      "warnings": [
+        "Nộp đơn sau 30 ngày trước hạn có thể bị coi là cư trú quá hạn",
+        "Giấy tờ yêu cầu khác nhau tùy loại visa (lao động, du học, đoàn tụ gia đình, v.v.)",
+        "Gia hạn không được đảm bảo — hãy nộp đơn sớm nhất có thể",
+        "Cũng có thể nộp đơn trực tuyến qua Hệ thống xin phép cư trú online"
+      ]
+    },
+    "zh": {
+      "title": "在留期限更新",
+      "subtitle": "在在留卡到期前提交申请",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "当前在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "🛂",
+          "name": "护照",
+          "note": "需要原件"
+        },
+        {
+          "icon": "📋",
+          "name": "在留期间更新许可申请书",
+          "note": "可在出入国在留管理局或官网获取"
+        },
+        {
+          "icon": "📄",
+          "name": "在职证明或劳动合同",
+          "note": "就劳签证需要"
+        },
+        {
+          "icon": "💰",
+          "name": "住民税课税证明及纳税证明",
+          "note": "在市政厅获取"
+        },
+        {
+          "icon": "🖼️",
+          "name": "证件照",
+          "note": "4cm×3cm，6个月内拍摄"
+        }
+      ],
+      "steps": [
+        "可在到期前3个月申请——尽早开始准备",
+        "准备所有所需材料（在职证明、纳税证明等）",
+        "填写申请书（可从出入国在留管理厅官网下载）",
+        "携带所有材料前往管辖的出入国在留管理局",
+        "审核期间可凭贴有申请中贴纸的在留卡继续在日居留",
+        "批准后领取新在留卡（审核需2周至2个月）"
+      ],
+      "warnings": [
+        "在到期前30天后提交申请可能被视为超期居留",
+        "所需材料因签证类型而异（就劳、留学、家族滞在等）",
+        "不保证一定获批——尽早申请",
+        "也可通过在留申请在线系统进行网上申请"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "出入国在留管理庁 在留期間更新",
+      "label_en": "Immigration Services Agency - Period of Stay Extension",
+      "url": "https://www.moj.go.jp/isa/applications/procedures/16-3.html"
+    }
+  ]
+}
