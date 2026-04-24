@@ -10,6 +10,7 @@
     "yen": "¥",
     "at_city_hall": "市政厅",
     "at_immigration": "出入国管理局",
+    "at_license_center": "驾照中心",
     "share_checklist": "分享清单",
     "checklist_share_text": "来日后需要办理的手续清单"
   },
@@ -33,7 +34,8 @@
     "deadline_expiry": "到期日",
     "no_deadline": "无期限",
     "location_city_hall": "市政厅 / 区役所",
-    "location_immigration": "出入国在留管理局"
+    "location_immigration": "出入国在留管理局",
+    "location_license_center": "驾照中心"
   },
   "lang": {
     "en": "English",

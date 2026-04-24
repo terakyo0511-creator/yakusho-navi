@@ -10,8 +10,9 @@ import addressChange from "@/content/procedures/address_change.json";
 import hankoRegistration from "@/content/procedures/hanko_registration.json";
 import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
+import driversLicense from "@/content/procedures/drivers_license.json";
 
-const procedures = [movingIn, residenceCard, healthInsurance, healthInsuranceLeave, addressChange, hankoRegistration, myNumber, pension];
+const procedures = [movingIn, residenceCard, healthInsurance, healthInsuranceLeave, addressChange, hankoRegistration, myNumber, pension, driversLicense];
 
 export default async function HomePage({
   params,
@@ -55,7 +56,7 @@ export default async function HomePage({
           {procedures.map((proc) => {
             const tr = proc.translations[locale as keyof typeof proc.translations] ?? proc.translations.en;
             const deadlineDays = proc.deadline.type === "within_days" && "days" in proc.deadline
-              ? proc.deadline.days
+              ? (proc.deadline as { days: number }).days
               : null;
             return (
               <ProcedureCard
@@ -75,6 +76,7 @@ export default async function HomePage({
                 daysLabel={t("days")}
                 cityHallLabel={t("at_city_hall")}
                 immigrationLabel={t("at_immigration")}
+                licenseCenterLabel={t("at_license_center")}
               />
             );
           })}

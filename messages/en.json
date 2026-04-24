@@ -10,6 +10,7 @@
     "yen": "¥",
     "at_city_hall": "City Hall",
     "at_immigration": "Immigration Office",
+    "at_license_center": "Driver's License Center",
     "share_checklist": "Share checklist",
     "checklist_share_text": "After moving to Japan — checklist of procedures to complete"
   },
@@ -33,7 +34,8 @@
     "deadline_expiry": "expiry date",
     "no_deadline": "No deadline",
     "location_city_hall": "City Hall / Ward Office",
-    "location_immigration": "Immigration Office"
+    "location_immigration": "Immigration Office",
+    "location_license_center": "Driver's License Center"
   },
   "lang": {
     "en": "English",

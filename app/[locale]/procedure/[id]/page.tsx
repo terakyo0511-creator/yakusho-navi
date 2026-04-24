@@ -9,6 +9,7 @@ import addressChange from "@/content/procedures/address_change.json";
 import hankoRegistration from "@/content/procedures/hanko_registration.json";
 import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
+import driversLicense from "@/content/procedures/drivers_license.json";
 import PrintButton from "@/components/PrintButton";
 import ShareLineButton from "@/components/ShareLineButton";
 import ShowStaffButton from "@/components/ShowStaffButton";
@@ -24,6 +25,7 @@ const procedureMap: Record<string, typeof movingIn> = {
   hanko_registration: hankoRegistration as unknown as typeof movingIn,
   my_number: myNumber as typeof movingIn,
   pension: pension as typeof movingIn,
+  drivers_license: driversLicense as unknown as typeof movingIn,
 };
 
 export default async function ProcedurePage({
@@ -49,6 +51,8 @@ export default async function ProcedurePage({
 
   const locationLabel = proc.location_type === "immigration_office"
     ? `🏢 ${t("location_immigration")}`
+    : proc.location_type === "license_center"
+    ? `🚗 ${t("location_license_center")}`
     : `🏛️ ${t("location_city_hall")}`;
 
   return (

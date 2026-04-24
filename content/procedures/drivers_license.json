@@ -1,0 +1,226 @@
+{
+  "id": "drivers_license",
+  "icon": "🚗",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "license_center",
+  "cost_yen": 3800,
+  "duration_minutes": {
+    "min": 60,
+    "max": 180
+  },
+  "translations": {
+    "ja": {
+      "title": "外国免許の切替",
+      "subtitle": "外国の運転免許を日本の免許に切り替える",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "原本必須"
+        },
+        {
+          "icon": "🚗",
+          "name": "外国の運転免許証（原本）",
+          "note": null
+        },
+        {
+          "icon": "📄",
+          "name": "免許証の日本語翻訳文",
+          "note": "JAF（日本自動車連盟）または大使館・領事館が発行したもの"
+        },
+        {
+          "icon": "🛂",
+          "name": "パスポート",
+          "note": "入国日が確認できるもの"
+        },
+        {
+          "icon": "📋",
+          "name": "住民票",
+          "note": "発行から3ヶ月以内"
+        },
+        {
+          "icon": "🖼️",
+          "name": "証明写真",
+          "note": "3cm×2.4cm、6ヶ月以内撮影"
+        }
+      ],
+      "steps": [
+        "JAFまたは大使館・領事館で免許証の日本語翻訳文を取得する（数日〜数週間かかる）",
+        "住民票を市区町村役所で取得する",
+        "居住地を管轄する運転免許センターに予約・来所",
+        "書類審査・視力検査・適性検査を受ける",
+        "知識テスト（筆記試験）が必要な国の場合は試験を受ける",
+        "合格後、手数料を支払い日本の免許証を受け取る"
+      ],
+      "warnings": [
+        "国によって筆記試験が免除される場合とされない場合がある（ジュネーブ条約加盟国は免除されやすい）",
+        "翻訳文はJAFまたは大使館・領事館発行のみ有効（個人翻訳は不可）",
+        "免許取得後1年以上経過している必要がある",
+        "来日前に免許を取得していること（来日後の取得は不可）",
+        "運転免許センターは事前予約が必要な場合が多い"
+      ]
+    },
+    "en": {
+      "title": "Foreign License Conversion",
+      "subtitle": "Convert your foreign driver's license to a Japanese license",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "🚗",
+          "name": "Foreign Driver's License (original)",
+          "note": null
+        },
+        {
+          "icon": "📄",
+          "name": "Japanese translation of your license",
+          "note": "Must be issued by JAF or your country's embassy/consulate"
+        },
+        {
+          "icon": "🛂",
+          "name": "Passport",
+          "note": "Must show your entry date to Japan"
+        },
+        {
+          "icon": "📋",
+          "name": "Resident Record (住民票)",
+          "note": "Issued within the last 3 months"
+        },
+        {
+          "icon": "🖼️",
+          "name": "ID photo",
+          "note": "3cm×2.4cm, taken within 6 months"
+        }
+      ],
+      "steps": [
+        "Get a Japanese translation of your license from JAF or your country's embassy/consulate (takes days to weeks)",
+        "Obtain your Resident Record (住民票) from city hall",
+        "Visit the Driver's License Center in your area (appointment may be required)",
+        "Go through document check, vision test, and fitness test",
+        "Take the written knowledge test if required for your country",
+        "Pay the fee and receive your Japanese driver's license"
+      ],
+      "warnings": [
+        "Written test may be waived depending on your country (Geneva Convention countries are often exempt)",
+        "Translation must be from JAF or an official embassy/consulate — personal translations are not accepted",
+        "Your foreign license must have been issued at least 1 year ago",
+        "You must have obtained your license before entering Japan",
+        "Appointments are often required at license centers — check in advance"
+      ]
+    },
+    "vi": {
+      "title": "Đổi bằng lái xe nước ngoài",
+      "subtitle": "Chuyển đổi bằng lái xe nước ngoài sang bằng lái Nhật Bản",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "🚗",
+          "name": "Bằng lái xe nước ngoài (bản gốc)",
+          "note": null
+        },
+        {
+          "icon": "📄",
+          "name": "Bản dịch tiếng Nhật của bằng lái",
+          "note": "Phải do JAF hoặc đại sứ quán/lãnh sự quán cấp"
+        },
+        {
+          "icon": "🛂",
+          "name": "Hộ chiếu",
+          "note": "Phải thể hiện ngày nhập cảnh vào Nhật"
+        },
+        {
+          "icon": "📋",
+          "name": "Giấy đăng ký cư trú (住民票)",
+          "note": "Cấp trong vòng 3 tháng gần nhất"
+        },
+        {
+          "icon": "🖼️",
+          "name": "Ảnh thẻ",
+          "note": "3cm×2.4cm, chụp trong vòng 6 tháng"
+        }
+      ],
+      "steps": [
+        "Lấy bản dịch tiếng Nhật của bằng lái từ JAF hoặc đại sứ quán/lãnh sự quán (mất vài ngày đến vài tuần)",
+        "Lấy giấy đăng ký cư trú (住民票) tại ủy ban nhân dân",
+        "Đến Trung tâm cấp bằng lái xe trong khu vực (có thể cần đặt lịch trước)",
+        "Trải qua kiểm tra hồ sơ, kiểm tra thị lực và kiểm tra thể chất",
+        "Làm bài thi kiến thức nếu quốc gia của bạn yêu cầu",
+        "Nộp lệ phí và nhận bằng lái xe Nhật Bản"
+      ],
+      "warnings": [
+        "Có thể được miễn thi viết tùy theo quốc gia (các nước tham gia Công ước Geneva thường được miễn)",
+        "Bản dịch phải từ JAF hoặc đại sứ quán/lãnh sự quán chính thức — không chấp nhận bản dịch cá nhân",
+        "Bằng lái nước ngoài phải được cấp ít nhất 1 năm trước",
+        "Phải lấy bằng lái trước khi vào Nhật",
+        "Trung tâm cấp bằng thường yêu cầu đặt lịch trước"
+      ]
+    },
+    "zh": {
+      "title": "外国驾照换领",
+      "subtitle": "将外国驾照换领为日本驾照",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "🚗",
+          "name": "外国驾照（原件）",
+          "note": null
+        },
+        {
+          "icon": "📄",
+          "name": "驾照的日语翻译件",
+          "note": "必须由JAF或大使馆/领事馆出具"
+        },
+        {
+          "icon": "🛂",
+          "name": "护照",
+          "note": "须显示入境日本的日期"
+        },
+        {
+          "icon": "📋",
+          "name": "住民票",
+          "note": "3个月内开具"
+        },
+        {
+          "icon": "🖼️",
+          "name": "证件照",
+          "note": "3cm×2.4cm，6个月内拍摄"
+        }
+      ],
+      "steps": [
+        "从JAF或大使馆/领事馆获取驾照的日语翻译件（需要数天至数周）",
+        "在市政厅获取住民票",
+        "前往所在地区的驾照中心（可能需要预约）",
+        "进行材料审核、视力检查和适性检查",
+        "如您所在国家需要，参加笔试",
+        "缴纳费用后领取日本驾照"
+      ],
+      "warnings": [
+        "是否需要笔试取决于您所在国家（日内瓦公约成员国通常可免试）",
+        "翻译件必须由JAF或官方大使馆/领事馆出具——不接受个人翻译",
+        "外国驾照必须在1年前以上取得",
+        "必须在入境日本前取得驾照",
+        "驾照中心通常需要提前预约"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "警察庁 外国免許切替",
+      "label_en": "NPA - Foreign License Conversion",
+      "url": "https://www.npa.go.jp/bureau/traffic/menkyo/gaimmenkyo.html"
+    }
+  ]
+}
