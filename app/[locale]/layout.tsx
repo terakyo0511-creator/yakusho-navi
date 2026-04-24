@@ -100,6 +100,7 @@ export default async function LocaleLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="役所ナビ" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7995912357051752" crossOrigin="anonymous"></script>
       </head>
       <body className={`${geist.className} min-h-screen bg-white`}>
         <ServiceWorkerRegistrar />
