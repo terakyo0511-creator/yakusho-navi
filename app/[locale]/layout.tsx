@@ -71,6 +71,9 @@ export async function generateMetadata({
       locale: ogLocale,
       type: "website",
     },
+    verification: {
+      google: "X8DfpdGmgVP3EeJSnYkFW0GNVxsFnpY7DnsN4Bn1tdQ",
+    },
   };
 }
 
