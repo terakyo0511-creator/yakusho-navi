@@ -43,7 +43,7 @@
       ],
       "warnings": [
         "出国後2年以内に申請しないと権利が消滅する",
-        "受給額は保険料納付月数によって異なる（上限36ヶ月分）",
+        "受給額は保険料納付月数によって異なる（上限60ヶ月分）",
         "受給すると過去の年金加入期間がリセットされる",
         "受給額の20.42%が源泉徴収される（租税条約のある国は還付申請可）",
         "住民票の除票が必要になる場合がある"
@@ -81,7 +81,7 @@
       ],
       "warnings": [
         "You must apply within 2 years of leaving Japan — the right expires after that",
-        "The amount depends on how many months you paid into the pension (max 36 months)",
+        "The amount depends on how many months you paid into the pension (max 60 months)",
         "Receiving the lump sum resets your pension contribution history in Japan",
         "20.42% withholding tax is deducted (residents of tax-treaty countries may claim a refund)",
         "A copy of your deregistration record (住民票の除票) may be required"
@@ -119,7 +119,7 @@
       ],
       "warnings": [
         "Phải nộp đơn trong vòng 2 năm sau khi rời Nhật — quyền lợi sẽ hết hạn sau đó",
-        "Số tiền phụ thuộc vào số tháng đã đóng bảo hiểm (tối đa 36 tháng)",
+        "Số tiền phụ thuộc vào số tháng đã đóng bảo hiểm (tối đa 60 tháng)",
         "Nhận hoàn trả một lần sẽ xóa lịch sử đóng bảo hiểm lương hưu tại Nhật",
         "Bị khấu trừ 20,42% thuế tại nguồn (cư dân các nước có hiệp ước thuế có thể xin hoàn thuế)",
         "Có thể cần bản sao hồ sơ hủy đăng ký cư trú (住民票の除票)"
@@ -157,7 +157,7 @@
       ],
       "warnings": [
         "必须在离开日本后2年内申请——逾期权利消失",
-        "金额取决于缴费月数（最多36个月）",
+        "金额取决于缴费月数（最多60个月）",
         "领取一次金将清零在日本的年金缴费记录",
         "将被扣除20.42%的预扣税（与日本签有税收协定的国家居民可申请退税）",
         "可能需要住民票除票（注销登记证明）"

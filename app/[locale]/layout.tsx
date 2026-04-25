@@ -19,10 +19,10 @@ const titleMap: Record<string, string> = {
 };
 
 const descriptionMap: Record<string, string> = {
-  en: "Step-by-step guides for foreign residents in Japan. Residence card, health insurance, moving-in registration and more — in English, Vietnamese, and Chinese.",
-  ja: "在日外国人向けの役所手続きガイド。在留カード・国民健康保険・転入届などを英語・ベトナム語・中国語で分かりやすく解説。",
-  zh: "外国居民在日本的手续指南。在留卡、国民健康保险、转入手续等逐步指引，提供英语、越南语、中文版本。",
-  vi: "Hướng dẫn thủ tục cho người nước ngoài tại Nhật Bản. Thẻ cư trú, bảo hiểm y tế, đăng ký chuyển đến — bằng tiếng Anh, tiếng Việt và tiếng Trung.",
+  en: "Step-by-step guides for foreign residents in Japan. Residence card, health insurance, moving-in registration and more — in English, Japanese, Vietnamese, and Chinese.",
+  ja: "在日外国人向けの役所手続きガイド。在留カード・国民健康保険・転入届など14手続きを日本語・英語・ベトナム語・中国語で解説。",
+  zh: "外国居民在日本的手续指南。在留卡、国民健康保险、转入手续等14项手续，提供日语、英语、越南语、中文版本。",
+  vi: "Hướng dẫn thủ tục cho người nước ngoài tại Nhật Bản. Thẻ cư trú, bảo hiểm y tế, đăng ký chuyển đến — bằng tiếng Nhật, tiếng Anh, tiếng Việt và tiếng Trung.",
 };
 
 const ogLocaleMap: Record<string, string> = {
@@ -102,10 +102,17 @@ export default async function LocaleLayout({
         <meta name="apple-mobile-web-app-title" content="役所ナビ" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7995912357051752" crossOrigin="anonymous"></script>
       </head>
-      <body className={`${geist.className} min-h-screen bg-white`}>
+      <body className={`${geist.className} min-h-screen bg-white flex flex-col`}>
         <ServiceWorkerRegistrar />
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <div className="flex-1">{children}</div>
+          <footer className="border-t border-gray-100 mt-8 py-4 print:hidden">
+            <div className="max-w-2xl mx-auto px-4 flex flex-wrap gap-4 text-xs text-gray-400">
+              <a href={`/${locale}/about`} className="hover:text-gray-600">About</a>
+              <a href={`/${locale}/privacy`} className="hover:text-gray-600">Privacy Policy</a>
+              <a href={`/${locale}/contact`} className="hover:text-gray-600">Contact</a>
+            </div>
+          </footer>
         </NextIntlClientProvider>
       </body>
     </html>

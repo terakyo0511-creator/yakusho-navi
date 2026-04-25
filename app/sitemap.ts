@@ -11,6 +11,12 @@ const procedureIds = [
   "hanko_registration",
   "my_number",
   "pension",
+  "drivers_license",
+  "pension_withdrawal",
+  "bank_account",
+  "mobile_phone",
+  "health_insurance_withdrawal",
+  "residence_extension",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -34,6 +40,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
       });
     }
+    entries.push({ url: `${SITE_URL}/${locale}/about`, changeFrequency: "yearly", priority: 0.3 });
+    entries.push({ url: `${SITE_URL}/${locale}/privacy`, changeFrequency: "yearly", priority: 0.3 });
+    entries.push({ url: `${SITE_URL}/${locale}/contact`, changeFrequency: "yearly", priority: 0.3 });
   }
 
   return entries;

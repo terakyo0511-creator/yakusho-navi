@@ -6,8 +6,10 @@ import residenceCard from "@/content/procedures/residence_card.json";
 import healthInsurance from "@/content/procedures/health_insurance.json";
 import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
+import bankAccount from "@/content/procedures/bank_account.json";
+import mobilePhone from "@/content/procedures/mobile_phone.json";
 
-const checklistProcedures = [movingIn, residenceCard, healthInsurance, myNumber, pension];
+const checklistProcedures = [movingIn, residenceCard, healthInsurance, myNumber, pension, bankAccount, mobilePhone];
 
 const titleMap: Record<string, string> = {
   en: "After Moving to Japan — Checklist",

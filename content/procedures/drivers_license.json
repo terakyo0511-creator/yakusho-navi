@@ -59,7 +59,8 @@
         "翻訳文はJAFまたは大使館・領事館発行のみ有効（個人翻訳は不可）",
         "免許取得後1年以上経過している必要がある",
         "来日前に免許を取得していること（来日後の取得は不可）",
-        "運転免許センターは事前予約が必要な場合が多い"
+        "運転免許センターは事前予約が必要な場合が多い",
+        "国別の試験免除リストや手数料は変更になることがある。最新情報は警察庁公式サイトで確認すること"
       ]
     },
     "en": {
@@ -110,7 +111,8 @@
         "Translation must be from JAF or an official embassy/consulate — personal translations are not accepted",
         "Your foreign license must have been issued at least 1 year ago",
         "You must have obtained your license before entering Japan",
-        "Appointments are often required at license centers — check in advance"
+        "Appointments are often required at license centers — check in advance",
+        "Country-specific exemptions and fees are subject to change — always check the NPA official website for the latest information"
       ]
     },
     "vi": {
@@ -161,7 +163,8 @@
         "Bản dịch phải từ JAF hoặc đại sứ quán/lãnh sự quán chính thức — không chấp nhận bản dịch cá nhân",
         "Bằng lái nước ngoài phải được cấp ít nhất 1 năm trước",
         "Phải lấy bằng lái trước khi vào Nhật",
-        "Trung tâm cấp bằng thường yêu cầu đặt lịch trước"
+        "Trung tâm cấp bằng thường yêu cầu đặt lịch trước",
+        "Danh sách miễn thi và lệ phí theo quốc gia có thể thay đổi — luôn kiểm tra trang web chính thức của NPA để có thông tin mới nhất"
       ]
     },
     "zh": {
@@ -212,7 +215,8 @@
         "翻译件必须由JAF或官方大使馆/领事馆出具——不接受个人翻译",
         "外国驾照必须在1年前以上取得",
         "必须在入境日本前取得驾照",
-        "驾照中心通常需要提前预约"
+        "驾照中心通常需要提前预约",
+        "各国免试条件及手续费可能变更，请以警察厅官方网站的最新信息为准"
       ]
     }
   },

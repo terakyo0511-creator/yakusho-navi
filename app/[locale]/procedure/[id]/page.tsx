@@ -69,7 +69,28 @@ export default async function ProcedurePage({
     ? `📱 ${t("location_phone_shop")}`
     : `🏛️ ${t("location_city_hall")}`;
 
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: tr.title,
+    description: tr.subtitle,
+    ...(proc.cost_yen > 0 && {
+      estimatedCost: { "@type": "MonetaryAmount", currency: "JPY", value: proc.cost_yen },
+    }),
+    totalTime: `PT${proc.duration_minutes.max}M`,
+    step: tr.steps.map((text: string, i: number) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      text,
+    })),
+  };
+
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+    />
     <div className="max-w-2xl mx-auto px-4 py-6 print:py-2">
       <div className="flex justify-between items-center mb-4 print:hidden">
         <Link href={`/${locale}`} className="text-[#1a2744] hover:underline text-sm font-medium">
@@ -133,6 +154,17 @@ export default async function ProcedurePage({
           />
         </section>
 
+        <div className="my-4 print:hidden">
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-7995912357051752"
+            data-ad-slot="auto"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          />
+        </div>
+
         <section className="mb-6">
           <h2 className="text-lg font-bold text-[#1a2744] border-b-2 border-[#1a2744] pb-1 mb-3">
             ✅ {t("steps")}
@@ -191,5 +223,6 @@ export default async function ProcedurePage({
         )}
       </div>
     </div>
+    </>
   );
 }

@@ -57,7 +57,7 @@
         "許可後、在留カードを受け取る（審査期間：2週間〜2ヶ月程度）"
       ],
       "warnings": [
-        "在留期限の30日前を過ぎてからの申請は超過在留とみなされる場合がある",
+        "在留期限を過ぎてからの申請は超過在留になる。期限前に申請すること",
         "必要書類はビザの種類によって異なる（就労・留学・家族滞在など）",
         "更新が許可されない場合もあるため、早めに申請すること",
         "オンライン申請（在留申請オンラインシステム）も利用可能"
@@ -107,7 +107,7 @@
         "Receive your new Residence Card after approval (review takes 2 weeks to 2 months)"
       ],
       "warnings": [
-        "Applying after the 30-day period before expiry may be treated as overstaying",
+        "Applying after your residence period expires is treated as overstaying — always apply before the expiry date",
         "Required documents vary by visa type (work, student, family stay, etc.)",
         "Extensions are not guaranteed — apply as early as possible",
         "Online applications are also available via the Immigration Online System"
@@ -157,7 +157,7 @@
         "Nhận thẻ cư trú mới sau khi được chấp thuận (xét duyệt mất 2 tuần đến 2 tháng)"
       ],
       "warnings": [
-        "Nộp đơn sau 30 ngày trước hạn có thể bị coi là cư trú quá hạn",
+        "Nộp đơn sau khi hết thời hạn cư trú sẽ bị coi là cư trú quá hạn — hãy nộp đơn trước ngày hết hạn",
         "Giấy tờ yêu cầu khác nhau tùy loại visa (lao động, du học, đoàn tụ gia đình, v.v.)",
         "Gia hạn không được đảm bảo — hãy nộp đơn sớm nhất có thể",
         "Cũng có thể nộp đơn trực tuyến qua Hệ thống xin phép cư trú online"
@@ -207,7 +207,7 @@
         "批准后领取新在留卡（审核需2周至2个月）"
       ],
       "warnings": [
-        "在到期前30天后提交申请可能被视为超期居留",
+        "在留期限が過ぎてから申請すると超期居留となる。必ず期限前に申請すること",
         "所需材料因签证类型而异（就劳、留学、家族滞在等）",
         "不保证一定获批——尽早申请",
         "也可通过在留申请在线系统进行网上申请"
