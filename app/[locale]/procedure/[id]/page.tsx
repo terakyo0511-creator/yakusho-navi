@@ -174,7 +174,7 @@ export default async function ProcedurePage({
               <div className="text-xs text-gray-500 mb-1">{t("time")}</div>
               <div className="text-2xl font-bold text-[#1a2744]">
                 🕐 {proc.duration_minutes.min}〜{proc.duration_minutes.max}
-                <span className="text-sm font-normal ml-1">min</span>
+                <span className="text-sm font-normal ml-1">{t("minutes")}</span>
               </div>
             </div>
             <div className="text-center">

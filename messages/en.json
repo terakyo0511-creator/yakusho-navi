@@ -32,6 +32,7 @@
     "cost": "Cost",
     "time": "Estimated Time",
     "deadline": "Deadline",
+    "minutes": "min",
     "warnings": "Important Notes",
     "official_link": "Official Website",
     "print": "Print",
