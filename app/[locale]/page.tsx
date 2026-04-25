@@ -17,7 +17,31 @@ import mobilePhone from "@/content/procedures/mobile_phone.json";
 import healthInsuranceWithdrawal from "@/content/procedures/health_insurance_withdrawal.json";
 import residenceExtension from "@/content/procedures/residence_extension.json";
 
-const procedures = [movingIn, residenceCard, healthInsurance, healthInsuranceLeave, addressChange, hankoRegistration, myNumber, pension, driversLicense, pensionWithdrawal, bankAccount, mobilePhone, healthInsuranceWithdrawal, residenceExtension];
+const categoryLabels: Record<string, Record<string, string>> = {
+  arrival: { ja: "🆕 来日直後にやること", en: "🆕 After Arrival (Essential)", zh: "🆕 刚来日本时要做的事", vi: "🆕 Việc cần làm ngay sau khi đến Nhật" },
+  living: { ja: "🏠 生活の変更", en: "🏠 Life Changes", zh: "🏠 生活变更", vi: "🏠 Thay đổi trong cuộc sống" },
+  departure: { ja: "✈️ 帰国時の手続き", en: "✈️ Before Leaving Japan", zh: "✈️ 回国时的手续", vi: "✈️ Thủ tục trước khi về nước" },
+  visa: { ja: "📜 ビザ・免許", en: "📜 Visa & License", zh: "📜 签证与驾照", vi: "📜 Visa & Bằng lái xe" },
+};
+
+const categories = [
+  {
+    key: "arrival",
+    procedures: [movingIn, residenceCard, healthInsurance, myNumber, pension, bankAccount, mobilePhone],
+  },
+  {
+    key: "living",
+    procedures: [addressChange, hankoRegistration, healthInsuranceLeave],
+  },
+  {
+    key: "departure",
+    procedures: [healthInsuranceWithdrawal, pensionWithdrawal],
+  },
+  {
+    key: "visa",
+    procedures: [residenceExtension, driversLicense],
+  },
+];
 
 export default async function HomePage({
   params,
@@ -43,7 +67,7 @@ export default async function HomePage({
       </header>
 
       <main>
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center justify-between mb-4">
           <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
             {t("procedures_title")}
           </h2>
@@ -57,36 +81,46 @@ export default async function HomePage({
             {t("share_checklist")}
           </a>
         </div>
-        <div className="flex flex-col gap-3">
-          {procedures.map((proc) => {
-            const tr = proc.translations[locale as keyof typeof proc.translations] ?? proc.translations.en;
-            const deadlineDays = proc.deadline.type === "within_days" && "days" in proc.deadline
-              ? (proc.deadline as { days: number }).days
-              : null;
-            return (
-              <ProcedureCard
-                key={proc.id}
-                id={proc.id}
-                icon={proc.icon}
-                title={tr.title}
-                subtitle={tr.subtitle}
-                costYen={proc.cost_yen}
-                durationMin={proc.duration_minutes.min}
-                durationMax={proc.duration_minutes.max}
-                deadlineDays={deadlineDays}
-                locationType={proc.location_type}
-                locale={locale}
-                freeLabel={t("free")}
-                minutesLabel={t("minutes")}
-                daysLabel={t("days")}
-                cityHallLabel={t("at_city_hall")}
-                immigrationLabel={t("at_immigration")}
-                licenseCenterLabel={t("at_license_center")}
-                bankLabel={t("at_bank")}
-                phoneShopLabel={t("at_phone_shop")}
-              />
-            );
-          })}
+
+        <div className="flex flex-col gap-6">
+          {categories.map(({ key, procedures }) => (
+            <section key={key}>
+              <h3 className="text-sm font-bold text-[#1a2744] mb-2 pb-1 border-b border-gray-200">
+                {categoryLabels[key][locale] ?? categoryLabels[key].en}
+              </h3>
+              <div className="flex flex-col gap-3">
+                {procedures.map((proc) => {
+                  const tr = proc.translations[locale as keyof typeof proc.translations] ?? proc.translations.en;
+                  const deadlineDays = proc.deadline.type === "within_days" && "days" in proc.deadline
+                    ? (proc.deadline as { days: number }).days
+                    : null;
+                  return (
+                    <ProcedureCard
+                      key={proc.id}
+                      id={proc.id}
+                      icon={proc.icon}
+                      title={tr.title}
+                      subtitle={tr.subtitle}
+                      costYen={proc.cost_yen}
+                      durationMin={proc.duration_minutes.min}
+                      durationMax={proc.duration_minutes.max}
+                      deadlineDays={deadlineDays}
+                      locationType={proc.location_type}
+                      locale={locale}
+                      freeLabel={t("free")}
+                      minutesLabel={t("minutes")}
+                      daysLabel={t("days")}
+                      cityHallLabel={t("at_city_hall")}
+                      immigrationLabel={t("at_immigration")}
+                      licenseCenterLabel={t("at_license_center")}
+                      bankLabel={t("at_bank")}
+                      phoneShopLabel={t("at_phone_shop")}
+                    />
+                  );
+                })}
+              </div>
+            </section>
+          ))}
         </div>
       </main>
     </div>

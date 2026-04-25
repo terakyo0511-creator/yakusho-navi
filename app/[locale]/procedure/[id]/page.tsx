@@ -20,6 +20,7 @@ import ShareLineButton from "@/components/ShareLineButton";
 import ShowStaffButton from "@/components/ShowStaffButton";
 import DocumentCheckboxList from "@/components/DocumentCheckboxList";
 import CityOfficialLink from "@/components/CityOfficialLink";
+import AdUnit from "@/components/AdUnit";
 
 const procedureMap: Record<string, typeof movingIn> = {
   moving_in: movingIn,
@@ -155,14 +156,7 @@ export default async function ProcedurePage({
         </section>
 
         <div className="my-4 print:hidden">
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block" }}
-            data-ad-client="ca-pub-7995912357051752"
-            data-ad-slot="auto"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          />
+          <AdUnit />
         </div>
 
         <section className="mb-6">
@@ -196,12 +190,14 @@ export default async function ProcedurePage({
           </section>
         )}
 
-        <section className="mb-6 print:hidden">
-          <h2 className="text-lg font-bold text-[#1a2744] border-b-2 border-[#1a2744] pb-1 mb-3">
-            🏛️ {t("location_city_hall")}
-          </h2>
-          <CityOfficialLink locale={locale} />
-        </section>
+        {proc.location_type === "city_hall" && (
+          <section className="mb-6 print:hidden">
+            <h2 className="text-lg font-bold text-[#1a2744] border-b-2 border-[#1a2744] pb-1 mb-3">
+              🏛️ {t("location_city_hall")}
+            </h2>
+            <CityOfficialLink locale={locale} />
+          </section>
+        )}
 
         {proc.official_links.length > 0 && (
           <section>
