@@ -1,24 +1,19 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
-const flagMap: Record<string, string> = {
+const flagMap = {
   en: "🇺🇸",
   vi: "🇻🇳",
   zh: "🇨🇳",
   ja: "🇯🇵",
-};
-
-const labelMap: Record<string, string> = {
-  en: "English",
-  vi: "Tiếng Việt",
-  zh: "中文",
-  ja: "日本語",
-};
+} as const;
 
 export default function LanguageSwitcher() {
+  const t = useTranslations("lang");
+  const a11y = useTranslations("a11y");
   const fallbackLocale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -33,14 +28,14 @@ export default function LanguageSwitcher() {
 
   return (
     <select
-      aria-label="Language"
+      aria-label={a11y("aria_language_selector")}
       value={locale}
       onChange={(e) => switchLocale(e.target.value)}
       className="px-3 py-1.5 rounded-lg border border-[#1a2744] text-sm font-medium text-[#1a2744] bg-white"
     >
       {routing.locales.map((l) => (
         <option key={l} value={l}>
-          {flagMap[l]} {labelMap[l]}
+          {flagMap[l]} {t(l)}
         </option>
       ))}
     </select>

@@ -4,19 +4,19 @@ import { procedureMap } from "@/lib/procedures";
 
 export const runtime = "edge";
 
-const siteTitle: Record<string, string> = {
+const siteTitle = {
   ja: "役所手続きナビ",
   en: "Japan City Hall Guide",
   zh: "日本市政手续指南",
   vi: "Hướng dẫn thủ tục Nhật Bản",
-};
+} as const;
 
-const siteSubtitle: Record<string, string> = {
+const siteSubtitle = {
   ja: "外国人住民のための手続きガイド",
   en: "Step-by-step guides for foreign residents",
   zh: "面向外国居民的手续指南",
   vi: "Hướng dẫn từng bước cho cư dân nước ngoài",
-};
+} as const;
 
 export async function GET(
   _request: Request,

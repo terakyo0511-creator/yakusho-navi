@@ -67,8 +67,68 @@
     "save": "Lưu"
   },
   "checklist": {
+    "title": "Sau khi đến Nhật Bản — Danh sách việc cần làm",
+    "subtitle": "Nhấn vào vòng tròn để đánh dấu hoàn thành. Tiến độ được lưu trên thiết bị này.",
     "progress": "Hoàn thành {done}/{total}",
     "all_done": "Tất cả đã xong! Tuyệt vời!"
+  },
+  "a11y": {
+    "aria_city_selector": "Chọn thành phố",
+    "aria_language_selector": "Chọn ngôn ngữ",
+    "aria_mark_complete": "Đánh dấu hoàn thành",
+    "aria_mark_incomplete": "Đánh dấu chưa hoàn thành"
+  },
+  "footer": {
+    "about": "Giới thiệu",
+    "privacy": "Chính sách bảo mật",
+    "contact": "Liên hệ"
+  },
+  "cities": {
+    "select_placeholder": "(Chọn thành phố)",
+    "tokyo": "Tokyo (23 quận)",
+    "osaka": "Thành phố Osaka",
+    "nagoya": "Thành phố Nagoya",
+    "yokohama": "Thành phố Yokohama",
+    "kawasaki": "Thành phố Kawasaki",
+    "saitama": "Thành phố Saitama",
+    "chiba": "Thành phố Chiba",
+    "fukuoka": "Thành phố Fukuoka",
+    "kobe": "Thành phố Kobe",
+    "kyoto": "Thành phố Kyoto",
+    "other": "Khác",
+    "note": "Các thủ tục hiển thị là hướng dẫn chung. Chi tiết có thể khác nhau tùy thành phố."
+  },
+  "city_official": {
+    "link_label": "Xem trang web chính thức",
+    "not_selected": "Chọn thành phố ở trang chủ để xem liên kết trang web chính thức."
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "body": "Nếu có câu hỏi, báo cáo thông tin sai hoặc các yêu cầu khác, vui lòng dùng biểu mẫu bên dưới.",
+    "name": "Tên",
+    "message": "Nội dung",
+    "submit": "Gửi",
+    "success": "Đã gửi thành công. Cảm ơn bạn!",
+    "error": "Gửi thất bại. Vui lòng thử lại sau."
+  },
+  "about": {
+    "title": "Về trang web này",
+    "service_heading": "Giới thiệu",
+    "service_body": "Japan City Hall Guide giúp người nước ngoài tại Nhật Bản thực hiện các thủ tục hành chính một cách thuận lợi. Chúng tôi cung cấp hướng dẫn từng bước bằng tiếng Nhật, tiếng Anh, tiếng Trung và tiếng Việt.",
+    "operator_heading": "Người vận hành",
+    "operator_body": "Trang web này do cá nhân vận hành. Để liên hệ, vui lòng sử dụng trang liên hệ.",
+    "disclaimer_heading": "Tuyên bố miễn trách nhiệm",
+    "disclaimer_body": "Thông tin dựa trên nguồn chính thức nhưng có thể thay đổi do sửa đổi pháp luật. Luôn xác minh với trang web chính thức của cơ quan chính phủ liên quan. Chúng tôi không chịu trách nhiệm về bất kỳ thiệt hại nào phát sinh từ việc sử dụng thông tin trên trang này."
+  },
+  "privacy": {
+    "title": "Chính sách bảo mật",
+    "p1": "Trang web này (cityhall-guide.vercel.app) cung cấp hướng dẫn thủ tục hành chính cho người nước ngoài tại Nhật Bản.",
+    "p2": "Trang web sử dụng Google AdSense, Google có thể dùng Cookie để hiển thị quảng cáo dựa trên sở thích của bạn. Để biết thêm thông tin về cách tắt Cookie hoặc về Google AdSense, vui lòng tham khảo Chính sách quyền riêng tư của Google.",
+    "p3": "Trang web sử dụng Google Analytics để phân tích tình hình truy cập. Google Analytics dùng Cookie để thu thập dữ liệu sử dụng ẩn danh.",
+    "p4": "Chúng tôi cố gắng cung cấp thông tin chính xác nhưng không đảm bảo tính chính xác hay cập nhật của nội dung. Vui lòng tham khảo trang web chính thức của các cơ quan nhà nước để biết thông tin mới nhất.",
+    "p5": "Chính sách này có thể thay đổi mà không cần thông báo trước.",
+    "p6": "Liên hệ: tera.kyo0511@gmail.com",
+    "last_updated": "Cập nhật lần cuối"
   },
   "lang": {
     "en": "English",

@@ -67,8 +67,68 @@
     "save": "保存"
   },
   "checklist": {
+    "title": "来日后需要办理的手续清单",
+    "subtitle": "点击圆圈标记为已完成。进度会保存在此设备上。",
     "progress": "已完成 {done}/{total}",
     "all_done": "全部完成！辛苦了"
+  },
+  "a11y": {
+    "aria_city_selector": "选择城市",
+    "aria_language_selector": "选择语言",
+    "aria_mark_complete": "标记为已完成",
+    "aria_mark_incomplete": "改为未完成"
+  },
+  "footer": {
+    "about": "关于",
+    "privacy": "隐私政策",
+    "contact": "联系我们"
+  },
+  "cities": {
+    "select_placeholder": "（选择城市）",
+    "tokyo": "东京（23区）",
+    "osaka": "大阪市",
+    "nagoya": "名古屋市",
+    "yokohama": "横滨市",
+    "kawasaki": "川崎市",
+    "saitama": "埼玉市",
+    "chiba": "千叶市",
+    "fukuoka": "福冈市",
+    "kobe": "神户市",
+    "kyoto": "京都市",
+    "other": "其他",
+    "note": "所示手续为一般指南，具体细节可能因城市而异。"
+  },
+  "city_official": {
+    "link_label": "查看官方网站",
+    "not_selected": "请在首页选择城市以查看官方网站链接。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "body": "如有疑问、信息更正请求或其他咨询，请使用以下表单。",
+    "name": "姓名",
+    "message": "留言内容",
+    "submit": "发送",
+    "success": "已发送，感谢您的联系。",
+    "error": "发送失败，请稍后重试。"
+  },
+  "about": {
+    "title": "关于本网站",
+    "service_heading": "服务简介",
+    "service_body": "日本市政厅手续指南帮助在日外国人顺利办理各类行政手续。我们以日语、英语、中文、越南语提供所需材料、步骤及注意事项的详细说明。",
+    "operator_heading": "运营者",
+    "operator_body": "本网站由个人运营。如有疑问，请通过联系页面与我们联系。",
+    "disclaimer_heading": "免责声明",
+    "disclaimer_body": "信息基于官方来源，但可能因法律修订而变更。请以各官方网站的最新信息为准。对于因使用本站信息而造成的任何损失，本站不承担责任。"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "p1": "本网站（cityhall-guide.vercel.app）为在日外国人提供行政手续指南。",
+    "p2": "本网站使用 Google AdSense，Google 可能会使用 Cookie 根据您的兴趣展示广告。有关如何禁用 Cookie 或 Google AdSense 的详细信息，请参阅 Google 的隐私政策。",
+    "p3": "本网站使用 Google Analytics 分析访问情况。Google Analytics 使用 Cookie 收集匿名的使用数据。",
+    "p4": "我们尽力提供准确的信息，但不保证内容的准确性或时效性。有关手续的详细信息，请参阅各官方网站。",
+    "p5": "本政策可能在不事先通知的情况下更改。",
+    "p6": "联系方式：tera.kyo0511@gmail.com",
+    "last_updated": "最后更新"
   },
   "lang": {
     "en": "English",

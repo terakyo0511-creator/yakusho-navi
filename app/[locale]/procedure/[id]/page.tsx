@@ -17,6 +17,16 @@ import { procedureMap } from "@/lib/procedures";
 
 const SITE_URL = "https://cityhall-guide.vercel.app";
 
+function getLanguageAlternates(path: string) {
+  return {
+    en: `${SITE_URL}/en${path}`,
+    ja: `${SITE_URL}/ja${path}`,
+    zh: `${SITE_URL}/zh${path}`,
+    vi: `${SITE_URL}/vi${path}`,
+    "x-default": `${SITE_URL}/en${path}`,
+  };
+}
+
 const locationLabels: Record<ProcedureLocationType, { icon: string; key: string }> = {
   city_hall: { icon: "🏛️", key: "location_city_hall" },
   immigration_office: { icon: "🏢", key: "location_immigration" },
@@ -69,6 +79,7 @@ export async function generateMetadata({
     description: tr.subtitle,
     alternates: {
       canonical: pageUrl,
+      languages: getLanguageAlternates(`/procedure/${id}`),
     },
     openGraph: {
       title: tr.title,
@@ -261,7 +272,7 @@ export default async function ProcedurePage({
               <h2 className="text-lg font-bold text-[#1a2744] border-b-2 border-[#1a2744] pb-1 mb-3">
                 🏛️ {t("location_city_hall")}
               </h2>
-              <CityOfficialLink locale={locale} />
+              <CityOfficialLink />
             </section>
           )}
 

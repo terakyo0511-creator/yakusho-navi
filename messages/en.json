@@ -67,8 +67,68 @@
     "save": "Save"
   },
   "checklist": {
+    "title": "After Moving to Japan — Checklist",
+    "subtitle": "Tap the circle to mark an item as done. Progress is saved on this device.",
     "progress": "{done}/{total} done",
     "all_done": "All done! Great job!"
+  },
+  "a11y": {
+    "aria_city_selector": "Select city",
+    "aria_language_selector": "Select language",
+    "aria_mark_complete": "Mark as complete",
+    "aria_mark_incomplete": "Mark as incomplete"
+  },
+  "footer": {
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "contact": "Contact"
+  },
+  "cities": {
+    "select_placeholder": "(Select your city)",
+    "tokyo": "Tokyo (23 Wards)",
+    "osaka": "Osaka City",
+    "nagoya": "Nagoya City",
+    "yokohama": "Yokohama City",
+    "kawasaki": "Kawasaki City",
+    "saitama": "Saitama City",
+    "chiba": "Chiba City",
+    "fukuoka": "Fukuoka City",
+    "kobe": "Kobe City",
+    "kyoto": "Kyoto City",
+    "other": "Other",
+    "note": "Procedures shown are general guidelines. Details may vary by city."
+  },
+  "city_official": {
+    "link_label": "Official city hall website",
+    "not_selected": "Select your city on the top page to see your city hall's official website."
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "For questions, corrections, or other inquiries, please use the form below.",
+    "name": "Name",
+    "message": "Message",
+    "submit": "Send",
+    "success": "Message sent. Thank you!",
+    "error": "Failed to send. Please try again later."
+  },
+  "about": {
+    "title": "About This Site",
+    "service_heading": "About",
+    "service_body": "Japan City Hall Guide helps foreign residents navigate administrative procedures in Japan. We provide step-by-step instructions for residence card renewal, health insurance, moving-in registration, and more in English, Japanese, Chinese, and Vietnamese.",
+    "operator_heading": "Operator",
+    "operator_body": "This site is independently operated. For inquiries, please use the contact page.",
+    "disclaimer_heading": "Disclaimer",
+    "disclaimer_body": "Information is based on official sources but may change due to legal revisions. Always verify with the relevant government agency's official website. We are not responsible for any damage resulting from use of this site's information."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "p1": "This website (cityhall-guide.vercel.app) provides guidance on administrative procedures for foreign residents in Japan.",
+    "p2": "This site uses Google AdSense, which may use cookies to display ads based on your interests. For more information on how to disable cookies or about Google AdSense, please refer to Google's Privacy Policy.",
+    "p3": "This site uses Google Analytics to analyze access trends. Google Analytics uses cookies to collect anonymous usage data.",
+    "p4": "We strive to provide accurate information, but we do not guarantee the accuracy or timeliness of the content. Please refer to the official websites of the relevant government agencies for the latest procedures.",
+    "p5": "This policy may be updated without notice.",
+    "p6": "Contact: tera.kyo0511@gmail.com",
+    "last_updated": "Last updated"
   },
   "lang": {
     "en": "English",

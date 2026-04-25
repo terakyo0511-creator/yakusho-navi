@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { setLocalStorageValue, useLocalStorage } from "@/hooks/useLocalStorage";
 
 const cityKeys = [
@@ -15,52 +16,43 @@ const cityKeys = [
   "kobe",
   "kyoto",
   "other",
-];
+] as const;
 
-const cityLabels: Record<string, string[]> = {
-  en: ["(Select your city)", "Tokyo (23 Wards)", "Osaka", "Nagoya", "Yokohama", "Kawasaki", "Saitama", "Chiba", "Fukuoka", "Kobe", "Kyoto", "Other"],
-  vi: ["(Chọn thành phố)", "Tokyo (23 quận)", "Osaka", "Nagoya", "Yokohama", "Kawasaki", "Saitama", "Chiba", "Fukuoka", "Kobe", "Kyoto", "Khác"],
-  zh: ["（选择城市）", "东京（23区）", "大阪", "名古屋", "横滨", "川崎", "埼玉", "千叶", "福冈", "神户", "京都", "其他"],
-  ja: ["（市区町村を選ぶ）", "東京23区", "大阪市", "名古屋市", "横浜市", "川崎市", "さいたま市", "千葉市", "福岡市", "神戸市", "京都市", "その他"],
-};
+type CityKey = (typeof cityKeys)[number];
 
-const noteMap: Record<string, string> = {
-  en: "Procedures shown are general guidelines. Details may vary by city.",
-  vi: "Các thủ tục hiển thị là hướng dẫn chung. Chi tiết có thể khác nhau tùy thành phố.",
-  zh: "所示手续为一般指南，具体细节可能因城市而异。",
-  ja: "表示されている手続きは一般的なガイドです。詳細は市区町村によって異なる場合があります。",
-};
+function isCityKey(value: string): value is CityKey {
+  return cityKeys.includes(value as CityKey);
+}
 
 export const CITY_STORAGE_KEY = "yakusho_navi_city";
 
-export default function CitySelector({ locale }: { locale: string }) {
+export default function CitySelector() {
+  const t = useTranslations("cities");
+  const a11y = useTranslations("a11y");
   const savedCityKey = useLocalStorage(CITY_STORAGE_KEY);
-  const cityKey = savedCityKey && cityKeys.includes(savedCityKey) ? savedCityKey : "";
+  const cityKey = savedCityKey && isCityKey(savedCityKey) ? savedCityKey : "";
 
   function handleChange(e: React.ChangeEvent<HTMLSelectElement>) {
     const key = e.target.value;
     setLocalStorageValue(CITY_STORAGE_KEY, key || null);
   }
 
-  const labels = cityLabels[locale] ?? cityLabels.en;
-  const note = noteMap[locale] ?? noteMap.en;
-
   return (
     <div className="mt-2">
       <select
-        aria-label="City"
+        aria-label={a11y("aria_city_selector")}
         value={cityKey}
         onChange={handleChange}
         className="px-3 py-1.5 rounded-lg border border-gray-300 text-sm text-gray-700 bg-white w-full sm:w-auto"
       >
-        {cityKeys.map((key, i) => (
+        {cityKeys.map((key) => (
           <option key={key} value={key}>
-            {labels[i]}
+            {key ? t(key) : t("select_placeholder")}
           </option>
         ))}
       </select>
       {cityKey && cityKey !== "other" && (
-        <p className="text-xs text-gray-400 mt-1">{note}</p>
+        <p className="text-xs text-gray-400 mt-1">{t("note")}</p>
       )}
     </div>
   );

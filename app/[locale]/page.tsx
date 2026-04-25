@@ -138,7 +138,7 @@ export default async function HomePage({
         </div>
         <div className="mt-3 flex flex-wrap gap-2 items-center">
           <LanguageSwitcher />
-          <CitySelector locale={locale} />
+          <CitySelector />
         </div>
       </header>
 

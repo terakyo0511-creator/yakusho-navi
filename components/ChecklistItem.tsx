@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { setLocalStorageValue, useLocalStorage } from "@/hooks/useLocalStorage";
 
 interface ChecklistItemProps {
@@ -12,6 +13,7 @@ interface ChecklistItemProps {
 }
 
 export default function ChecklistItem({ id, icon, title, subtitle, href }: ChecklistItemProps) {
+  const a11y = useTranslations("a11y");
   const storageKey = `checklist_done_${id}`;
   const checked = useLocalStorage(storageKey) === "1";
 
@@ -26,7 +28,7 @@ export default function ChecklistItem({ id, icon, title, subtitle, href }: Check
     <li className="flex items-center gap-3">
       <button
         onClick={toggle}
-        aria-label={checked ? "Mark as incomplete" : "Mark as complete"}
+        aria-label={checked ? a11y("aria_mark_incomplete") : a11y("aria_mark_complete")}
         className={`flex-shrink-0 w-7 h-7 rounded-full border-2 flex items-center justify-center transition-colors ${
           checked
             ? "bg-green-600 border-green-600 text-white"

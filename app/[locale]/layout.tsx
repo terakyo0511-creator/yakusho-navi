@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
@@ -9,26 +9,26 @@ import "../globals.css";
 
 const SITE_URL = "https://cityhall-guide.vercel.app";
 
-const titleMap: Record<string, string> = {
+const titleMap = {
   en: "Japan City Hall Guide",
   ja: "役所手続きナビ",
   zh: "日本市政厅手续指南",
   vi: "Hướng dẫn thủ tục ủy ban nhân dân Nhật Bản",
-};
+} as const;
 
-const descriptionMap: Record<string, string> = {
+const descriptionMap = {
   en: "Step-by-step guides for foreign residents in Japan. Residence card, health insurance, moving-in registration and more — in English, Japanese, Vietnamese, and Chinese.",
   ja: "在日外国人向けの役所手続きガイド。在留カード・国民健康保険・転入届など14手続きを日本語・英語・ベトナム語・中国語で解説。",
   zh: "外国居民在日本的手续指南。在留卡、国民健康保险、转入手续等14项手续，提供日语、英语、越南语、中文版本。",
   vi: "Hướng dẫn thủ tục cho người nước ngoài tại Nhật Bản. Thẻ cư trú, bảo hiểm y tế, đăng ký chuyển đến — bằng tiếng Nhật, tiếng Anh, tiếng Việt và tiếng Trung.",
-};
+} as const;
 
-const ogLocaleMap: Record<string, string> = {
+const ogLocaleMap = {
   en: "en_US",
   ja: "ja_JP",
   zh: "zh_CN",
   vi: "vi_VN",
-};
+} as const;
 
 export async function generateMetadata({
   params,
@@ -36,9 +36,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const title = titleMap[locale] ?? titleMap.en;
-  const description = descriptionMap[locale] ?? descriptionMap.en;
-  const ogLocale = ogLocaleMap[locale] ?? "en_US";
+  const localeKey = routing.locales.includes(locale as (typeof routing.locales)[number])
+    ? (locale as keyof typeof titleMap)
+    : "en";
+  const title = titleMap[localeKey];
+  const description = descriptionMap[localeKey];
+  const ogLocale = ogLocaleMap[localeKey];
 
   return {
     title,
@@ -95,7 +98,10 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  setRequestLocale(locale);
+
   const messages = await getMessages();
+  const footerT = await getTranslations("footer");
 
   return (
     <html lang={locale}>
@@ -114,9 +120,9 @@ export default async function LocaleLayout({
           <div className="flex-1">{children}</div>
           <footer className="border-t border-gray-100 mt-8 py-4 print:hidden">
             <div className="max-w-2xl mx-auto px-4 flex flex-wrap gap-4 text-xs text-gray-400">
-              <a href={`/${locale}/about`} className="hover:text-gray-600">About</a>
-              <a href={`/${locale}/privacy`} className="hover:text-gray-600">Privacy Policy</a>
-              <a href={`/${locale}/contact`} className="hover:text-gray-600">Contact</a>
+              <a href={`/${locale}/about`} className="hover:text-gray-600">{footerT("about")}</a>
+              <a href={`/${locale}/privacy`} className="hover:text-gray-600">{footerT("privacy")}</a>
+              <a href={`/${locale}/contact`} className="hover:text-gray-600">{footerT("contact")}</a>
             </div>
           </footer>
         </NextIntlClientProvider>

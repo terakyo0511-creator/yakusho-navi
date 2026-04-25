@@ -9,6 +9,16 @@ import { isLocale } from "@/types/procedure";
 
 const SITE_URL = "https://cityhall-guide.vercel.app";
 
+function getLanguageAlternates(path: string) {
+  return {
+    en: `${SITE_URL}/en${path}`,
+    ja: `${SITE_URL}/ja${path}`,
+    zh: `${SITE_URL}/zh${path}`,
+    vi: `${SITE_URL}/vi${path}`,
+    "x-default": `${SITE_URL}/en${path}`,
+  };
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -31,6 +41,7 @@ export async function generateMetadata({
     description: tr.description,
     alternates: {
       canonical: url,
+      languages: getLanguageAlternates(`/situations/${id}`),
     },
     openGraph: {
       title: tr.title,

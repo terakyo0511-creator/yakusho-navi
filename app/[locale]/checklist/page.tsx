@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import ChecklistItem from "@/components/ChecklistItem";
@@ -9,22 +10,54 @@ import myNumber from "@/content/procedures/my_number.json";
 import pension from "@/content/procedures/pension.json";
 import bankAccount from "@/content/procedures/bank_account.json";
 import mobilePhone from "@/content/procedures/mobile_phone.json";
+import { isLocale } from "@/types/procedure";
+
+const SITE_URL = "https://cityhall-guide.vercel.app";
 
 const checklistProcedures = [movingIn, residenceCard, healthInsurance, myNumber, pension, bankAccount, mobilePhone];
 
-const titleMap: Record<string, string> = {
-  en: "After Moving to Japan — Checklist",
-  vi: "Sau khi đến Nhật Bản — Danh sách việc cần làm",
-  zh: "来日后需要办理的手续清单",
-  ja: "来日後にやること チェックリスト",
-};
+function getLanguageAlternates(path: string) {
+  return {
+    en: `${SITE_URL}/en${path}`,
+    ja: `${SITE_URL}/ja${path}`,
+    zh: `${SITE_URL}/zh${path}`,
+    vi: `${SITE_URL}/vi${path}`,
+    "x-default": `${SITE_URL}/en${path}`,
+  };
+}
 
-const subtitleMap: Record<string, string> = {
-  en: "Tap the circle to mark as done. Progress is saved on this device.",
-  vi: "Nhấn vào vòng tròn để đánh dấu hoàn thành. Tiến độ được lưu trên thiết bị này.",
-  zh: "点击圆圈标记为已完成。进度保存在此设备上。",
-  ja: "丸をタップして完了マーク。進捗はこの端末に保存されます。",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: rawLocale } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : "en";
+  const checklistT = await getTranslations("checklist");
+  const url = `${SITE_URL}/${locale}/checklist`;
+
+  return {
+    title: checklistT("title"),
+    description: checklistT("subtitle"),
+    alternates: {
+      canonical: url,
+      languages: getLanguageAlternates("/checklist"),
+    },
+    openGraph: {
+      title: checklistT("title"),
+      description: checklistT("subtitle"),
+      url,
+      type: "website",
+      images: [`${SITE_URL}/og/${locale}/index`],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: checklistT("title"),
+      description: checklistT("subtitle"),
+      images: [`${SITE_URL}/og/${locale}/index`],
+    },
+  };
+}
 
 export default async function ChecklistPage({
   params,
@@ -35,16 +68,13 @@ export default async function ChecklistPage({
   const t = await getTranslations("procedure");
   const checklistT = await getTranslations("checklist");
 
-  const title = titleMap[locale] ?? titleMap.en;
-  const subtitle = subtitleMap[locale] ?? subtitleMap.en;
-
   return (
     <div className="max-w-2xl mx-auto px-4 py-6">
       <Link href={`/${locale}`} className="text-[#1a2744] hover:underline text-sm font-medium">
         {t("back")}
       </Link>
-      <h1 className="text-xl font-bold text-[#1a2744] mt-4 mb-1">☑️ {title}</h1>
-      <p className="text-sm text-gray-500 mb-6">{subtitle}</p>
+      <h1 className="text-xl font-bold text-[#1a2744] mt-4 mb-1">☑️ {checklistT("title")}</h1>
+      <p className="text-sm text-gray-500 mb-6">{checklistT("subtitle")}</p>
 
       <ChecklistProgress
         procedureIds={checklistProcedures.map((procedure) => procedure.id)}
