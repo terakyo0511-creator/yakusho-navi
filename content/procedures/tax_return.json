@@ -1,0 +1,159 @@
+{
+  "id": "tax_return",
+  "icon": "🧾",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "tax_office",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 30,
+    "max": 120
+  },
+  "translations": {
+    "ja": {
+      "title": "確定申告",
+      "subtitle": "毎年2〜3月に税務署で所得税を申告します",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留カードまたは本人確認書類",
+          "note": "本人確認に使います"
+        },
+        {
+          "icon": "📄",
+          "name": "源泉徴収票・支払調書",
+          "note": "勤務先や支払元から受け取ります"
+        },
+        {
+          "icon": "🏦",
+          "name": "還付金を受け取る銀行口座",
+          "note": "本人名義の口座を用意します"
+        }
+      ],
+      "steps": [
+        "前年1月から12月までの収入と控除資料を集める",
+        "国税庁の確定申告書等作成コーナーで申告書を作成する",
+        "必要に応じて医療費控除や扶養控除などを入力する",
+        "マイナンバーと本人確認書類を準備する",
+        "税務署へ提出するか、e-Taxでオンライン送信する",
+        "還付がある場合は指定口座への入金を待つ"
+      ],
+      "warnings": [
+        "申告期間は通常2月中旬から3月中旬です",
+        "期限を過ぎると延滞税や加算税がかかる場合があります",
+        "会社で年末調整済みでも、副業や控除がある場合は申告が必要なことがあります"
+      ]
+    },
+    "en": {
+      "title": "Income Tax Return",
+      "subtitle": "File your annual income tax return at the tax office from February to March",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Residence Card or ID",
+          "note": "Used to confirm your identity"
+        },
+        {
+          "icon": "📄",
+          "name": "Withholding tax slip or payment statements",
+          "note": "Provided by your employer or payer"
+        },
+        {
+          "icon": "🏦",
+          "name": "Bank account for refund",
+          "note": "The account should be in your name"
+        }
+      ],
+      "steps": [
+        "Collect income and deduction documents for January to December of the previous year",
+        "Create the return using the National Tax Agency filing website",
+        "Enter deductions such as medical expenses or dependents if applicable",
+        "Prepare your My Number and identity documents",
+        "Submit the return to the tax office or send it online with e-Tax",
+        "If you have a refund, wait for the deposit to your bank account"
+      ],
+      "warnings": [
+        "The filing period is usually from mid-February to mid-March",
+        "Late filing may result in additional tax or penalties",
+        "You may still need to file even after year-end adjustment if you have side income or deductions"
+      ]
+    },
+    "zh": {
+      "title": "所得税申报",
+      "subtitle": "每年2月至3月在税务署申报上一年的所得税",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留卡或本人确认文件",
+          "note": "用于确认身份"
+        },
+        {
+          "icon": "📄",
+          "name": "源泉征收票或支付调书",
+          "note": "由公司或付款方提供"
+        },
+        {
+          "icon": "🏦",
+          "name": "接收退税的银行账户",
+          "note": "请准备本人名义的账户"
+        }
+      ],
+      "steps": [
+        "收集上一年1月至12月的收入和扣除相关资料",
+        "使用国税厅的申报网站制作申报书",
+        "根据情况填写医疗费扣除、扶养扣除等内容",
+        "准备 My Number 和本人确认文件",
+        "向税务署提交，或通过 e-Tax 在线发送",
+        "如有退税，等待款项汇入指定账户"
+      ],
+      "warnings": [
+        "申报期间通常为2月中旬至3月中旬",
+        "逾期申报可能产生滞纳税或加算税",
+        "即使公司已做年末调整，有副业收入或扣除项目时也可能需要申报"
+      ]
+    },
+    "vi": {
+      "title": "Khai thuế thu nhập",
+      "subtitle": "Khai thuế hằng năm tại cơ quan thuế từ tháng 2 đến tháng 3",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú hoặc giấy tờ tùy thân",
+          "note": "Dùng để xác nhận danh tính"
+        },
+        {
+          "icon": "📄",
+          "name": "Phiếu khấu trừ thuế hoặc chứng từ thanh toán",
+          "note": "Nhận từ công ty hoặc nơi chi trả"
+        },
+        {
+          "icon": "🏦",
+          "name": "Tài khoản ngân hàng nhận hoàn thuế",
+          "note": "Nên là tài khoản đứng tên bạn"
+        }
+      ],
+      "steps": [
+        "Thu thập giấy tờ thu nhập và khấu trừ từ tháng 1 đến tháng 12 năm trước",
+        "Tạo tờ khai trên trang khai thuế của Cơ quan Thuế Quốc gia",
+        "Nhập các khoản khấu trừ như chi phí y tế hoặc người phụ thuộc nếu có",
+        "Chuẩn bị My Number và giấy tờ xác nhận danh tính",
+        "Nộp tại cơ quan thuế hoặc gửi trực tuyến bằng e-Tax",
+        "Nếu được hoàn thuế, chờ tiền chuyển vào tài khoản đã đăng ký"
+      ],
+      "warnings": [
+        "Thời gian khai thường từ giữa tháng 2 đến giữa tháng 3",
+        "Nộp muộn có thể bị tính thêm thuế hoặc tiền phạt",
+        "Dù công ty đã điều chỉnh cuối năm, bạn vẫn có thể cần khai nếu có thu nhập phụ hoặc khoản khấu trừ"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "国税庁 確定申告書等作成コーナー",
+      "label_en": "National Tax Agency - Final Tax Return",
+      "url": "https://www.keisan.nta.go.jp/"
+    }
+  ],
+  "updated_at": "2026-04-26"
+}

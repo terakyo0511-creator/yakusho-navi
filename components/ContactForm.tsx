@@ -34,8 +34,9 @@ export default function ContactForm({ locale }: { locale: string }) {
       <input type="checkbox" name="botcheck" className="hidden" />
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">{l.name}</label>
+        <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700 mb-1">{l.name}</label>
         <input
+          id="contact-name"
           type="text"
           name="name"
           required
@@ -44,8 +45,9 @@ export default function ContactForm({ locale }: { locale: string }) {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">{l.message}</label>
+        <label htmlFor="contact-message" className="block text-sm font-medium text-gray-700 mb-1">{l.message}</label>
         <textarea
+          id="contact-message"
           name="message"
           required
           rows={5}

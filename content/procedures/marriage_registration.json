@@ -1,0 +1,189 @@
+{
+  "id": "marriage_registration",
+  "icon": "💍",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 30,
+    "max": 90
+  },
+  "translations": {
+    "ja": {
+      "title": "婚姻届",
+      "subtitle": "日本で結婚を成立させるための届出",
+      "required_documents": [
+        {
+          "icon": "📋",
+          "name": "婚姻届",
+          "note": "証人2名の署名が必要"
+        },
+        {
+          "icon": "📄",
+          "name": "戸籍謄本",
+          "note": "日本人配偶者が本籍地以外で提出する場合"
+        },
+        {
+          "icon": "🏛️",
+          "name": "婚姻要件具備証明書と日本語訳",
+          "note": "外国人配偶者の本国大使館などで発行"
+        },
+        {
+          "icon": "🛂",
+          "name": "パスポート",
+          "note": "外国人配偶者の本人確認"
+        },
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "日本に住む外国人の場合"
+        }
+      ],
+      "steps": [
+        "本国大使館または領事館で婚姻要件具備証明書を取得する",
+        "証明書の日本語翻訳を用意する",
+        "婚姻届に二人で署名し、証人2名にも署名してもらう",
+        "必要書類をそろえて市区町村役所へ行く",
+        "窓口で婚姻届を提出し、受理されたことを確認する"
+      ],
+      "warnings": [
+        "国によっては婚姻要件具備証明書の発行に数週間かかります",
+        "提出後に在留資格変更が必要な場合は入管で別途申請します",
+        "必要書類は国籍や自治体によって異なるため、提出先に事前確認してください"
+      ]
+    },
+    "en": {
+      "title": "Marriage Registration",
+      "subtitle": "Register a legal marriage in Japan",
+      "required_documents": [
+        {
+          "icon": "📋",
+          "name": "Marriage Registration Form",
+          "note": "Signatures from two witnesses are required"
+        },
+        {
+          "icon": "📄",
+          "name": "Family Register Copy",
+          "note": "For a Japanese spouse when filing outside their registered domicile"
+        },
+        {
+          "icon": "🏛️",
+          "name": "Certificate of Legal Capacity to Marry and Japanese Translation",
+          "note": "Issued by the foreign spouse's embassy or home country authority"
+        },
+        {
+          "icon": "🛂",
+          "name": "Passport",
+          "note": "Identity document for the foreign spouse"
+        },
+        {
+          "icon": "🪪",
+          "name": "Residence Card",
+          "note": "For foreign residents in Japan"
+        }
+      ],
+      "steps": [
+        "Obtain a certificate of legal capacity to marry from your embassy or consulate",
+        "Prepare a Japanese translation of the certificate",
+        "Both partners sign the marriage form and get signatures from two witnesses",
+        "Bring all required documents to the city office",
+        "Submit the marriage registration and confirm that it has been accepted"
+      ],
+      "warnings": [
+        "Some countries take several weeks to issue the certificate of legal capacity to marry",
+        "If your residence status needs to change after marriage, apply separately at Immigration",
+        "Requirements differ by nationality and city, so confirm with the filing office in advance"
+      ]
+    },
+    "zh": {
+      "title": "婚姻登记",
+      "subtitle": "在日本办理结婚届出",
+      "required_documents": [
+        {
+          "icon": "📋",
+          "name": "婚姻届",
+          "note": "需要2名证人签名"
+        },
+        {
+          "icon": "📄",
+          "name": "户籍誊本",
+          "note": "日本人配偶者在本籍地以外提交时需要"
+        },
+        {
+          "icon": "🏛️",
+          "name": "婚姻要件具备证明书及日文翻译",
+          "note": "由外国人配偶者本国大使馆等发行"
+        },
+        {
+          "icon": "🛂",
+          "name": "护照",
+          "note": "用于确认外国人配偶者身份"
+        },
+        {
+          "icon": "🪪",
+          "name": "在留卡",
+          "note": "在日本居住的外国人需要"
+        }
+      ],
+      "steps": [
+        "在本国大使馆或领事馆取得婚姻要件具备证明书",
+        "准备该证明书的日文翻译",
+        "双方在婚姻届上签名，并请2名证人签名",
+        "备齐所需材料后前往市区町村役所",
+        "在窗口提交婚姻届并确认已受理"
+      ],
+      "warnings": [
+        "有些国家发行婚姻要件具备证明书需要数周时间",
+        "提交后如需变更在留资格，请另行向入管申请",
+        "所需材料会因国籍和自治体不同而变化，请事先向提交窗口确认"
+      ]
+    },
+    "vi": {
+      "title": "Đăng ký kết hôn",
+      "subtitle": "Nộp đăng ký để kết hôn hợp pháp tại Nhật",
+      "required_documents": [
+        {
+          "icon": "📋",
+          "name": "Tờ khai đăng ký kết hôn",
+          "note": "Cần chữ ký của 2 người làm chứng"
+        },
+        {
+          "icon": "📄",
+          "name": "Bản sao hộ tịch",
+          "note": "Dành cho vợ/chồng người Nhật khi nộp ngoài nơi đăng ký hộ tịch"
+        },
+        {
+          "icon": "🏛️",
+          "name": "Giấy đủ điều kiện kết hôn và bản dịch tiếng Nhật",
+          "note": "Do đại sứ quán hoặc cơ quan nước của vợ/chồng người nước ngoài cấp"
+        },
+        {
+          "icon": "🛂",
+          "name": "Hộ chiếu",
+          "note": "Xác nhận danh tính của vợ/chồng người nước ngoài"
+        },
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú",
+          "note": "Cần nếu đang cư trú tại Nhật"
+        }
+      ],
+      "steps": [
+        "Xin giấy đủ điều kiện kết hôn tại đại sứ quán hoặc lãnh sự quán",
+        "Chuẩn bị bản dịch tiếng Nhật của giấy chứng nhận",
+        "Hai người ký vào tờ khai và nhờ 2 người làm chứng ký",
+        "Mang đủ giấy tờ đến ủy ban",
+        "Nộp đăng ký kết hôn tại quầy và xác nhận đã được tiếp nhận"
+      ],
+      "warnings": [
+        "Một số quốc gia mất vài tuần để cấp giấy đủ điều kiện kết hôn",
+        "Nếu cần đổi tư cách lưu trú sau khi kết hôn, hãy nộp hồ sơ riêng tại Cục xuất nhập cảnh",
+        "Giấy tờ cần thiết khác nhau tùy quốc tịch và địa phương, nên xác nhận trước với nơi nộp"
+      ]
+    }
+  },
+  "official_links": [],
+  "updated_at": "2026-04-26"
+}

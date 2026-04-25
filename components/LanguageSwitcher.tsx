@@ -33,6 +33,7 @@ export default function LanguageSwitcher() {
 
   return (
     <select
+      aria-label="Language"
       value={locale}
       onChange={(e) => switchLocale(e.target.value)}
       className="px-3 py-1.5 rounded-lg border border-[#1a2744] text-sm font-medium text-[#1a2744] bg-white"

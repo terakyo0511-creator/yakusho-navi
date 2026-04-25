@@ -1,0 +1,151 @@
+{
+  "id": "death_registration",
+  "icon": "🕊️",
+  "deadline": {
+    "type": "within_days",
+    "days": 7,
+    "from": "after_event"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 30,
+    "max": 60
+  },
+  "translations": {
+    "ja": {
+      "title": "死亡届",
+      "subtitle": "死亡を知った日から7日以内に行う届出",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "死亡届",
+          "note": "医師記入の死亡診断書付き"
+        },
+        {
+          "icon": "🖋️",
+          "name": "届出人の印鑑",
+          "note": "自治体により署名で可"
+        },
+        {
+          "icon": "🪪",
+          "name": "故人の在留カード",
+          "note": "外国人住民の場合"
+        }
+      ],
+      "steps": [
+        "医師から死亡診断書を受け取る",
+        "死亡を知った日から7日以内に市区町村役所へ行く",
+        "死亡届に届出人の情報を記入して提出する",
+        "火葬許可証を受け取る",
+        "故人の在留カードを14日以内に入管へ返納する"
+      ],
+      "warnings": [
+        "在留カードは死亡後14日以内に入管へ返納が必要です",
+        "年金や健康保険の停止手続きも別途必要です",
+        "国によっては母国の大使館や領事館への通知も必要です"
+      ]
+    },
+    "en": {
+      "title": "Death Registration",
+      "subtitle": "Report a death within 7 days of becoming aware",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "Death Registration Form",
+          "note": "Includes the medical death certificate completed by a doctor"
+        },
+        {
+          "icon": "🖋️",
+          "name": "Notifier's Personal Seal",
+          "note": "A signature may be accepted depending on the city"
+        },
+        {
+          "icon": "🪪",
+          "name": "Deceased Person's Residence Card",
+          "note": "For foreign residents"
+        }
+      ],
+      "steps": [
+        "Receive the medical death certificate from the doctor",
+        "Go to city hall within 7 days of becoming aware of the death",
+        "Fill in and submit the death registration form",
+        "Receive the cremation permit",
+        "Return the deceased person's residence card to Immigration within 14 days"
+      ],
+      "warnings": [
+        "The residence card must be returned to Immigration within 14 days after death",
+        "Pension and health insurance cancellation procedures are also required separately",
+        "Some countries also require notification to the embassy or consulate"
+      ]
+    },
+    "zh": {
+      "title": "死亡登记",
+      "subtitle": "得知死亡之日起7天内办理的届出",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "死亡届",
+          "note": "附医生填写的死亡诊断书"
+        },
+        {
+          "icon": "🖋️",
+          "name": "申报人的印章",
+          "note": "部分自治体可用签名代替"
+        },
+        {
+          "icon": "🪪",
+          "name": "故人的在留卡",
+          "note": "外国居民需要"
+        }
+      ],
+      "steps": [
+        "从医生处领取死亡诊断书",
+        "在得知死亡之日起7天内前往市区町村役所",
+        "填写申报人信息并提交死亡届",
+        "领取火葬许可证",
+        "在14天内将故人的在留卡返还给入管"
+      ],
+      "warnings": [
+        "在留卡需要在死亡后14天内返还给入管",
+        "年金和健康保险的停止手续也需要另行办理",
+        "有些国家还需要通知本国大使馆或领事馆"
+      ]
+    },
+    "vi": {
+      "title": "Đăng ký khai tử",
+      "subtitle": "Thông báo tử vong trong vòng 7 ngày từ ngày được biết",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "Tờ khai tử",
+          "note": "Kèm giấy chứng tử do bác sĩ điền"
+        },
+        {
+          "icon": "🖋️",
+          "name": "Con dấu của người khai",
+          "note": "Một số nơi chấp nhận chữ ký"
+        },
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú của người đã mất",
+          "note": "Cần nếu là cư dân nước ngoài"
+        }
+      ],
+      "steps": [
+        "Nhận giấy chứng tử từ bác sĩ",
+        "Đến ủy ban trong vòng 7 ngày từ ngày biết việc tử vong",
+        "Điền thông tin người khai và nộp tờ khai tử",
+        "Nhận giấy phép hỏa táng",
+        "Trả thẻ cư trú của người đã mất cho Cục xuất nhập cảnh trong vòng 14 ngày"
+      ],
+      "warnings": [
+        "Thẻ cư trú phải được trả cho Cục xuất nhập cảnh trong vòng 14 ngày sau khi mất",
+        "Cần làm riêng thủ tục dừng lương hưu và bảo hiểm y tế",
+        "Tùy quốc gia, có thể cần thông báo cho đại sứ quán hoặc lãnh sự quán"
+      ]
+    }
+  },
+  "official_links": [],
+  "updated_at": "2026-04-26"
+}

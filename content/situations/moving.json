@@ -1,0 +1,32 @@
+{
+  "id": "moving",
+  "icon": "📦",
+  "procedure_ids": [
+    "moving_in",
+    "address_change",
+    "health_insurance_leave",
+    "hanko_registration"
+  ],
+  "translations": {
+    "ja": {
+      "title": "引っ越しをするとき",
+      "description": "日本国内で引っ越す外国人住民向けに、転入、住所変更、国民健康保険、印鑑登録などの手続きを整理します。",
+      "intro": "引っ越しでは、同じ市区町村内か別の市区町村へ移るかで手続きが変わります。期限があるものも多いため、早めに確認しましょう。"
+    },
+    "en": {
+      "title": "When Moving Home",
+      "description": "A guide for foreign residents moving within Japan, covering moving-in registration, address changes, health insurance, and hanko registration.",
+      "intro": "Moving procedures differ depending on whether you move within the same city or to another city. Many items have deadlines, so check them early."
+    },
+    "zh": {
+      "title": "搬家时",
+      "description": "面向在日本国内搬家的外国居民，整理迁入、住址变更、国民健康保险和印章登记等手续。",
+      "intro": "搬家手续会因是否在同一市区町村内移动而不同。许多手续有期限，请尽早确认。"
+    },
+    "vi": {
+      "title": "Khi chuyển nhà",
+      "description": "Hướng dẫn cho cư dân nước ngoài chuyển nhà trong Nhật, gồm đăng ký chuyển đến, đổi địa chỉ, bảo hiểm y tế và đăng ký con dấu.",
+      "intro": "Thủ tục chuyển nhà khác nhau tùy bạn chuyển trong cùng thành phố hay sang thành phố khác. Nhiều việc có thời hạn, nên hãy kiểm tra sớm."
+    }
+  }
+}

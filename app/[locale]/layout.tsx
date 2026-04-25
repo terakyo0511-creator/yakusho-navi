@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "../globals.css";
-
-const geist = Geist({ subsets: ["latin"] });
 
 const SITE_URL = "https://cityhall-guide.vercel.app";
 
@@ -70,6 +68,13 @@ export async function generateMetadata({
       siteName: "Japan City Hall Guide | 役所手続きナビ",
       locale: ogLocale,
       type: "website",
+      images: [`${SITE_URL}/og/${locale}/index`],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${SITE_URL}/og/${locale}/index`],
     },
     verification: {
       google: "X8DfpdGmgVP3EeJSnYkFW0GNVxsFnpY7DnsN4Bn1tdQ",
@@ -102,7 +107,8 @@ export default async function LocaleLayout({
         <meta name="apple-mobile-web-app-title" content="役所ナビ" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7995912357051752" crossOrigin="anonymous"></script>
       </head>
-      <body className={`${geist.className} min-h-screen bg-white flex flex-col`}>
+      <body className="min-h-screen bg-white flex flex-col">
+        <GoogleAnalytics />
         <ServiceWorkerRegistrar />
         <NextIntlClientProvider messages={messages}>
           <div className="flex-1">{children}</div>

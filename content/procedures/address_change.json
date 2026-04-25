@@ -8,14 +8,25 @@
   },
   "location_type": "city_hall",
   "cost_yen": 0,
-  "duration_minutes": { "min": 20, "max": 40 },
+  "duration_minutes": {
+    "min": 20,
+    "max": 40
+  },
   "translations": {
     "ja": {
       "title": "転居届",
       "subtitle": "同じ市区町村内での引越し時に必要",
       "required_documents": [
-        { "icon": "🪪", "name": "在留カード", "note": "必ず原本" },
-        { "icon": "🪪", "name": "身分証明書（パスポート等）", "note": "在留カードで代用可" }
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "必ず原本"
+        },
+        {
+          "icon": "🪪",
+          "name": "身分証明書（パスポート等）",
+          "note": "在留カードで代用可"
+        }
       ],
       "steps": [
         "引越し後14日以内に市区町村の窓口へ行く",
@@ -34,8 +45,16 @@
       "title": "Address Change Within Same City",
       "subtitle": "Required when moving to a new address within the same city",
       "required_documents": [
-        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "Original required" },
-        { "icon": "🪪", "name": "ID (passport etc.)", "note": "Residence Card is sufficient" }
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "Original required"
+        },
+        {
+          "icon": "🪪",
+          "name": "ID (passport etc.)",
+          "note": "Residence Card is sufficient"
+        }
       ],
       "steps": [
         "Go to city hall within 14 days of moving",
@@ -54,8 +73,16 @@
       "title": "Thay đổi địa chỉ trong cùng thành phố",
       "subtitle": "Cần làm khi chuyển nhà trong cùng thành phố",
       "required_documents": [
-        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Cần bản gốc" },
-        { "icon": "🪪", "name": "Giấy tờ tùy thân (hộ chiếu...)", "note": "Thẻ cư trú là đủ" }
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Cần bản gốc"
+        },
+        {
+          "icon": "🪪",
+          "name": "Giấy tờ tùy thân (hộ chiếu...)",
+          "note": "Thẻ cư trú là đủ"
+        }
       ],
       "steps": [
         "Đến ủy ban nhân dân trong vòng 14 ngày sau khi chuyển nhà",
@@ -74,8 +101,16 @@
       "title": "同城地址变更",
       "subtitle": "在同一市区町村内搬家时需办理",
       "required_documents": [
-        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "需要原件" },
-        { "icon": "🪪", "name": "身份证明（护照等）", "note": "在留卡即可" }
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "需要原件"
+        },
+        {
+          "icon": "🪪",
+          "name": "身份证明（护照等）",
+          "note": "在留卡即可"
+        }
       ],
       "steps": [
         "搬家后14天内前往市区町村窗口",
@@ -91,5 +126,6 @@
       ]
     }
   },
-  "official_links": []
+  "official_links": [],
+  "updated_at": "2026-04-26"
 }

@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
+import { setLocalStorageValue, useLocalStorage } from "@/hooks/useLocalStorage";
 
 interface ChecklistItemProps {
   id: string;
@@ -12,20 +12,14 @@ interface ChecklistItemProps {
 }
 
 export default function ChecklistItem({ id, icon, title, subtitle, href }: ChecklistItemProps) {
-  const [checked, setChecked] = useState(false);
   const storageKey = `checklist_done_${id}`;
-
-  useEffect(() => {
-    setChecked(localStorage.getItem(storageKey) === "1");
-  }, [storageKey]);
+  const checked = useLocalStorage(storageKey) === "1";
 
   function toggle(e: React.MouseEvent) {
     e.preventDefault();
     e.stopPropagation();
     const next = !checked;
-    setChecked(next);
-    if (next) localStorage.setItem(storageKey, "1");
-    else localStorage.removeItem(storageKey);
+    setLocalStorageValue(storageKey, next ? "1" : null);
   }
 
   return (

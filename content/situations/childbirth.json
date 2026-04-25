@@ -1,0 +1,33 @@
+{
+  "id": "childbirth",
+  "icon": "🍼",
+  "procedure_ids": [
+    "birth_registration",
+    "child_allowance",
+    "health_insurance",
+    "my_number",
+    "my_number_card"
+  ],
+  "translations": {
+    "ja": {
+      "title": "子どもが日本で生まれたとき",
+      "description": "日本で子どもが生まれた外国人世帯向けに、健康保険、マイナンバー、カード申請などの関連手続きを整理します。",
+      "intro": "出生後は短い期限で必要になる届出があります。このページでは、役所や保険に関係する主な確認事項をまとめています。"
+    },
+    "en": {
+      "title": "When a Child Is Born in Japan",
+      "description": "A checklist for foreign families after childbirth in Japan, covering health insurance, My Number, and card-related procedures.",
+      "intro": "Some procedures after childbirth have short deadlines. This page collects the main city hall and insurance items you may need to confirm."
+    },
+    "zh": {
+      "title": "孩子在日本出生后",
+      "description": "面向在日本生育的外国人家庭，整理健康保险、My Number 和相关卡片申请等手续。",
+      "intro": "孩子出生后，有些手续需要在较短期限内办理。本页汇总与市役所和保险相关的主要确认事项。"
+    },
+    "vi": {
+      "title": "Khi con sinh ra tại Nhật",
+      "description": "Danh sách kiểm tra cho gia đình người nước ngoài sau khi sinh con tại Nhật, gồm bảo hiểm y tế, My Number và thẻ liên quan.",
+      "intro": "Một số thủ tục sau khi sinh có thời hạn ngắn. Trang này tổng hợp các việc chính cần kiểm tra tại ủy ban và bảo hiểm."
+    }
+  }
+}

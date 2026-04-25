@@ -54,6 +54,7 @@ export default function ShowStaffButton({
   return (
     <button
       onClick={() => setOpen(true)}
+      aria-label={label}
       className="flex items-center gap-1.5 bg-[#1a2744] text-white px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-[#2a3754] transition-colors"
     >
       🗣️ <span className="hidden sm:inline">{label}</span>

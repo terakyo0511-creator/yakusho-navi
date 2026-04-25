@@ -14,7 +14,17 @@
     "at_bank": "銀行",
     "at_phone_shop": "携帯ショップ",
     "share_checklist": "チェックリストをシェア",
-    "checklist_share_text": "来日後にやること チェックリスト"
+    "checklist_share_text": "来日後にやること チェックリスト",
+    "at_tax_office": "税務署",
+    "at_hello_work": "ハローワーク",
+    "situations_title": "状況別ガイド",
+    "recently_viewed": "最近見た手続き",
+    "filter_search": "キーワード",
+    "filter_category": "カテゴリ",
+    "filter_location": "場所",
+    "filter_with_deadline_only": "期限ありのみ",
+    "filter_all": "すべて",
+    "filter_no_results": "条件に合う手続きが見つかりません。"
   },
   "procedure": {
     "required_documents": "必要書類",
@@ -34,13 +44,30 @@
     "deadline_within_days": "{from}から{days}日以内",
     "deadline_moving": "転入日",
     "deadline_expiry": "有効期限",
+    "deadline_birth": "出生日",
+    "deadline_event": "死亡を知った日",
     "deadline_before_expiry": "有効期限前",
     "no_deadline": "期限なし",
     "location_city_hall": "市区町村役所・区役所",
     "location_immigration": "出入国在留管理局",
     "location_license_center": "運転免許センター",
     "location_bank": "銀行",
-    "location_phone_shop": "携帯ショップ"
+    "location_phone_shop": "携帯ショップ",
+    "location_tax_office": "税務署",
+    "location_hello_work": "ハローワーク",
+    "last_updated": "最終更新",
+    "disclaimer": "このガイドは一般的な情報提供であり、最新性や正確性を保証するものではありません。必要に応じて窓口や公式情報を確認してください。",
+    "recommended_services": "おすすめサービス",
+    "deadline_calculator": "期限計算",
+    "event_date": "対象日",
+    "days_remaining": "あと{days}日",
+    "days_overdue": "{days}日超過",
+    "clear": "リセット",
+    "save": "設定"
+  },
+  "checklist": {
+    "progress": "{done}/{total}完了",
+    "all_done": "全部完了！おつかれさま"
   },
   "lang": {
     "en": "English",

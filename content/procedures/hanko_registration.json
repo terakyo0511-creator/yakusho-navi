@@ -6,14 +6,25 @@
   },
   "location_type": "city_hall",
   "cost_yen": 0,
-  "duration_minutes": { "min": 20, "max": 40 },
+  "duration_minutes": {
+    "min": 20,
+    "max": 40
+  },
   "translations": {
     "ja": {
       "title": "印鑑登録",
       "subtitle": "家の契約・銀行口座開設などに必要な実印登録",
       "required_documents": [
-        { "icon": "🔴", "name": "登録したい印鑑", "note": "シャチハタ・ゴム印は不可" },
-        { "icon": "🪪", "name": "在留カード", "note": "本人確認に使用" }
+        {
+          "icon": "🔴",
+          "name": "登録したい印鑑",
+          "note": "シャチハタ・ゴム印は不可"
+        },
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "本人確認に使用"
+        }
       ],
       "steps": [
         "登録したい印鑑（実印）を持参する",
@@ -32,8 +43,16 @@
       "title": "Hanko (Seal) Registration",
       "subtitle": "Required for housing contracts, bank accounts, and official documents",
       "required_documents": [
-        { "icon": "🔴", "name": "Your personal seal (hanko)", "note": "Rubber or self-inking stamps are not accepted" },
-        { "icon": "🪪", "name": "Residence Card (在留カード)", "note": "For identity verification" }
+        {
+          "icon": "🔴",
+          "name": "Your personal seal (hanko)",
+          "note": "Rubber or self-inking stamps are not accepted"
+        },
+        {
+          "icon": "🪪",
+          "name": "Residence Card (在留カード)",
+          "note": "For identity verification"
+        }
       ],
       "steps": [
         "Bring your personal seal (hanko) to city hall",
@@ -52,8 +71,16 @@
       "title": "Đăng ký con dấu cá nhân (Hanko)",
       "subtitle": "Cần thiết cho hợp đồng thuê nhà, tài khoản ngân hàng",
       "required_documents": [
-        { "icon": "🔴", "name": "Con dấu cá nhân (hanko)", "note": "Không chấp nhận dấu cao su hoặc dấu tự động" },
-        { "icon": "🪪", "name": "Thẻ cư trú (在留カード)", "note": "Để xác minh danh tính" }
+        {
+          "icon": "🔴",
+          "name": "Con dấu cá nhân (hanko)",
+          "note": "Không chấp nhận dấu cao su hoặc dấu tự động"
+        },
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú (在留カード)",
+          "note": "Để xác minh danh tính"
+        }
       ],
       "steps": [
         "Mang con dấu cá nhân đến ủy ban nhân dân",
@@ -72,8 +99,16 @@
       "title": "印章登记",
       "subtitle": "办理租房合同、银行开户等手续时需要",
       "required_documents": [
-        { "icon": "🔴", "name": "需登记的印章（实印）", "note": "不接受橡皮章或自动印章" },
-        { "icon": "🪪", "name": "在留卡 (在留カード)", "note": "用于身份确认" }
+        {
+          "icon": "🔴",
+          "name": "需登记的印章（实印）",
+          "note": "不接受橡皮章或自动印章"
+        },
+        {
+          "icon": "🪪",
+          "name": "在留卡 (在留カード)",
+          "note": "用于身份确认"
+        }
       ],
       "steps": [
         "携带需要登记的印章（实印）前往市政厅",
@@ -89,5 +124,6 @@
       ]
     }
   },
-  "official_links": []
+  "official_links": [],
+  "updated_at": "2026-04-26"
 }

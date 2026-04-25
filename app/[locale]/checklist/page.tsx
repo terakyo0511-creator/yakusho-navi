@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import ChecklistItem from "@/components/ChecklistItem";
+import ChecklistProgress from "@/components/ChecklistProgress";
 import movingIn from "@/content/procedures/moving_in.json";
 import residenceCard from "@/content/procedures/residence_card.json";
 import healthInsurance from "@/content/procedures/health_insurance.json";
@@ -32,6 +33,7 @@ export default async function ChecklistPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations("procedure");
+  const checklistT = await getTranslations("checklist");
 
   const title = titleMap[locale] ?? titleMap.en;
   const subtitle = subtitleMap[locale] ?? subtitleMap.en;
@@ -43,6 +45,14 @@ export default async function ChecklistPage({
       </Link>
       <h1 className="text-xl font-bold text-[#1a2744] mt-4 mb-1">☑️ {title}</h1>
       <p className="text-sm text-gray-500 mb-6">{subtitle}</p>
+
+      <ChecklistProgress
+        procedureIds={checklistProcedures.map((procedure) => procedure.id)}
+        labels={{
+          progressLabel: checklistT("progress"),
+          allDoneLabel: checklistT("all_done"),
+        }}
+      />
 
       <ol className="space-y-3">
         {checklistProcedures.map((proc) => {

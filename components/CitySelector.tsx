@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { setLocalStorageValue, useLocalStorage } from "@/hooks/useLocalStorage";
 
 const cityKeys = [
   "",
@@ -34,19 +34,12 @@ const noteMap: Record<string, string> = {
 export const CITY_STORAGE_KEY = "yakusho_navi_city";
 
 export default function CitySelector({ locale }: { locale: string }) {
-  const [cityKey, setCityKey] = useState("");
-
-  useEffect(() => {
-    const saved = localStorage.getItem(CITY_STORAGE_KEY);
-    if (saved && cityKeys.includes(saved)) setCityKey(saved);
-    else if (saved) localStorage.removeItem(CITY_STORAGE_KEY);
-  }, []);
+  const savedCityKey = useLocalStorage(CITY_STORAGE_KEY);
+  const cityKey = savedCityKey && cityKeys.includes(savedCityKey) ? savedCityKey : "";
 
   function handleChange(e: React.ChangeEvent<HTMLSelectElement>) {
     const key = e.target.value;
-    setCityKey(key);
-    if (key) localStorage.setItem(CITY_STORAGE_KEY, key);
-    else localStorage.removeItem(CITY_STORAGE_KEY);
+    setLocalStorageValue(CITY_STORAGE_KEY, key || null);
   }
 
   const labels = cityLabels[locale] ?? cityLabels.en;
@@ -55,6 +48,7 @@ export default function CitySelector({ locale }: { locale: string }) {
   return (
     <div className="mt-2">
       <select
+        aria-label="City"
         value={cityKey}
         onChange={handleChange}
         className="px-3 py-1.5 rounded-lg border border-gray-300 text-sm text-gray-700 bg-white w-full sm:w-auto"

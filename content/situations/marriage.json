@@ -1,0 +1,32 @@
+{
+  "id": "marriage",
+  "icon": "💍",
+  "procedure_ids": [
+    "marriage_registration",
+    "address_change",
+    "health_insurance",
+    "my_number_card"
+  ],
+  "translations": {
+    "ja": {
+      "title": "国際結婚をしたとき",
+      "description": "日本で結婚した外国人住民が確認したい役所手続き、住所や保険、マイナンバーカード関連の変更をまとめたガイドです。",
+      "intro": "結婚後は氏名や住所、世帯、保険の状況が変わることがあります。必要な手続きは自治体や在留資格によって異なるため、まず関係する窓口を確認しましょう。"
+    },
+    "en": {
+      "title": "After Getting Married",
+      "description": "A practical guide to city hall procedures after marriage in Japan, including address, health insurance, and My Number Card updates.",
+      "intro": "Marriage can change your household, name, address, and insurance situation. Requirements vary by city and residence status, so use this page as a checklist before contacting the relevant office."
+    },
+    "zh": {
+      "title": "在日本结婚后",
+      "description": "面向在日本结婚的外国居民，整理住址、健康保险、My Number 卡等可能需要确认的市政手续。",
+      "intro": "结婚后，姓名、住址、家庭成员和保险情况可能发生变化。所需手续会因自治体和在留资格而不同，请先确认相关窗口。"
+    },
+    "vi": {
+      "title": "Sau khi kết hôn",
+      "description": "Hướng dẫn các thủ tục cần kiểm tra sau khi kết hôn tại Nhật, bao gồm địa chỉ, bảo hiểm y tế và thẻ My Number.",
+      "intro": "Sau khi kết hôn, thông tin hộ gia đình, họ tên, địa chỉ hoặc bảo hiểm có thể thay đổi. Quy định khác nhau tùy thành phố và tư cách lưu trú, vì vậy hãy dùng trang này như danh sách kiểm tra ban đầu."
+    }
+  }
+}

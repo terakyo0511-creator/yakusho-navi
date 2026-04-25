@@ -1,0 +1,32 @@
+{
+  "id": "leaving_japan",
+  "icon": "✈️",
+  "procedure_ids": [
+    "health_insurance_withdrawal",
+    "pension_withdrawal",
+    "bank_account",
+    "mobile_phone"
+  ],
+  "translations": {
+    "ja": {
+      "title": "帰国するとき",
+      "description": "日本から帰国する外国人住民向けに、国民健康保険の脱退、年金の脱退一時金、銀行口座や携帯電話の確認事項をまとめます。",
+      "intro": "帰国前は、保険、年金、銀行、携帯電話などの手続きを忘れやすい時期です。出国日が決まったら、早めに準備を始めましょう。"
+    },
+    "en": {
+      "title": "Before Leaving Japan",
+      "description": "A checklist before leaving Japan, including health insurance withdrawal, pension lump-sum withdrawal, bank accounts, and mobile phone contracts.",
+      "intro": "Before leaving Japan, it is easy to miss insurance, pension, banking, and mobile phone procedures. Start preparing once your departure date is set."
+    },
+    "zh": {
+      "title": "回国前",
+      "description": "面向准备离开日本的外国居民，整理健康保险退出、养老金脱退一时金、银行账户和手机合约等确认事项。",
+      "intro": "回国前容易忘记保险、年金、银行和手机等手续。确定出国日期后，请尽早开始准备。"
+    },
+    "vi": {
+      "title": "Trước khi rời Nhật",
+      "description": "Danh sách kiểm tra trước khi về nước, gồm rút bảo hiểm y tế, nhận tiền lương hưu một lần, tài khoản ngân hàng và hợp đồng điện thoại.",
+      "intro": "Trước khi rời Nhật, bạn dễ bỏ sót bảo hiểm, lương hưu, ngân hàng và điện thoại. Hãy bắt đầu chuẩn bị sớm khi đã có ngày xuất cảnh."
+    }
+  }
+}

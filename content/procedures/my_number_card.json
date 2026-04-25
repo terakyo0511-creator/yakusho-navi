@@ -1,0 +1,159 @@
+{
+  "id": "my_number_card",
+  "icon": "💳",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 20,
+    "max": 60
+  },
+  "translations": {
+    "ja": {
+      "title": "マイナンバーカード申請",
+      "subtitle": "市役所またはオンラインでマイナンバーカードを申請します",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留カード",
+          "note": "本人確認に使います"
+        },
+        {
+          "icon": "📬",
+          "name": "個人番号通知書または交付申請書",
+          "note": "手元にない場合は市役所で相談できます"
+        },
+        {
+          "icon": "📷",
+          "name": "顔写真",
+          "note": "オンライン申請ではスマートフォンで撮影できます"
+        }
+      ],
+      "steps": [
+        "転入届を済ませ、住民票にマイナンバーが登録されていることを確認する",
+        "交付申請書またはオンライン申請用IDを用意する",
+        "市役所窓口、郵送、スマートフォン、パソコンのいずれかで申請する",
+        "カードの準備ができるまで通知を待つ",
+        "交付通知書と本人確認書類を持って市役所へ行く",
+        "暗証番号を設定してカードを受け取る"
+      ],
+      "warnings": [
+        "カードの受け取りには本人が市役所へ行く必要があります",
+        "発行まで1〜2か月ほどかかる場合があります",
+        "暗証番号を複数設定するため、忘れないように管理してください"
+      ]
+    },
+    "en": {
+      "title": "My Number Card Application",
+      "subtitle": "Apply for a My Number Card at city hall or online",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Residence Card",
+          "note": "Used for identity verification"
+        },
+        {
+          "icon": "📬",
+          "name": "Individual Number notice or application form",
+          "note": "Ask city hall if you do not have it"
+        },
+        {
+          "icon": "📷",
+          "name": "Face photo",
+          "note": "You can take one with your phone for online application"
+        }
+      ],
+      "steps": [
+        "Complete moving-in registration and confirm your My Number is on your resident record",
+        "Prepare the application form or online application ID",
+        "Apply at city hall, by mail, by smartphone, or by computer",
+        "Wait for the notification that your card is ready",
+        "Bring the pickup notice and ID documents to city hall",
+        "Set your PIN codes and receive the card"
+      ],
+      "warnings": [
+        "You usually must pick up the card in person at city hall",
+        "Issuance may take about one to two months",
+        "You will set several PIN codes, so keep them safely"
+      ]
+    },
+    "zh": {
+      "title": "申请 My Number 卡",
+      "subtitle": "在市役所或网上申请个人编号卡",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "在留卡",
+          "note": "用于本人确认"
+        },
+        {
+          "icon": "📬",
+          "name": "个人编号通知书或交付申请书",
+          "note": "没有时可向市役所咨询"
+        },
+        {
+          "icon": "📷",
+          "name": "证件照",
+          "note": "网上申请时可用手机拍摄"
+        }
+      ],
+      "steps": [
+        "完成迁入登记，并确认住民票上已有 My Number",
+        "准备交付申请书或网上申请用ID",
+        "通过市役所窗口、邮寄、手机或电脑申请",
+        "等待卡片制作完成的通知",
+        "携带交付通知书和本人确认文件前往市役所",
+        "设置密码并领取卡片"
+      ],
+      "warnings": [
+        "领取卡片通常需要本人到市役所办理",
+        "发行可能需要约1至2个月",
+        "需要设置多个密码，请妥善保管"
+      ]
+    },
+    "vi": {
+      "title": "Đăng ký thẻ My Number",
+      "subtitle": "Đăng ký thẻ My Number tại ủy ban hoặc trực tuyến",
+      "required_documents": [
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú",
+          "note": "Dùng để xác nhận danh tính"
+        },
+        {
+          "icon": "📬",
+          "name": "Giấy thông báo số cá nhân hoặc đơn đăng ký",
+          "note": "Nếu không có, hãy hỏi tại ủy ban"
+        },
+        {
+          "icon": "📷",
+          "name": "Ảnh khuôn mặt",
+          "note": "Có thể chụp bằng điện thoại khi đăng ký trực tuyến"
+        }
+      ],
+      "steps": [
+        "Hoàn tất đăng ký chuyển đến và xác nhận My Number đã có trong hồ sơ cư trú",
+        "Chuẩn bị đơn đăng ký hoặc ID đăng ký trực tuyến",
+        "Đăng ký tại ủy ban, qua bưu điện, điện thoại hoặc máy tính",
+        "Chờ thông báo thẻ đã sẵn sàng",
+        "Mang thông báo nhận thẻ và giấy tờ tùy thân đến ủy ban",
+        "Thiết lập mã PIN và nhận thẻ"
+      ],
+      "warnings": [
+        "Thông thường bạn phải trực tiếp đến ủy ban để nhận thẻ",
+        "Việc phát hành có thể mất khoảng 1 đến 2 tháng",
+        "Bạn sẽ đặt nhiều mã PIN, hãy lưu giữ cẩn thận"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "マイナンバーカード総合サイト",
+      "label_en": "My Number Card General Website",
+      "url": "https://www.kojinbango-card.go.jp/en/"
+    }
+  ],
+  "updated_at": "2026-04-26"
+}

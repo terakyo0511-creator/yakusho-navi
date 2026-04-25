@@ -15,6 +15,7 @@ export default function ShareLineButton({ label, title }: ShareLineButtonProps) 
   return (
     <button
       onClick={share}
+      aria-label={label}
       className="flex items-center gap-1.5 bg-[#06C755] text-white px-3 py-1.5 rounded-lg text-sm font-medium hover:bg-[#05a847] transition-colors"
     >
       <svg width="16" height="16" viewBox="0 0 24 24" fill="white">

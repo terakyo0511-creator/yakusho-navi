@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { CITY_STORAGE_KEY } from "./CitySelector";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 
 const cityHallMap: Record<string, { name: Record<string, string>; url: string }> = {
   tokyo: {
@@ -66,16 +66,7 @@ const labelMap: Record<string, { link: string; notSelected: string }> = {
 };
 
 export default function CityOfficialLink({ locale }: { locale: string }) {
-  const [cityKey, setCityKey] = useState<string | null>(null);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-    const saved = localStorage.getItem(CITY_STORAGE_KEY);
-    if (saved) setCityKey(saved);
-  }, []);
-
-  if (!mounted) return null;
+  const cityKey = useLocalStorage(CITY_STORAGE_KEY);
 
   const labels = labelMap[locale] ?? labelMap.en;
   const city = cityKey ? cityHallMap[cityKey] : null;

@@ -14,7 +14,17 @@
     "at_bank": "银行",
     "at_phone_shop": "手机店",
     "share_checklist": "分享清单",
-    "checklist_share_text": "来日后需要办理的手续清单"
+    "checklist_share_text": "来日后需要办理的手续清单",
+    "at_tax_office": "税务署",
+    "at_hello_work": "Hello Work",
+    "situations_title": "情况别指南",
+    "recently_viewed": "最近查看",
+    "filter_search": "关键词",
+    "filter_category": "类别",
+    "filter_location": "地点",
+    "filter_with_deadline_only": "仅显示有期限",
+    "filter_all": "全部",
+    "filter_no_results": "没有符合条件的手续。"
   },
   "procedure": {
     "required_documents": "所需材料",
@@ -34,13 +44,30 @@
     "deadline_within_days": "{from}后{days}天内",
     "deadline_moving": "搬家",
     "deadline_expiry": "到期日",
+    "deadline_birth": "出生日",
+    "deadline_event": "得知之日",
     "deadline_before_expiry": "到期前",
     "no_deadline": "无期限",
     "location_city_hall": "市政厅 / 区役所",
     "location_immigration": "出入国在留管理局",
     "location_license_center": "驾照中心",
     "location_bank": "银行",
-    "location_phone_shop": "手机店"
+    "location_phone_shop": "手机店",
+    "location_tax_office": "税务署",
+    "location_hello_work": "Hello Work",
+    "last_updated": "最后更新",
+    "disclaimer": "本指南仅提供一般信息，不保证最新性或准确性。如有需要，请向相关窗口或官方来源确认。",
+    "recommended_services": "推荐服务",
+    "deadline_calculator": "期限计算",
+    "event_date": "事件日",
+    "days_remaining": "还剩{days}天",
+    "days_overdue": "超过{days}天",
+    "clear": "重置",
+    "save": "保存"
+  },
+  "checklist": {
+    "progress": "已完成 {done}/{total}",
+    "all_done": "全部完成！辛苦了"
   },
   "lang": {
     "en": "English",

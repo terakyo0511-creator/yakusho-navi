@@ -1,0 +1,171 @@
+{
+  "id": "birth_registration",
+  "icon": "👶",
+  "deadline": {
+    "type": "within_days",
+    "days": 14,
+    "from": "after_birth"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 30,
+    "max": 60
+  },
+  "translations": {
+    "ja": {
+      "title": "出生届",
+      "subtitle": "日本で生まれた子どもの出生を役所に届け出る",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "出生証明書",
+          "note": "医師または助産師が記入したもの"
+        },
+        {
+          "icon": "📘",
+          "name": "母子健康手帳",
+          "note": "出生届出済証明の記入に使用"
+        },
+        {
+          "icon": "🪪",
+          "name": "両親の在留カード",
+          "note": "外国人住民の場合"
+        },
+        {
+          "icon": "🖋️",
+          "name": "印鑑",
+          "note": "自治体により署名で可"
+        }
+      ],
+      "steps": [
+        "病院で出生証明書を受け取る",
+        "出生日から14日以内に市区町村役所へ行く",
+        "出生届に必要事項を記入して提出する",
+        "在留カードの写しなどを使って子どもの住民登録を確認する",
+        "出生後30日以内に入管で子どもの在留資格取得を別途申請する"
+      ],
+      "warnings": [
+        "子どもの在留資格取得は出生後30日以内に入管で別途必要です",
+        "無国籍を避けるため、母国大使館や領事館への出生届も確認してください",
+        "出生届の期限は出生日を含めて14日以内です"
+      ]
+    },
+    "en": {
+      "title": "Birth Registration",
+      "subtitle": "Report a child born in Japan to the city office",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "Birth Certificate",
+          "note": "Completed by the doctor or midwife"
+        },
+        {
+          "icon": "📘",
+          "name": "Maternal and Child Health Handbook",
+          "note": "Used for the birth notification record"
+        },
+        {
+          "icon": "🪪",
+          "name": "Parents' Residence Cards",
+          "note": "Required for foreign resident households"
+        },
+        {
+          "icon": "🖋️",
+          "name": "Personal Seal",
+          "note": "A signature may be accepted depending on the city"
+        }
+      ],
+      "steps": [
+        "Receive the birth certificate from the hospital",
+        "Go to city hall within 14 days of the birth",
+        "Fill in and submit the birth registration form",
+        "Confirm the child's resident registration using copies of the parents' residence cards",
+        "Apply separately at Immigration for the child's status of residence within 30 days after birth"
+      ],
+      "warnings": [
+        "The child's status of residence must be handled separately at Immigration within 30 days after birth",
+        "To avoid nationality problems, also confirm birth registration with your embassy or consulate",
+        "The 14-day deadline includes the date of birth"
+      ]
+    },
+    "zh": {
+      "title": "出生登记",
+      "subtitle": "向市区町村役所申报在日本出生的孩子",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "出生证明书",
+          "note": "由医生或助产师填写"
+        },
+        {
+          "icon": "📘",
+          "name": "母子健康手册",
+          "note": "用于记录出生申报证明"
+        },
+        {
+          "icon": "🪪",
+          "name": "父母双方的在留卡",
+          "note": "外国居民家庭需要"
+        },
+        {
+          "icon": "🖋️",
+          "name": "印章",
+          "note": "部分自治体可用签名代替"
+        }
+      ],
+      "steps": [
+        "从医院领取出生证明书",
+        "在出生日起14天内前往市区町村役所",
+        "填写并提交出生届",
+        "使用在留卡复印件等确认孩子的住民登记",
+        "出生后30天内另行向入管申请孩子的在留资格"
+      ],
+      "warnings": [
+        "孩子的在留资格需要在出生后30天内另行到入管办理",
+        "为避免无国籍问题，请同时确认向本国大使馆或领事馆申报出生",
+        "14天期限包括出生日当天"
+      ]
+    },
+    "vi": {
+      "title": "Đăng ký khai sinh",
+      "subtitle": "Thông báo việc trẻ sinh tại Nhật cho ủy ban",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "Giấy chứng sinh",
+          "note": "Do bác sĩ hoặc hộ sinh điền"
+        },
+        {
+          "icon": "📘",
+          "name": "Sổ sức khỏe mẹ và bé",
+          "note": "Dùng để ghi nhận việc đã khai sinh"
+        },
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú của cha mẹ",
+          "note": "Cần cho hộ gia đình người nước ngoài"
+        },
+        {
+          "icon": "🖋️",
+          "name": "Con dấu cá nhân",
+          "note": "Một số nơi chấp nhận chữ ký"
+        }
+      ],
+      "steps": [
+        "Nhận giấy chứng sinh từ bệnh viện",
+        "Đến ủy ban trong vòng 14 ngày kể từ ngày sinh",
+        "Điền và nộp tờ khai khai sinh",
+        "Xác nhận đăng ký cư trú của trẻ bằng bản sao thẻ cư trú của cha mẹ",
+        "Nộp hồ sơ riêng tại Cục xuất nhập cảnh để xin tư cách lưu trú cho trẻ trong vòng 30 ngày sau sinh"
+      ],
+      "warnings": [
+        "Tư cách lưu trú của trẻ phải được làm riêng tại Cục xuất nhập cảnh trong vòng 30 ngày sau sinh",
+        "Để tránh vấn đề không quốc tịch, hãy xác nhận thủ tục khai sinh với đại sứ quán hoặc lãnh sự quán của nước bạn",
+        "Thời hạn 14 ngày bao gồm cả ngày sinh"
+      ]
+    }
+  },
+  "official_links": [],
+  "updated_at": "2026-04-26"
+}

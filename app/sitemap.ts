@@ -1,23 +1,9 @@
 import { MetadataRoute } from "next";
+import { procedureMap } from "@/lib/procedures";
+import { situationMap } from "@/lib/situations";
+import { locales } from "@/types/procedure";
 
 const SITE_URL = "https://cityhall-guide.vercel.app";
-const locales = ["en", "vi", "zh", "ja"];
-const procedureIds = [
-  "moving_in",
-  "residence_card",
-  "health_insurance",
-  "health_insurance_leave",
-  "address_change",
-  "hanko_registration",
-  "my_number",
-  "pension",
-  "drivers_license",
-  "pension_withdrawal",
-  "bank_account",
-  "mobile_phone",
-  "health_insurance_withdrawal",
-  "residence_extension",
-];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -33,11 +19,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     });
-    for (const id of procedureIds) {
+    for (const id of Object.keys(procedureMap)) {
       entries.push({
         url: `${SITE_URL}/${locale}/procedure/${id}`,
         changeFrequency: "monthly",
         priority: 0.9,
+      });
+    }
+    for (const id of Object.keys(situationMap)) {
+      entries.push({
+        url: `${SITE_URL}/${locale}/situations/${id}`,
+        changeFrequency: "monthly",
+        priority: 0.8,
       });
     }
     entries.push({ url: `${SITE_URL}/${locale}/about`, changeFrequency: "yearly", priority: 0.3 });

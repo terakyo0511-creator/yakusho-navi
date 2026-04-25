@@ -1,0 +1,171 @@
+{
+  "id": "child_allowance",
+  "icon": "🧒",
+  "deadline": {
+    "type": "within_days",
+    "days": 15,
+    "from": "after_birth"
+  },
+  "location_type": "city_hall",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 30,
+    "max": 60
+  },
+  "translations": {
+    "ja": {
+      "title": "児童手当",
+      "subtitle": "子どもを養育する世帯向けの手当申請",
+      "required_documents": [
+        {
+          "icon": "📋",
+          "name": "認定請求書",
+          "note": "役所窓口で入手"
+        },
+        {
+          "icon": "🏦",
+          "name": "申請者名義の銀行口座",
+          "note": "通帳またはキャッシュカード"
+        },
+        {
+          "icon": "🪪",
+          "name": "健康保険証",
+          "note": "加入保険の確認"
+        },
+        {
+          "icon": "🔢",
+          "name": "マイナンバー確認書類",
+          "note": "申請者と配偶者分が必要な場合あり"
+        }
+      ],
+      "steps": [
+        "出生届提出と同時または直後に市区町村役所の窓口へ行く",
+        "児童手当の認定請求書を受け取る",
+        "申請者、配偶者、子どもの情報を記入する",
+        "銀行口座、健康保険証、マイナンバー確認書類を提出する",
+        "認定後、原則として申請月の翌月分から支給が始まる"
+      ],
+      "warnings": [
+        "申請が遅れると遡及支給されない場合があります",
+        "支給は原則として申請月の翌月分からです",
+        "所得制限があり、配偶者の所得も確認される場合があります"
+      ]
+    },
+    "en": {
+      "title": "Child Allowance",
+      "subtitle": "Apply for child allowance for households raising children",
+      "required_documents": [
+        {
+          "icon": "📋",
+          "name": "Certification Request Form",
+          "note": "Available at city hall"
+        },
+        {
+          "icon": "🏦",
+          "name": "Applicant's Bank Account",
+          "note": "Bankbook or cash card"
+        },
+        {
+          "icon": "🪪",
+          "name": "Health Insurance Card",
+          "note": "Used to confirm insurance enrollment"
+        },
+        {
+          "icon": "🔢",
+          "name": "My Number Documents",
+          "note": "May be required for the applicant and spouse"
+        }
+      ],
+      "steps": [
+        "Go to city hall when filing the birth registration or soon afterward",
+        "Get the child allowance certification request form",
+        "Fill in details for the applicant, spouse, and child",
+        "Submit bank account, health insurance, and My Number documents",
+        "After approval, payments usually start from the month after the application month"
+      ],
+      "warnings": [
+        "If you apply late, payments may not be made retroactively",
+        "Payments usually start from the month after the application month",
+        "Income limits may apply, and your spouse's income may also be checked"
+      ]
+    },
+    "zh": {
+      "title": "儿童津贴",
+      "subtitle": "抚养儿童家庭可申请的补助",
+      "required_documents": [
+        {
+          "icon": "📋",
+          "name": "认定请求书",
+          "note": "可在役所窗口领取"
+        },
+        {
+          "icon": "🏦",
+          "name": "申请者名义的银行账户",
+          "note": "存折或银行卡"
+        },
+        {
+          "icon": "🪪",
+          "name": "健康保险证",
+          "note": "用于确认保险加入情况"
+        },
+        {
+          "icon": "🔢",
+          "name": "My Number 确认资料",
+          "note": "可能需要申请者及配偶者的资料"
+        }
+      ],
+      "steps": [
+        "在提交出生届时或之后尽快前往市区町村役所窗口",
+        "领取儿童津贴认定请求书",
+        "填写申请者、配偶者和孩子的信息",
+        "提交银行账户、健康保险证和 My Number 确认资料",
+        "认定后原则上从申请月的下个月份开始支付"
+      ],
+      "warnings": [
+        "申请延迟时，可能无法追溯支付",
+        "原则上从申请月的下个月份开始支付",
+        "有所得限制，配偶者收入也可能被确认"
+      ]
+    },
+    "vi": {
+      "title": "Trợ cấp trẻ em",
+      "subtitle": "Xin trợ cấp cho hộ gia đình đang nuôi con",
+      "required_documents": [
+        {
+          "icon": "📋",
+          "name": "Đơn yêu cầu chứng nhận",
+          "note": "Có tại quầy ủy ban"
+        },
+        {
+          "icon": "🏦",
+          "name": "Tài khoản ngân hàng đứng tên người nộp",
+          "note": "Sổ ngân hàng hoặc thẻ ATM"
+        },
+        {
+          "icon": "🪪",
+          "name": "Thẻ bảo hiểm y tế",
+          "note": "Dùng để xác nhận bảo hiểm"
+        },
+        {
+          "icon": "🔢",
+          "name": "Giấy tờ My Number",
+          "note": "Có thể cần của người nộp và vợ/chồng"
+        }
+      ],
+      "steps": [
+        "Đến quầy ủy ban khi nộp khai sinh hoặc ngay sau đó",
+        "Nhận đơn yêu cầu chứng nhận trợ cấp trẻ em",
+        "Điền thông tin người nộp, vợ/chồng và trẻ",
+        "Nộp giấy tờ tài khoản ngân hàng, bảo hiểm y tế và My Number",
+        "Sau khi được công nhận, tiền thường bắt đầu từ tháng sau tháng nộp đơn"
+      ],
+      "warnings": [
+        "Nếu nộp muộn, khoản trợ cấp có thể không được trả truy ngược",
+        "Tiền thường bắt đầu từ tháng sau tháng nộp đơn",
+        "Có giới hạn thu nhập và thu nhập của vợ/chồng cũng có thể được tính"
+      ]
+    }
+  },
+  "official_links": [],
+  "updated_at": "2026-04-26"
+}

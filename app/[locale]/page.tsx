@@ -1,47 +1,107 @@
 import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import CitySelector from "@/components/CitySelector";
-import ProcedureCard from "@/components/ProcedureCard";
-import movingIn from "@/content/procedures/moving_in.json";
-import residenceCard from "@/content/procedures/residence_card.json";
-import healthInsurance from "@/content/procedures/health_insurance.json";
-import healthInsuranceLeave from "@/content/procedures/health_insurance_leave.json";
-import addressChange from "@/content/procedures/address_change.json";
-import hankoRegistration from "@/content/procedures/hanko_registration.json";
-import myNumber from "@/content/procedures/my_number.json";
-import pension from "@/content/procedures/pension.json";
-import driversLicense from "@/content/procedures/drivers_license.json";
-import pensionWithdrawal from "@/content/procedures/pension_withdrawal.json";
-import bankAccount from "@/content/procedures/bank_account.json";
-import mobilePhone from "@/content/procedures/mobile_phone.json";
-import healthInsuranceWithdrawal from "@/content/procedures/health_insurance_withdrawal.json";
-import residenceExtension from "@/content/procedures/residence_extension.json";
+import ProcedureFilter from "@/components/ProcedureFilter";
+import RecentlyViewed from "@/components/RecentlyViewed";
+import type { FilterableProcedure, ProcedureCategoryKey } from "@/components/ProcedureFilter";
+import type { Locale, Procedure } from "@/types/procedure";
+import { isLocale } from "@/types/procedure";
+import { procedureMap } from "@/lib/procedures";
+import { situations } from "@/lib/situations";
 
-const categoryLabels: Record<string, Record<string, string>> = {
-  arrival: { ja: "🆕 来日直後にやること", en: "🆕 After Arrival (Essential)", zh: "🆕 刚来日本时要做的事", vi: "🆕 Việc cần làm ngay sau khi đến Nhật" },
-  living: { ja: "🏠 生活の変更", en: "🏠 Life Changes", zh: "🏠 生活变更", vi: "🏠 Thay đổi trong cuộc sống" },
-  departure: { ja: "✈️ 帰国時の手続き", en: "✈️ Before Leaving Japan", zh: "✈️ 回国时的手续", vi: "✈️ Thủ tục trước khi về nước" },
-  visa: { ja: "📜 ビザ・免許", en: "📜 Visa & License", zh: "📜 签证与驾照", vi: "📜 Visa & Bằng lái xe" },
+const categoryLabels: Record<ProcedureCategoryKey, Record<Locale, string>> = {
+  arrival: {
+    ja: "来日後すぐにすること",
+    en: "After Arrival",
+    zh: "抵达后办理",
+    vi: "Sau khi đến Nhật",
+  },
+  living: {
+    ja: "生活の変更",
+    en: "Life Changes",
+    zh: "生活变更",
+    vi: "Thay đổi đời sống",
+  },
+  departure: {
+    ja: "帰国時の手続き",
+    en: "Before Leaving Japan",
+    zh: "离日前手续",
+    vi: "Trước khi rời Nhật",
+  },
+  visa: {
+    ja: "ビザ・免許",
+    en: "Visa & License",
+    zh: "签证与驾照",
+    vi: "Visa & bằng lái",
+  },
+  support: {
+    ja: "生活支援",
+    en: "Life Support",
+    zh: "生活支持",
+    vi: "Hỗ trợ đời sống",
+  },
+  family: {
+    ja: "家族",
+    en: "Family",
+    zh: "家庭",
+    vi: "Gia đình",
+  },
 };
 
 const categories = [
   {
     key: "arrival",
-    procedures: [movingIn, residenceCard, healthInsurance, myNumber, pension, bankAccount, mobilePhone],
+    procedures: [
+      procedureMap.moving_in,
+      procedureMap.residence_card,
+      procedureMap.health_insurance,
+      procedureMap.my_number,
+      procedureMap.my_number_card,
+      procedureMap.pension,
+      procedureMap.bank_account,
+      procedureMap.mobile_phone,
+      procedureMap.tax_return,
+    ],
   },
   {
     key: "living",
-    procedures: [addressChange, hankoRegistration, healthInsuranceLeave],
+    procedures: [
+      procedureMap.address_change,
+      procedureMap.hanko_registration,
+      procedureMap.health_insurance_leave,
+    ],
   },
   {
     key: "departure",
-    procedures: [healthInsuranceWithdrawal, pensionWithdrawal],
+    procedures: [
+      procedureMap.health_insurance_withdrawal,
+      procedureMap.pension_withdrawal,
+    ],
   },
   {
     key: "visa",
-    procedures: [residenceExtension, driversLicense],
+    procedures: [
+      procedureMap.residence_extension,
+      procedureMap.drivers_license,
+    ],
   },
-];
+  {
+    key: "support",
+    procedures: [
+      procedureMap.unemployment,
+      procedureMap.birth_registration,
+      procedureMap.child_allowance,
+    ],
+  },
+  {
+    key: "family",
+    procedures: [
+      procedureMap.marriage_registration,
+      procedureMap.death_registration,
+    ],
+  },
+] satisfies Array<{ key: ProcedureCategoryKey; procedures: Procedure[] }>;
 
 export default async function HomePage({
   params,
@@ -50,6 +110,22 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   const t = await getTranslations("home");
+  const activeLocale = isLocale(locale) ? locale : "en";
+  const locationLabels = {
+    city_hall: t("at_city_hall"),
+    immigration_office: t("at_immigration"),
+    license_center: t("at_license_center"),
+    bank: t("at_bank"),
+    phone_shop: t("at_phone_shop"),
+    tax_office: t("at_tax_office"),
+    hello_work: t("at_hello_work"),
+  };
+  const filterableProcedures: FilterableProcedure[] = categories.flatMap(({ key, procedures }) =>
+    procedures.map((procedure) => ({ category: key, procedure })),
+  );
+  const localizedCategoryLabels = Object.fromEntries(
+    Object.entries(categoryLabels).map(([key, labels]) => [key, labels[activeLocale]]),
+  ) as Record<ProcedureCategoryKey, string>;
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-6">
@@ -67,6 +143,33 @@ export default async function HomePage({
       </header>
 
       <main>
+        <section className="mb-6">
+          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
+            {t("situations_title")}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {situations.map((situation) => {
+              const tr = situation.translations[activeLocale];
+
+              return (
+                <Link
+                  key={situation.id}
+                  href={`/${locale}/situations/${situation.id}`}
+                  className="bg-white border border-gray-200 rounded-xl px-4 py-3 hover:border-[#1a2744] transition-colors"
+                >
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl" aria-hidden="true">{situation.icon}</span>
+                    <div>
+                      <h3 className="font-bold text-[#1a2744] text-sm">{tr.title}</h3>
+                      <p className="text-xs text-gray-500 mt-1 line-clamp-2">{tr.description}</p>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
             {t("procedures_title")}
@@ -82,46 +185,28 @@ export default async function HomePage({
           </a>
         </div>
 
-        <div className="flex flex-col gap-6">
-          {categories.map(({ key, procedures }) => (
-            <section key={key}>
-              <h3 className="text-sm font-bold text-[#1a2744] mb-2 pb-1 border-b border-gray-200">
-                {categoryLabels[key][locale] ?? categoryLabels[key].en}
-              </h3>
-              <div className="flex flex-col gap-3">
-                {procedures.map((proc) => {
-                  const tr = proc.translations[locale as keyof typeof proc.translations] ?? proc.translations.en;
-                  const deadlineDays = proc.deadline.type === "within_days" && "days" in proc.deadline
-                    ? (proc.deadline as { days: number }).days
-                    : null;
-                  return (
-                    <ProcedureCard
-                      key={proc.id}
-                      id={proc.id}
-                      icon={proc.icon}
-                      title={tr.title}
-                      subtitle={tr.subtitle}
-                      costYen={proc.cost_yen}
-                      durationMin={proc.duration_minutes.min}
-                      durationMax={proc.duration_minutes.max}
-                      deadlineDays={deadlineDays}
-                      locationType={proc.location_type}
-                      locale={locale}
-                      freeLabel={t("free")}
-                      minutesLabel={t("minutes")}
-                      daysLabel={t("days")}
-                      cityHallLabel={t("at_city_hall")}
-                      immigrationLabel={t("at_immigration")}
-                      licenseCenterLabel={t("at_license_center")}
-                      bankLabel={t("at_bank")}
-                      phoneShopLabel={t("at_phone_shop")}
-                    />
-                  );
-                })}
-              </div>
-            </section>
-          ))}
-        </div>
+        <RecentlyViewed
+          procedureMap={procedureMap}
+          locale={activeLocale}
+          title={t("recently_viewed")}
+        />
+
+        <ProcedureFilter
+          procedures={filterableProcedures}
+          categoryLabels={localizedCategoryLabels}
+          locationLabels={locationLabels}
+          labels={{
+            search: t("filter_search"),
+            category: t("filter_category"),
+            location: t("filter_location"),
+            withDeadlineOnly: t("filter_with_deadline_only"),
+            all: t("filter_all"),
+            noResults: t("filter_no_results"),
+            minutes: t("minutes"),
+            days: t("days"),
+          }}
+          locale={activeLocale}
+        />
       </main>
     </div>
   );

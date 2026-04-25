@@ -1,0 +1,159 @@
+{
+  "id": "unemployment",
+  "icon": "🤝",
+  "deadline": {
+    "type": "none"
+  },
+  "location_type": "hello_work",
+  "cost_yen": 0,
+  "duration_minutes": {
+    "min": 60,
+    "max": 120
+  },
+  "translations": {
+    "ja": {
+      "title": "失業給付申請",
+      "subtitle": "退職後にハローワークで雇用保険の基本手当を申請します",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "離職票",
+          "note": "退職後に会社から受け取ります"
+        },
+        {
+          "icon": "🪪",
+          "name": "在留カードまたは本人確認書類",
+          "note": "本人確認に必要です"
+        },
+        {
+          "icon": "🏦",
+          "name": "本人名義の銀行口座",
+          "note": "給付金の振込先です"
+        }
+      ],
+      "steps": [
+        "会社から離職票を受け取る",
+        "住所地を管轄するハローワークを確認する",
+        "必要書類を持ってハローワークへ行く",
+        "求職申込みと雇用保険受給資格の手続きを行う",
+        "説明会または指定された案内を受ける",
+        "認定日に求職活動の状況を申告する"
+      ],
+      "warnings": [
+        "受給には働く意思と能力があり、求職活動をしていることが必要です",
+        "自己都合退職の場合、給付開始まで待機期間があることがあります",
+        "在留資格によって就労条件が異なるため、不明な場合は相談してください"
+      ]
+    },
+    "en": {
+      "title": "Unemployment Benefits Application",
+      "subtitle": "Apply for employment insurance benefits at Hello Work after leaving a job",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "Separation notice",
+          "note": "Provided by your employer after resignation"
+        },
+        {
+          "icon": "🪪",
+          "name": "Residence Card or ID",
+          "note": "Required for identity verification"
+        },
+        {
+          "icon": "🏦",
+          "name": "Bank account in your name",
+          "note": "Used for benefit payments"
+        }
+      ],
+      "steps": [
+        "Receive the separation notice from your former employer",
+        "Find the Hello Work office responsible for your address",
+        "Visit Hello Work with the required documents",
+        "Register as a job seeker and apply for employment insurance eligibility",
+        "Attend the briefing session or follow the instructions you receive",
+        "Report your job search activity on each recognition date"
+      ],
+      "warnings": [
+        "You must be willing and able to work and actively looking for a job",
+        "If you resigned voluntarily, there may be a waiting period before payments start",
+        "Work conditions depend on your residence status, so ask for help if unsure"
+      ]
+    },
+    "zh": {
+      "title": "失业给付申请",
+      "subtitle": "离职后在 Hello Work 申请雇用保险基本津贴",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "离职票",
+          "note": "离职后由公司提供"
+        },
+        {
+          "icon": "🪪",
+          "name": "在留卡或本人确认文件",
+          "note": "用于确认身份"
+        },
+        {
+          "icon": "🏦",
+          "name": "本人名义的银行账户",
+          "note": "用于接收给付金"
+        }
+      ],
+      "steps": [
+        "从原公司领取离职票",
+        "确认管辖你住址的 Hello Work 办公室",
+        "携带必要文件前往 Hello Work",
+        "办理求职登记和雇用保险受给资格手续",
+        "参加说明会或按照收到的指示办理",
+        "在认定日申报求职活动情况"
+      ],
+      "warnings": [
+        "领取给付需要有工作意愿和能力，并正在求职",
+        "因个人原因离职时，开始领取前可能有等待期",
+        "可工作的条件取决于在留资格，不清楚时请咨询"
+      ]
+    },
+    "vi": {
+      "title": "Đăng ký trợ cấp thất nghiệp",
+      "subtitle": "Đăng ký trợ cấp bảo hiểm việc làm tại Hello Work sau khi nghỉ việc",
+      "required_documents": [
+        {
+          "icon": "📄",
+          "name": "Phiếu nghỉ việc",
+          "note": "Nhận từ công ty sau khi nghỉ việc"
+        },
+        {
+          "icon": "🪪",
+          "name": "Thẻ cư trú hoặc giấy tờ tùy thân",
+          "note": "Cần để xác nhận danh tính"
+        },
+        {
+          "icon": "🏦",
+          "name": "Tài khoản ngân hàng đứng tên bạn",
+          "note": "Dùng để nhận tiền trợ cấp"
+        }
+      ],
+      "steps": [
+        "Nhận phiếu nghỉ việc từ công ty cũ",
+        "Xác nhận văn phòng Hello Work phụ trách địa chỉ của bạn",
+        "Đến Hello Work cùng các giấy tờ cần thiết",
+        "Đăng ký tìm việc và làm thủ tục đủ điều kiện nhận bảo hiểm việc làm",
+        "Tham gia buổi hướng dẫn hoặc làm theo chỉ dẫn được nhận",
+        "Báo cáo hoạt động tìm việc vào ngày xác nhận"
+      ],
+      "warnings": [
+        "Bạn cần có ý định và khả năng làm việc, đồng thời đang tìm việc",
+        "Nếu tự nghỉ việc, có thể có thời gian chờ trước khi bắt đầu nhận tiền",
+        "Điều kiện làm việc phụ thuộc vào tư cách lưu trú, hãy hỏi nếu không chắc chắn"
+      ]
+    }
+  },
+  "official_links": [
+    {
+      "label_ja": "ハローワークインターネットサービス",
+      "label_en": "Hello Work Internet Service",
+      "url": "https://www.hellowork.mhlw.go.jp/"
+    }
+  ],
+  "updated_at": "2026-04-26"
+}
