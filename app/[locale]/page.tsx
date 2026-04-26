@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 import CitySelector from "@/components/CitySelector";
 import ProcedureFilter from "@/components/ProcedureFilter";
 import RecentlyViewed from "@/components/RecentlyViewed";
@@ -137,7 +136,6 @@ export default async function HomePage({
           </div>
         </div>
         <div className="mt-3 flex flex-wrap gap-2 items-center">
-          <LanguageSwitcher />
           <CitySelector />
         </div>
       </header>

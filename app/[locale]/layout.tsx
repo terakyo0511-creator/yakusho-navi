@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "../globals.css";
 
@@ -117,6 +118,11 @@ export default async function LocaleLayout({
         <GoogleAnalytics />
         <ServiceWorkerRegistrar />
         <NextIntlClientProvider messages={messages}>
+          <header className="border-b border-gray-100 print:hidden">
+            <div className="max-w-2xl mx-auto px-4 py-2 flex items-center justify-end">
+              <LanguageSwitcher />
+            </div>
+          </header>
           <div className="flex-1">{children}</div>
           <footer className="border-t border-gray-100 mt-8 py-4 print:hidden">
             <div className="max-w-2xl mx-auto px-4 flex flex-wrap gap-4 text-xs text-gray-400">
